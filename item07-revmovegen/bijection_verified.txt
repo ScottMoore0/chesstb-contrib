@@ -1,0 +1,14 @@
+==========================================================================
+BIJECTION TEST -- reverse move generation
+==========================================================================
+  startpos   complete    420/420      sound    161/161      PASS
+  kiwipete   complete   2087/2087     sound   1977/1977     PASS
+  ep-rich    complete    205/205      sound   1098/1098     PASS
+  promo      complete    520/520      sound   2014/2014     PASS
+  castling   complete    594/594      sound   2276/2276     PASS
+  pos5       complete   1530/1530     sound   6100/6100     PASS
+--------------------------------------------------------------------------
+  completeness : 5356/5356 transitions recovered
+  soundness    : 13626/13626 predecessors valid
+  VERDICT      : PASS
+TRUE EXIT CODE: 0

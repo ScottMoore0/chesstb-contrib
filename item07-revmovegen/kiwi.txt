@@ -1,0 +1,4 @@
+kiwipete  complete  2044/2087   sound  1977/1977   FAIL
+    MISSED r3k2r/p1ppqpb1/bn2pnp1/3PN3/Pp2P3/2N2Q1p/1PPBBPPP/R3K2R b KQkq a3 0 1 | Rg8
+    MISSED r3k2r/p1ppqpb1/bn2pnp1/3PN3/Pp2P3/2N2Q1p/1PPBBPPP/R3K2R b KQkq a3 0 1 | Rf8
+pos5      complete  1530/1530   sound  6100/6100   PASS

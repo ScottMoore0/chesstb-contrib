@@ -1,0 +1,11 @@
+# Generated tables: rebuild with refgen2 --dump (hundreds of MB).
+item02-refverify/tables/
+item02-refverify/tables_*/
+*.reftb
+# Binaries: build from source (see Quick start).
+*.exe
+item02-refverify/refgen2
+item09-sf-dtm4/dtm4
+# Tool output.
+item08-nnue-data/out/
+__pycache__/

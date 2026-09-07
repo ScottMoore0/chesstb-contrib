@@ -1,0 +1,46 @@
+refgen -- naive reference tablebase generator (speed is a non-goal)
+------------------------------------------------------------------
+KBBvK    legal=23824640     win=5007216     draw=13189344    loss=5628080     longest_win=37
+         longest FEN squares: Ka1 Kd2 Bd1 Bh4  stm=white
+  win-distance histogram (plies): 1:12624 3:5216 5:29872 7:36864 9:61344 11:75024 ... 17:248528 19:362512 21:499312 23:589168 25:709520 27:721072 29:632112 31:492144 33:218720 35:26896 37:240 
+  ply  dtm  move
+    0    37  Ka1 Kd2 Bb3 Bh4 
+    1   -36  Ka1 Kc3 Bb3 Bh4 
+    2    35  Ka1 Kc3 Be6 Bh4 
+    3   -34  Ka1 Kd2 Be6 Bh4 
+    4    33  Kb2 Kd2 Be6 Bh4 
+    5   -32  Kb2 Kd3 Be6 Bh4 
+    6    31  Kb2 Kd3 Be6 Bf6 
+    7   -30  Kb2 Kd2 Be6 Bf6 
+    8    29  Kb2 Kd2 Bd5 Bf6 
+    9   -28  Kb2 Kd3 Bd5 Bf6 
+   10    27  Kb2 Kd3 Bd5 Be5 
+   11   -26  Kb2 Kd2 Bd5 Be5 
+  playout invariant on longest win: PASS
+KBNvK    legal=24536088     win=10822184    draw=2525736     loss=11188168    longest_win=65
+         longest FEN squares: Ka1 Kc1 Be1 Nh6  stm=white
+  win-distance histogram (plies): 1:1840 3:1200 5:3216 7:15960 9:39752 11:45192 ... 17:42720 19:56240 21:95208 23:142084 25:189592 27:190296 29:139684 31:118004 33:114200 35:119780 37:127480 39:216552 41:350136 43:484868 45:576832 47:584456 49:729040 51:949808 53:1278384 55:1531500 57:1434268 59:859400 61:261004 63:33580 65:1104 
+  ply  dtm  move
+    0    65  Ka2 Kc1 Be1 Nh6 
+    1   -64  Ka2 Kd1 Be1 Nh6 
+    2    63  Ka2 Kd1 Bf2 Nh6 
+    3   -62  Ka2 Kc2 Bf2 Nh6 
+    4    61  Ka3 Kc2 Bf2 Nh6 
+    5   -60  Ka3 Kd1 Bf2 Nh6 
+    6    59  Kb3 Kd1 Bf2 Nh6 
+    7   -58  Kb3 Ke2 Bf2 Nh6 
+    8    57  Kb3 Ke2 Bc5 Nh6 
+    9   -56  Kb3 Kd3 Bc5 Nh6 
+   10    55  Kb3 Kd3 Bc5 Nf7 
+   11   -54  Kb3 Kd2 Bc5 Nf7 
+  playout invariant on longest win: PASS
+KNNvK    legal=25159888     win=1232        draw=25158416    loss=240         longest_win=1
+         longest FEN squares: Ka1 Kc1 Nd2 Ne3  stm=white
+  win-distance histogram (plies): 1:1232 
+  ply  dtm  move
+    0     1  Ka1 Kc1 Nb3 Ne3 
+  playout invariant on longest win: PASS
+
+real	25m42.275s
+user	0m0.015s
+sys	0m0.000s

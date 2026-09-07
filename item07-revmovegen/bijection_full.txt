@@ -1,0 +1,31 @@
+==========================================================================
+BIJECTION TEST -- reverse move generation
+==========================================================================
+  startpos   complete    420/420      sound    161/161      PASS
+  kiwipete   complete   1953/2087     sound   1976/1976     FAIL
+      MISSED  from r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1  move O-O
+              -> r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R4RK1 b kq - 1 1
+      MISSED  from r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1  move O-O-O
+              -> r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/2KR3R b kq - 1 1
+      MISSED  from r3k2r/p1ppqNb1/bn2pnp1/3P4/1p2P3/2N2Q1p/PPPBBPPP/R3K2R b KQkq - 0 1  move O-O
+              -> r4rk1/p1ppqNb1/bn2pnp1/3P4/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQ - 1 2
+  ep-rich    complete    205/205      sound   1082/1082     PASS
+  promo      complete    520/520      sound   2014/2014     PASS
+  castling   complete    531/594      sound   2256/2256     FAIL
+      MISSED  from r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1  move Rxh8+
+              -> r3k2R/8/8/8/8/8/8/R3K3 b Qq - 0 1
+      MISSED  from r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1  move Rxa8+
+              -> R3k2r/8/8/8/8/8/8/4K2R b Kk - 0 1
+      MISSED  from r3k2r/8/8/8/8/8/8/R3K2R w KQkq - 0 1  move O-O
+              -> r3k2r/8/8/8/8/8/8/R4RK1 b kq - 1 1
+  pos5       complete   1491/1530     sound   6099/6099     FAIL
+      MISSED  from rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQK2R w KQ - 1 8  move O-O
+              -> rnbq1k1r/pp1Pbppp/2p5/8/2B5/8/PPP1NnPP/RNBQ1RK1 b - - 2 8
+      MISSED  from rnbq1k1r/pp1PbBpp/2p5/8/8/8/PPP1NnPP/RNBQK2R b KQ - 0 8  move Nxh1
+              -> rnbq1k1r/pp1PbBpp/2p5/8/8/8/PPP1N1PP/RNBQK2n w Q - 0 9
+      MISSED  from rnbq1k1r/pp1Pbppp/2p1B3/8/8/8/PPP1NnPP/RNBQK2R b KQ - 2 8  move Nxh1
+              -> rnbq1k1r/pp1Pbppp/2p1B3/8/8/8/PPP1N1PP/RNBQK2n w Q - 0 9
+--------------------------------------------------------------------------
+  completeness : 5120/5356 transitions recovered
+  soundness    : 13588/13588 predecessors valid
+  VERDICT      : FAIL

@@ -1,0 +1,89 @@
+refgen -- naive reference tablebase generator (speed is a non-goal)
+------------------------------------------------------------------
+KBBvK    legal=23824640     win=5007216     draw=13189344    loss=5628080     longest_win=37
+         longest FEN squares: Ka1 Kd2 Bd1 Bh4  stm=white
+  win-distance histogram (plies): 1:12624 3:5216 5:29872 7:36864 9:61344 11:75024 ... 17:248528 19:362512 21:499312 23:589168 25:709520 27:721072 29:632112 31:492144 33:218720 35:26896 37:240 
+  ply  dtm  move
+    0    37  Ka1 Kd2 Bf3 Bh4 
+    1   -36  Ka1 Ke3 Bf3 Bh4 
+    2    35  Ka1 Ke3 Bg2 Bh4 
+    3   -34  Ka1 Kf4 Bg2 Bh4 
+    4    33  Kb2 Kf4 Bg2 Bh4 
+    5   -32  Kb2 Kg4 Bg2 Bh4 
+    6    31  Kb2 Kg4 Bg2 Bf2 
+    7   -30  Kb2 Kf4 Bg2 Bf2 
+    8    29  Kc3 Kf4 Bg2 Bf2 
+    9   -28  Kc3 Kg4 Bg2 Bf2 
+   10    27  Kc4 Kg4 Bg2 Bf2 
+   11   -26  Kc4 Kf4 Bg2 Bf2 
+  playout invariant on longest win: PASS
+  wrote tables/KBBvK.reftb (33554432 slots)
+KNNvK    legal=25159888     win=1232        draw=25158416    loss=240         longest_win=1
+         longest FEN squares: Ka1 Kc1 Nd2 Ne3  stm=white
+  win-distance histogram (plies): 1:1232 
+  ply  dtm  move
+    0     1  Ka1 Kc1 Nb3 Ne3 
+  playout invariant on longest win: PASS
+  wrote tables/KNNvK.reftb (33554432 slots)
+KQvKR    legal=19733336     win=11953856    draw=699664      loss=7079816     longest_win=73
+         longest FEN squares: Ka1 Kc2 Qg1 Rd5  stm=white
+  win-distance histogram (plies): 1:109328 3:62152 5:92800 7:175832 9:324020 11:606288 ... 17:1385012 19:987944 21:590664 23:528260 25:571440 27:585288 29:571484 31:302264 33:114924 35:69720 37:75848 39:85500 41:96864 43:115256 45:136068 47:156024 49:172800 51:196656 53:230376 55:247920 57:258420 59:255768 61:219108 63:169796 65:110876 67:59760 69:25836 71:6404 73:352 
+  ply  dtm  move
+    0    73  Ka1 Kc2 Qh2 Rd5 
+    1   -72  Ka1 Kc3 Qh2 Rd5 
+    2    71  Ka1 Kc3 Qc7 Rd5 
+    3   -70  Ka1 Kb3 Qc7 Rd5 
+    4    69  Ka1 Kb3 Qf7 Rd5 
+    5   -68  Ka1 Kc4 Qf7 Rd5 
+    6    67  Kb1 Kc4 Qf7 Rd5 
+    7   -66  Kb1 Kd4 Qf7 Rd5 
+    8    65  Kc2 Kd4 Qf7 Rd5 
+    9   -64  Kc2 Ke4 Qf7 Rd5 
+   10    63  Kc2 Ke4 Qg6 Rd5 
+   11   -62  Kc2 Ke3 Qg6 Rd5 
+  ply  58: INVARIANT BROKEN  dtm 15 -> -16 (expected magnitude 14)
+  playout invariant on longest win: FAIL
+  wrote tables/KQvKR.reftb (33554432 slots)
+KRvKR    legal=21561456     win=6278464     draw=15138064    loss=144928      longest_win=37
+         longest FEN squares: Ka1 Kc1 Rb3 Rg2  stm=white
+  win-distance histogram (plies): 1:71264 3:48080 5:58208 7:19664 9:50416 11:126400 ... 17:370184 19:441680 21:507232 23:704440 25:884512 27:994448 29:1026704 31:501632 33:124016 35:15712 37:2152 
+  ply  dtm  move
+    0    37  Ka1 Kc1 Rb1 Rg2 
+    1   -36  Ka1 Kc2 Rb1 Rg2 
+    2    35  Ka1 Kc2 Rb2 Rg2 
+    3   -34  Ka1 Kd3 Rb2 Rg2 
+  ply   4: NO OPTIMAL MOVE from dtm=33 wdl=2
+  playout invariant on longest win: FAIL
+  wrote tables/KRvKR.reftb (33554432 slots)
+KQvKQ    legal=17905216     win=7474184     draw=10349776    loss=81256       longest_win=25
+         longest FEN squares: Kb1 Kd1 Qa1 Qg1  stm=black
+  win-distance histogram (plies): 1:115568 3:77440 5:124384 7:303904 9:538840 11:967056 ... 17:1490152 19:447856 21:46640 23:2176 25:32 
+  ply  dtm  move
+    0    25  Kb1 Kd2 Qa1 Qg1 
+    1   -24  Ka2 Kd2 Qa1 Qg1 
+    2    23  Ka2 Kd2 Qa1 Qg8 
+    3   -22  Kb1 Kd2 Qa1 Qg8 
+    4    21  Kb1 Kd2 Qa1 Qg6 
+    5   -20  Ka2 Kd2 Qa1 Qg6 
+    6    19  Ka2 Kd2 Qa1 Qe6 
+    7   -18  Ka3 Kd2 Qa1 Qe6 
+    8    17  Ka3 Kd2 Qa1 Qa6 
+    9   -16  Kb2 Kd2 Qa1 Qa6 
+   10    15  Kb2 Kd2 Qa1 Qb5 
+   11   -14  Ka3 Kd2 Qa1 Qb5 
+  ply  14: INVARIANT BROKEN  dtm 11 -> -14 (expected magnitude 10)
+  playout invariant on longest win: FAIL
+  wrote tables/KQvKQ.reftb (33554432 slots)
+=== SYZYGY DIFF ON 4-MAN ===
+============================================================================
+REFERENCE GENERATOR vs SYZYGY  (WDL, position by position)
+============================================================================
+config          checked        agree     DISAGREE    skipped
+KBBvK          23782976     23782976            0          0
+KNNvK          25159888     25159888            0          0
+KQvKR          19733336     19733336            0          0
+KRvKR          21561456     21561456            0          0
+KQvKQ          17905216     17905216            0          0
+----------------------------------------------------------------------------
+VERDICT: PASS -- no disagreements
+ALLDONE
