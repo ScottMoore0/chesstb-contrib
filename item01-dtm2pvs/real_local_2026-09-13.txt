@@ -1,0 +1,8 @@
+# backend: chesstb(<chesstb tables>)
+8/6k1/8/5Q2/8/8/8/7K w - - ; dtm50 13 ; plies 13 ; end mate ; pv Kg2 Kg8 Qd7 Kf8 Kf3 Kg8 Ke4 Kf8 Ke5 Kg8 Kf6 Kf8 Qc8#
+8/8/8/8/8/2k5/8/K6R w - - ; dtm50 27 ; plies 27 ; end mate ; pv Rd1 Kc2 Rd8 Kc3 Kb1 Kb3 Rc8 Kb4 Ka2 Kb5 Ka3 Ka5 Rb8 Ka6 Ka4 Ka7 Rb1 Ka6 Rb2 Ka7 Ka5 Ka8 Kb6 Kb8 Rc2 Ka8 Rc8#
+8/8/8/4k3/8/8/8/K1Q5 w - - ; dtm50 17 ; plies 17 ; end mate ; pv Ka2 Kd4 Kb3 Kd5 Qe1 Kc5 Qd1 Kb6 Kb4 Ka6 Kc5 Ka7 Kc6 Ka8 Kb6 Kb8 Qd8#
+7k/8/8/8/8/8/6Q1/K7 w - - ; dtm50 11 ; plies 11 ; end mate ; pv Kb2 Kh7 Kc3 Kh6 Kd4 Kh5 Ke5 Kh4 Kf4 Kh5 Qg5#
+8/8/8/8/8/2k5/8/KBN5 w - - ; dtm50 59 ; plies 59 ; end mate ; pv Bf5 Kb4 Kb2 Kc4 Nd3 Kd4 Kb3 Kd5 Kc3 Kd6 Kd4 Ke7 Nf4 Kf6 Be6 Kg7 Ke5 Kh7 Kf6 Kh6 Ba2 Kh7 Ng6 Kh6 Bg8 Kh5 Ne5 Kh4 Kf5 Kg3 Ng4 Kg2 Bc4 Kf3 Ba6 Kg3 Be2 Kh4 Ne3 Kg3 Nd1 Kh4 Kf4 Kh3 Ne3 Kh4 Bd1 Kh3 Bg4+ Kh2 Kf3 Kg1 Kg3 Kh1 Kf2 Kh2 Nf1+ Kh1 Bf3#
+8/8/3k4/8/8/2r5/8/KR6 w - - ; dtm50 0 ; plies 0 ; end draw ; pv 
+# analysed 6, skipped 0, invariant failures 0

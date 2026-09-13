@@ -1,0 +1,4 @@
+chess.chesstb from: <python-chess checkout>/chess/chesstb.py
+remote: chesstb(https://huggingface.co/buckets/noobpwnftw/chesstb/resolve) via HttpTablebase
+positions 51  agree 51  differ 0  seconds 15.5
+transfer: <TransferStats 9 HEAD, 13 range requests, 363,208 bytes>

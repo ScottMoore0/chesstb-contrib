@@ -35,6 +35,15 @@ else
   skip "item02 refgen" "binary not built; run: g++ -O2 -std=c++17 -o refgen2 refgen.cpp"
 fi
 
+# Four-man DTM is where the capture defect lived, so three-man alone proves
+# nothing about it. Needs the dumped four-man tables and 3-4 man Gaviota files.
+if [ -f item02-refverify/tables/KQvKR.reftb ] && [ -n "$GAVIOTA" ]; then
+  run "item02 4-man DTM vs Gaviota (sampled)" $PY item02-refverify/gaviota_dtm_diff.py \
+      KQvKR KRvKR KQvKQ KBBvK --tables item02-refverify/tables --gaviota "$GAVIOTA" --sample 5000
+else
+  skip "item02 4-man DTM" "needs item02-refverify/tables/*.reftb for 4-man and GAVIOTA=<3-4 man Gaviota dir>"
+fi
+
 echo "--- item 01: dtm2pvs against reference tables ----------------"
 if [ -f item02-refverify/tables/KQvK.reftb ]; then
   run "item01 dtm2pvs" $PY item01-dtm2pvs/dtm2pvs_chesstb.py \

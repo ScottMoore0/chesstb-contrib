@@ -1,0 +1,104 @@
+refgen -- naive reference tablebase generator (speed is a non-goal)
+------------------------------------------------------------------
+KQvK     legal=368452       win=144508      draw=23048       loss=200896      longest_win=19
+         longest FEN squares: Ka1 Kf5 Qb2  stm=white
+  win-distance histogram (plies): 1:2448 3:5012 5:9064 7:19964 9:26164 11:32064 ... 17:2680 19:8 
+  ply  dtm  move
+    0    19  Kb1 Kf5 Qb2 
+    1   -18  Kb1 Ke6 Qb2 
+    2    17  Kc2 Ke6 Qb2 
+    3   -16  Kc2 Kf5 Qb2 
+    4    15  Kc3 Kf5 Qb2 
+    5   -14  Kc3 Ke4 Qb2 
+    6    13  Kc3 Ke4 Qb5 
+    7   -12  Kc3 Kf3 Qb5 
+    8    11  Kd3 Kf3 Qb5 
+    9   -10  Kd3 Kf2 Qb5 
+   10     9  Ke4 Kf2 Qb5 
+   11    -8  Ke4 Kg2 Qb5 
+  playout invariant on longest win: PASS
+  wrote tables_relax/KQvK.reftb (524288 slots)
+KRvK     legal=399112       win=175168      draw=22244       loss=201700      longest_win=31
+         longest FEN squares: Ka1 Kc3 Rb2  stm=white
+  win-distance histogram (plies): 1:1512 3:4676 5:3852 7:1900 9:4848 11:8708 ... 17:20088 19:19016 21:20476 23:21480 25:17824 27:16136 29:5244 31:916 
+  ply  dtm  move
+    0    31  Kb1 Kc3 Rb2 
+    1   -30  Kb1 Kd4 Rb2 
+    2    29  Kc2 Kd4 Rb2 
+    3   -28  Kc2 Kc4 Rb2 
+    4    27  Kc2 Kc4 Rb8 
+    5   -26  Kc2 Kd4 Rb8 
+    6    25  Kc2 Kd4 Re8 
+    7   -24  Kc2 Kc5 Re8 
+    8    23  Kc3 Kc5 Re8 
+    9   -22  Kc3 Kd5 Re8 
+   10    21  Kc3 Kd5 Re3 
+   11   -20  Kc3 Kc5 Re3 
+  playout invariant on longest win: PASS
+  wrote tables_relax/KRvK.reftb (524288 slots)
+KQvKR    legal=19733336     win=11953856    draw=699664      loss=7079816     longest_win=69
+         longest FEN squares: Ka1 Kc2 Qh1 Rc4  stm=white
+  win-distance histogram (plies): 1:109328 3:68816 5:91192 7:178400 9:334116 11:606712 ... 17:1382892 19:988024 21:594936 23:531836 25:576768 27:598856 29:591884 31:320936 33:132552 35:87980 37:96988 39:117644 41:134032 43:150140 45:180516 47:208884 49:242324 51:261544 53:266740 55:265368 57:231804 59:168604 61:101228 63:51844 65:18912 67:3692 69:80 
+  ply  dtm  move
+    0    69  Ka1 Kc2 Qg2 Rc4 
+    1   -68  Ka1 Kc3 Qg2 Rc4 
+    2    67  Kb1 Kc3 Qg2 Rc4 
+    3   -66  Kb1 Kd3 Qg2 Rc4 
+    4    65  Kb2 Kd3 Qg2 Rc4 
+    5   -64  Kb2 Kd4 Qg2 Rc4 
+    6    63  Kb2 Kd4 Qh3 Rc4 
+    7   -62  Kb2 Kc5 Qh3 Rc4 
+    8    61  Kb2 Kc5 Qf5 Rc4 
+    9   -60  Kb2 Kd4 Qf5 Rc4 
+   10    59  Kb3 Kd4 Qf5 Rc4 
+   11   -58  Kb3 Kd4 Qf5 Rc3 
+  playout invariant on longest win: PASS
+  wrote tables_relax/KQvKR.reftb (33554432 slots)
+KRvKR    legal=21561456     win=6278464     draw=15138064    loss=144928      longest_win=37
+         longest FEN squares: Ka1 Kc1 Rb3 Rg2  stm=white
+  win-distance histogram (plies): 1:71264 3:52480 5:54704 7:19472 9:50336 11:126848 ... 17:370184 19:442448 21:506960 23:704312 25:884544 27:994720 29:1026392 31:500744 33:124016 35:15680 37:2152 
+  ply  dtm  move
+    0    37  Ka1 Kc1 Rb1 Rg2 
+    1   -36  Ka1 Kc2 Rb1 Rg2 
+    2    35  Ka1 Kc2 Rb2 Rg2 
+    3   -34  Ka1 Kd3 Rb2 Rg2 
+    4    33  (optimal move is a capture; line continues in the sub-table)
+  playout invariant on longest win: PASS
+  wrote tables_relax/KRvKR.reftb (33554432 slots)
+KQvKQ    legal=17905216     win=7474184     draw=10349776    loss=81256       longest_win=25
+         longest FEN squares: Kb1 Kd1 Qa1 Qg1  stm=black
+  win-distance histogram (plies): 1:115568 3:85552 5:116272 7:304112 9:538808 11:966992 ... 17:1490136 19:447856 21:46640 23:2176 25:32 
+  ply  dtm  move
+    0    25  Kb1 Kd2 Qa1 Qg1 
+    1   -24  Ka2 Kd2 Qa1 Qg1 
+    2    23  Ka2 Kd2 Qa1 Qg8 
+    3   -22  Kb1 Kd2 Qa1 Qg8 
+    4    21  Kb1 Kd2 Qa1 Qg6 
+    5   -20  Ka2 Kd2 Qa1 Qg6 
+    6    19  Ka2 Kd2 Qa1 Qe6 
+    7   -18  Ka3 Kd2 Qa1 Qe6 
+    8    17  Ka3 Kd2 Qa1 Qa6 
+    9   -16  Kb2 Kd2 Qa1 Qa6 
+   10    15  Kb2 Kd2 Qa1 Qb5 
+   11   -14  Ka3 Kd2 Qa1 Qb5 
+   14    11  (optimal move is a capture; line continues in the sub-table)
+  playout invariant on longest win: PASS
+  wrote tables_relax/KQvKQ.reftb (33554432 slots)
+KBBvK    legal=23824640     win=5007216     draw=13189344    loss=5628080     longest_win=37
+         longest FEN squares: Ka1 Kd2 Bd1 Bh4  stm=white
+  win-distance histogram (plies): 1:12624 3:5216 5:29872 7:36864 9:61344 11:75024 ... 17:248528 19:362512 21:499312 23:589168 25:709520 27:721072 29:632112 31:492144 33:218720 35:26896 37:240 
+  ply  dtm  move
+    0    37  Ka1 Kd2 Bf3 Bh4 
+    1   -36  Ka1 Ke3 Bf3 Bh4 
+    2    35  Ka1 Ke3 Bg2 Bh4 
+    3   -34  Ka1 Kf4 Bg2 Bh4 
+    4    33  Kb2 Kf4 Bg2 Bh4 
+    5   -32  Kb2 Kg4 Bg2 Bh4 
+    6    31  Kb2 Kg4 Bg2 Bf2 
+    7   -30  Kb2 Kf4 Bg2 Bf2 
+    8    29  Kc3 Kf4 Bg2 Bf2 
+    9   -28  Kc3 Kg4 Bg2 Bf2 
+   10    27  Kc4 Kg4 Bg2 Bf2 
+   11   -26  Kc4 Kf4 Bg2 Bf2 
+  playout invariant on longest win: PASS
+  wrote tables_relax/KBBvK.reftb (33554432 slots)

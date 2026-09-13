@@ -1,0 +1,44 @@
+diff --git a/chess/chesstb.py b/chess/chesstb.py
+index 70fe054..dcae005 100644
+--- a/chess/chesstb.py
++++ b/chess/chesstb.py
+@@ -2777,6 +2777,15 @@ class Tablebase:
+         re-resolved, so a late directory only affects materials not yet looked
+         up.
+         """
++        if "://" in directory:
++            # os.path.join would splice a platform separator into the URL (on
++            # Windows, a backslash before the kind), after which every table
++            # reports missing and nothing names the real cause.
++            raise ValueError(
++                f"{directory!r} is a URL: open_tablebase and add_directory search "
++                "the local filesystem. To read tables remotely, subclass Tablebase, "
++                "override _find and add_directory, and give each table class an "
++                "_open_source that returns a buffer over the remote file.")
+         for kind in self.KINDS:
+             with self._open_locks[kind]:
+                 self.dirs[kind].append(os.path.join(directory, kind))
+diff --git a/test.py b/test.py
+index c0455b5..5583a8d 100755
+--- a/test.py
++++ b/test.py
+@@ -5030,6 +5030,19 @@ class ChesstbTestCase(unittest.TestCase):
+         tables.dirs["dtm50"].clear()
+         return tables
+ 
++    def test_url_directory_is_rejected(self):
++        # open_tablebase searches the local filesystem. A URL given as the
++        # directory used to be accepted and joined with os.path.join, which on
++        # Windows put a backslash before the kind subdirectory and then reported
++        # every table missing. It must fail at open and say why.
++        url = "https://huggingface.co/buckets/noobpwnftw/chesstb/resolve/full"
++        with self.assertRaises(ValueError) as ctx:
++            chess.chesstb.open_tablebase(url)
++        self.assertIn("URL", str(ctx.exception))
++        with chess.chesstb.open_tablebase("data/chesstb") as tables:
++            with self.assertRaises(ValueError):
++                tables.add_directory(url)
++
+     # --- The four table kinds, and how a directory is searched for them. ---
+ 
+     def test_table_kinds(self):

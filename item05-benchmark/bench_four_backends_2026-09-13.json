@@ -1,0 +1,178 @@
+{
+  "seed": 20260906,
+  "machine": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "python": "3.14.0"
+  },
+  "backends": {
+    "ref": "item02-refverify/tables",
+    "gaviota": "<gaviota tables>",
+    "chesstb": "<chesstb tables>",
+    "chesstb-hf": "https://huggingface.co/buckets/noobpwnftw/chesstb/resolve"
+  },
+  "sizes": {
+    "ref": 509608153,
+    "gaviota": 2648473,
+    "chesstb": 1123688
+  },
+  "agreement": {
+    "compared": 500,
+    "dtm_compared": 466,
+    "disagreements": 0
+  },
+  "timings": {
+    "ref": {
+      "uniform": {
+        "cold": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.0068,
+          "p95_ms": 0.0077,
+          "throughput_per_s": 147059.0
+        },
+        "warm": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.0071,
+          "p95_ms": 0.0075,
+          "throughput_per_s": 140845.2
+        }
+      },
+      "playout": {
+        "cold": {
+          "probes": 400,
+          "resolved": 398,
+          "missing": 2,
+          "median_ms": 0.0065,
+          "p95_ms": 0.0069,
+          "throughput_per_s": 153846.4
+        },
+        "warm": {
+          "probes": 400,
+          "resolved": 398,
+          "missing": 2,
+          "median_ms": 0.0066,
+          "p95_ms": 0.007,
+          "throughput_per_s": 151515.3
+        }
+      }
+    },
+    "gaviota": {
+      "uniform": {
+        "cold": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.0127,
+          "p95_ms": 1.3791,
+          "throughput_per_s": 78740.1
+        },
+        "warm": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.0127,
+          "p95_ms": 1.3662,
+          "throughput_per_s": 78740.3
+        }
+      },
+      "playout": {
+        "cold": {
+          "probes": 400,
+          "resolved": 400,
+          "missing": 0,
+          "median_ms": 0.0119,
+          "p95_ms": 0.0148,
+          "throughput_per_s": 84033.6
+        },
+        "warm": {
+          "probes": 400,
+          "resolved": 400,
+          "missing": 0,
+          "median_ms": 0.0121,
+          "p95_ms": 0.0197,
+          "throughput_per_s": 82644.6
+        }
+      }
+    },
+    "chesstb": {
+      "uniform": {
+        "cold": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.1263,
+          "p95_ms": 1.2237,
+          "throughput_per_s": 7917.7
+        },
+        "warm": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.1123,
+          "p95_ms": 1.0901,
+          "throughput_per_s": 8904.7
+        }
+      },
+      "playout": {
+        "cold": {
+          "probes": 400,
+          "resolved": 398,
+          "missing": 2,
+          "median_ms": 0.19985,
+          "p95_ms": 1.2114,
+          "throughput_per_s": 5003.8
+        },
+        "warm": {
+          "probes": 400,
+          "resolved": 398,
+          "missing": 2,
+          "median_ms": 0.1568,
+          "p95_ms": 1.2086,
+          "throughput_per_s": 6377.6
+        }
+      }
+    },
+    "chesstb-hf": {
+      "uniform": {
+        "cold": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.2444,
+          "p95_ms": 7.2693,
+          "throughput_per_s": 4091.7
+        },
+        "warm": {
+          "probes": 999,
+          "resolved": 999,
+          "missing": 0,
+          "median_ms": 0.2358,
+          "p95_ms": 6.8041,
+          "throughput_per_s": 4240.9
+        }
+      },
+      "playout": {
+        "cold": {
+          "probes": 400,
+          "resolved": 398,
+          "missing": 2,
+          "median_ms": 0.22905,
+          "p95_ms": 1.4105,
+          "throughput_per_s": 4365.9
+        },
+        "warm": {
+          "probes": 400,
+          "resolved": 398,
+          "missing": 2,
+          "median_ms": 0.16615,
+          "p95_ms": 1.3294,
+          "throughput_per_s": 6018.7
+        }
+      }
+    }
+  }
+}

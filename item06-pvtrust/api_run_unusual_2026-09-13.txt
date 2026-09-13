@@ -1,0 +1,13 @@
+==========================================================================
+PV TRUST METRIC -- live cdb API, 5 root(s), 40 plies, 1.0 s between requests
+==========================================================================
+  rnbqkbnr/pppppppp/8/8/6P1/8/PPPPPP1P/RNBQKBNR b KQkq - 0 1   len 41  substantiated 41  score 1.00  trustworthy     first gap None
+  rnbqkbnr/pppppppp/8/8/8/N7/PPPPPPPP/R1BQKBNR b KQkq - 1 1    len 41  substantiated 41  score 1.00  trustworthy     first gap None
+  rnbqkbnr/ppppp1pp/8/5p2/6P1/8/PPPPPP1P/RNBQKBNR w KQkq - 0 2 len 26  substantiated 23  score 0.89  trustworthy     first gap 23
+  rnbqkbnr/pppppppp/8/8/8/7P/PPPPPPP1/RNBQKBNR b KQkq - 0 1    len 37  substantiated 13  score 0.35  unsubstantiated first gap 13
+  r1bqkbnr/pppppppp/n7/8/8/N7/PPPPPPPP/R1BQKBNR w KQkq - 2 2   len 12  substantiated 10  score 0.83  trustworthy     first gap 10
+--------------------------------------------------------------------------
+  bands: trustworthy 4, unsubstantiated 1
+  requests made: 178
+  NOTE: the substantiation rule is this module's proposal and still needs
+  confirming by the cdb maintainer before these bands mean anything.

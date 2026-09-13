@@ -129,24 +129,33 @@ def dir_size(path: str) -> int:
 
 
 def agreement_check(backends: Dict[str, object], positions: List[chess.Board]) -> Dict:
-    """Every backend must agree on WDL before any timing is done."""
+    """Every backend must agree before any timing is done: on WDL wherever two
+    or more backends answer, and on DTM wherever two or more supply it for a
+    decided position. DTM is where a generator's distance bugs live; WDL alone
+    let a four-man DTM defect through for weeks."""
     names = list(backends)
     disagreements = []
-    compared = 0
+    compared = dtm_compared = 0
     for b in positions:
-        vals = {}
+        wdl, dtm = {}, {}
         for n in names:
             try:
-                vals[n] = backends[n].probe(b).wdl
+                r = backends[n].probe(b)
             except Exception:
-                vals[n] = None
-        present = {k: v for k, v in vals.items() if v is not None}
-        if len(present) < 2:
-            continue
-        compared += 1
-        if len(set(present.values())) > 1:
-            disagreements.append({"fen": b.fen(), "values": present})
-    return {"compared": compared, "disagreements": disagreements}
+                continue
+            if r.wdl is not None:
+                wdl[n] = r.wdl
+                if r.wdl != 0 and r.dtm is not None:
+                    dtm[n] = r.dtm
+        if len(wdl) >= 2:
+            compared += 1
+            if len(set(wdl.values())) > 1:
+                disagreements.append({"fen": b.fen(), "metric": "wdl", "values": wdl})
+        if len(dtm) >= 2:
+            dtm_compared += 1
+            if len(set(dtm.values())) > 1:
+                disagreements.append({"fen": b.fen(), "metric": "dtm", "values": dtm})
+    return {"compared": compared, "dtm_compared": dtm_compared, "disagreements": disagreements}
 
 
 # ------------------------------------------------------------------- main
@@ -215,9 +224,9 @@ def main(argv=None) -> int:
 
     print("-- correctness (must pass before timing) " + "-" * 37)
     agree = agreement_check(backends, all_positions[:500])
-    report["agreement"] = {"compared": agree["compared"],
+    report["agreement"] = {"compared": agree["compared"], "dtm_compared": agree["dtm_compared"],
                            "disagreements": len(agree["disagreements"])}
-    print("  positions compared : %d" % agree["compared"])
+    print("  positions compared : %d (WDL), %d (DTM)" % (agree["compared"], agree["dtm_compared"]))
     print("  disagreements      : %d" % len(agree["disagreements"]))
     for d in agree["disagreements"][:3]:
         print("    %s  %s" % (d["fen"], d["values"]))
@@ -241,9 +250,14 @@ def main(argv=None) -> int:
         for wname, pos in workloads.items():
             if not pos:
                 continue
-            # cold: first touch of these positions; warm: immediately repeated
-            cold = time_probes(be, pos)
-            warm = time_probes(be, pos)
+            # cold: a freshly opened backend, because the agreement check and the
+            # playout generator have already probed these positions through `be`
+            # and timing that instance measured its cache, not a first touch.
+            # Process-cold only: the OS may still hold local files in its cache.
+            # warm: the same positions again on the same fresh instance.
+            fresh = open_backend(roots[n])
+            cold = time_probes(fresh, pos)
+            warm = time_probes(fresh, pos)
             report["timings"][n][wname] = {"cold": cold, "warm": warm}
             for label, res in (("%s/cold" % wname, cold), ("%s/warm" % wname, warm)):
                 if res:

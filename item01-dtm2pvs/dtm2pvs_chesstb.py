@@ -152,9 +152,12 @@ def choose_move(backend, board: chess.Board) -> Tuple[Optional[chess.Move], Opti
         return None, None, "none"
 
     positives = [c for c in cands if c[0] > 0]
+    draws = [c for c in cands if c[0] == 0]
     if positives:                       # we can force mate: take the shortest
         best = min(positives, key=lambda c: (c[0], not board.is_capture(c[1]), c[1].uci()))
-    else:                               # we are lost or drawing: resist longest
+    elif draws:                         # a draw beats every loss, however long
+        best = min(draws, key=lambda c: (not board.is_capture(c[1]), c[1].uci()))
+    else:                               # every move loses: resist longest
         best = min(cands, key=lambda c: (c[0], not board.is_capture(c[1]), c[1].uci()))
     return best[1], best[0], best[2]
 
@@ -181,6 +184,15 @@ def build_pv(backend, board: chess.Board, max_plies: int = 400,
     res.start_distance, src = probe_distance(backend, work)
     if src in ("nocoverage", "nodistance"):
         res.reason = src
+        return res
+    # A mating line only exists from a decided position. From a draw the walk
+    # used to continue anyway, and because the loser's rule (resist longest)
+    # also ranked losses below draws, it played a losing blunder and "mated".
+    if src == "mate":
+        res.reason = "mate"
+        return res
+    if src == "draw" or res.start_distance == 0:
+        res.reason = "draw"
         return res
 
     # No previous ply to compare against at the root: the invariant relates
@@ -299,6 +311,9 @@ def main(argv=None) -> int:
                       % (mv_no, side, d["supplied"], d["optimal"], d["optimal_distance"]))
 
     print("# analysed %d, skipped %d, invariant failures %d" % (n_ok, n_skip, n_bad))
+    transfer = getattr(backend, "transfer", None)
+    if transfer is not None:
+        print("# remote transfer: %r" % transfer)
     if args.audit_pv:
         print("# audited %d supplied PVs, %d diverge from optimal" % (n_audited, n_div))
     if args.check_invariant and n_bad:

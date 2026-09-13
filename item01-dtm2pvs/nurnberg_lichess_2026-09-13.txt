@@ -1,0 +1,10 @@
+=== nurnberg sample
+Total number of positions to process: 4.
+8/6k1/8/5Q2/8/8/8/7K w - - bm #7; PV: h1g2 g7g8 g2h3 g8g7 h3g4 g7h6 f5g5 h6h7 g4f5 h7h8 f5f6 h8h7 g5g7;
+8/8/8/8/8/2k5/8/K6R w - - bm #14; PV: h1d1 c3c2 d1d8 c2c3 a1b1 c3b3 d8c8 b3b4 b1a2 b4b5 a2a3 b5a5 c8c4 a5b5 a3b3 b5a5 c4b4 a5a6 b3a4 a6a7 a4a5 a7a8 a5b6 a8b8 b4c4 b8a8 c4c8;
+8/8/8/4k3/8/8/8/K1Q5 w - - bm #9; PV: c1f1 e5e4 f1f6 e4e3 f6h4 e3e2 h4g3 e2f1 g3h2 f1e1 h2g2 e1d1 a1b2 d1e1 b2c3 e1d1 g2f1;
+7k/8/8/8/8/8/6Q1/K7 w - - bm #6; PV: a1b2 h8h7 b2c3 h7h6 c3d4 h6h5 d4e5 h5h4 e5f4 h4h5 g2g5;
+=== nurnberg audit
+Total number of positions to process: 1.
+Of those with (partial) PV to check: 1.
+8/6k1/8/5Q2/8/8/8/7K w - - bm #7; PV: h1g2 g7g8 g2h3 g8h8 f5g5 h8h7 h3g4 h7h8 g4f5 h8h7 f5f6 h7h8 g5g7;

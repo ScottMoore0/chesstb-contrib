@@ -442,6 +442,71 @@ static void generate(Table& t, bool verbose) {
     // Anything still unknown after the fixed point is a draw.
     for (uint64_t idx = 0; idx < total; idx++)
         if (t.wdl[idx] == V_UNKNOWN) { t.wdl[idx] = V_DRAW; t.dtm[idx] = 0; }
+
+    // DISTANCE RELAXATION.
+    //
+    // The passes above decide WDL correctly, but not always DTM. A capture's
+    // value comes from a finished sub-table, so it is available on the first
+    // pass however distant that mate is, and a position can be finalised with a
+    // long capture line before a shorter quiet line has resolved. The Gaviota
+    // diff caught it on KQvKR: distances 2-6 plies too long, longest 73 against
+    // the true 69. Forcing commits onto the pass matching their distance was
+    // tried and made things worse (refgen.cpp.badfix).
+    //
+    // So distances are recomputed from WDL alone. Every decided, non-terminal
+    // position starts at "infinity", and the two defining equations
+    //
+    //   win   d = 1 + min over losing children of |d(child)|
+    //   loss  d = 1 + max over children of d(child)      (all children win)
+    //
+    // are applied until nothing changes. From infinity a value can only fall,
+    // an update never takes it below the true distance, and on decided
+    // positions the equations have one solution (induction on true distance),
+    // so the sweep stops at the exact distances in whatever order it visits
+    // positions. Mated positions keep 0; sub-tables are relaxed when generated.
+    {
+        const int INF = 30000;
+        std::vector<uint64_t> decided;
+        for (uint64_t idx = 0; idx < total; idx++) {
+            if (t.wdl[idx] == V_WIN) { t.dtm[idx] = INF; decided.push_back(idx); }
+            else if (t.wdl[idx] == V_LOSS && t.dtm[idx] != 0) { t.dtm[idx] = -INF; decided.push_back(idx); }
+        }
+        for (int sweep = 1;; sweep++) {
+            uint64_t changed = 0;
+            for (uint64_t idx : decided) {
+                Pos p = decode(m, idx);
+                gen_moves(m, p, moves);
+                bool win = (t.wdl[idx] == V_WIN);
+                int best = win ? INF : 0;
+                for (const Move& mv : moves) {
+                    int8_t qv;
+                    int16_t qd;
+                    if (mv.captured >= 0) {
+                        if (!capture_value(m, p, mv, false, qv, qd)) continue;
+                    } else {
+                        Pos q = make_move(p, mv);
+                        if (in_check(m, q, p.stm)) continue;
+                        uint64_t qi = encode(m, q);
+                        qv = t.wdl[qi];
+                        qd = t.dtm[qi];
+                    }
+                    if (win) { if (qv == V_LOSS) best = std::min(best, -int(qd) + 1); }
+                    else     { if (qv == V_WIN)  best = std::max(best, int(qd) + 1); }
+                }
+                if (best > INF) best = INF;
+                int16_t nv = int16_t(win ? best : -best);
+                if (nv != t.dtm[idx]) { t.dtm[idx] = nv; changed++; }
+            }
+            if (verbose) fprintf(stderr, "  relax sweep %2d: changed %llu\n", sweep,
+                                 (unsigned long long)changed);
+            if (!changed) break;
+        }
+        uint64_t stuck = 0;
+        for (uint64_t idx : decided)
+            if (t.dtm[idx] == INF || t.dtm[idx] == -INF) stuck++;
+        if (stuck) fprintf(stderr, "  RELAXATION LEFT %llu positions at infinity in %s\n",
+                           (unsigned long long)stuck, m.name.c_str());
+    }
 }
 
 static Table* get_table(const Material& m, bool verbose) {

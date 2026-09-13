@@ -196,6 +196,145 @@ class ReftbBackend:
         raise TableMissing(sig, self.name())
 
 
+# ------------------------------------------------------------ http transport
+
+
+class TransferStats:
+    """What remote probing actually cost: requests and bytes, by kind."""
+
+    def __init__(self):
+        self.head_requests = 0
+        self.range_requests = 0
+        self.bytes = 0
+        self._exists = {}
+
+    def exists(self, url: str) -> bool:
+        if url not in self._exists:
+            import urllib.error
+            import urllib.request
+            req = urllib.request.Request(url, method="HEAD",
+                                         headers={"User-Agent": "chesstb-contrib/0.1"})
+            self.head_requests += 1
+            try:
+                with urllib.request.urlopen(req, timeout=30) as r:
+                    self._exists[url] = (r.status == 200, int(r.headers.get("Content-Length") or 0))
+            except urllib.error.HTTPError:
+                self._exists[url] = (False, 0)
+        return self._exists[url][0]
+
+    def length(self, url: str) -> int:
+        self.exists(url)
+        return self._exists[url][1]
+
+    def __repr__(self):
+        return ("<TransferStats %d HEAD, %d range requests, %s bytes>"
+                % (self.head_requests, self.range_requests, "{:,}".format(self.bytes)))
+
+
+class HttpRangeBuffer:
+    """A remote file as the buffer chess.chesstb reads a table through.
+
+    Upstream asks only for len(), indexing and slicing, and never takes a span
+    wider than one block, so the file is fetched in fixed chunks by HTTP Range
+    and each chunk is kept once fetched. Nothing is written to disk.
+    """
+
+    CHUNK = 1 << 16
+
+    def __init__(self, url: str, stats: TransferStats):
+        self.url = url
+        self.stats = stats
+        self._len = stats.length(url)
+        self._chunks = {}
+
+    def __str__(self):
+        return self.url
+
+    def __len__(self):
+        return self._len
+
+    def _chunk(self, n: int) -> bytes:
+        if n not in self._chunks:
+            import urllib.request
+            lo = n * self.CHUNK
+            hi = min(lo + self.CHUNK, self._len) - 1
+            req = urllib.request.Request(self.url, headers={"Range": "bytes=%d-%d" % (lo, hi),
+                                                            "User-Agent": "chesstb-contrib/0.1"})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                body = r.read()
+            if len(body) != hi - lo + 1:
+                raise IOError("short range read from %s: wanted %d bytes at %d, got %d"
+                              % (self.url, hi - lo + 1, lo, len(body)))
+            self.stats.range_requests += 1
+            self.stats.bytes += len(body)
+            self._chunks[n] = body
+        return self._chunks[n]
+
+    def __getitem__(self, key):
+        if isinstance(key, slice):
+            start, stop, step = key.indices(self._len)
+            if step != 1:
+                raise ValueError("stepped slices are not supported")
+            out = bytearray()
+            pos = start
+            while pos < stop:
+                n, off = divmod(pos, self.CHUNK)
+                piece = self._chunk(n)[off:off + (stop - pos)]
+                out += piece
+                pos += len(piece)
+            return bytes(out)
+        if key < 0:
+            key += self._len
+        if not 0 <= key < self._len:
+            raise IndexError(key)
+        n, off = divmod(key, self.CHUNK)
+        return self._chunk(n)[off]
+
+    def close(self):
+        self._chunks.clear()
+
+
+def open_remote_chesstb(base_url: str, stats: TransferStats):
+    """A chess.chesstb Tablebase reading `base_url` over HTTP.
+
+    Built on upstream's transport seam: _find returns a URL (checked by HEAD),
+    add_directory joins URLs with url_join rather than os.path.join, and each
+    table class opens its source as an HttpRangeBuffer.
+    """
+    import chess.chesstb as ctb
+
+    def remote(cls):
+        class Remote(cls):
+            def _open_source(self, path):
+                buf = HttpRangeBuffer(str(path), stats)
+                self._data = buf
+                return buf
+        Remote.__name__ = "Http" + cls.__name__
+        return Remote
+
+    class HttpTablebase(ctb.Tablebase):
+        WDL_FILE = remote(ctb.WDLFile)
+        DTZ_FILE = remote(ctb.DTZFile)
+        DTC_FILE = remote(ctb.DTCFile)
+        DTM_FILE = remote(ctb.DTMFile)
+        DTM50_FILE = remote(ctb.DTM50File)
+
+        def add_directory(self, directory):
+            for kind in self.KINDS:
+                with self._open_locks[kind]:
+                    self.dirs[kind].append(url_join(directory, kind))
+                    self.dirs[kind].append(directory)
+
+        def _find(self, kind, name, ext):
+            for d in self.dirs[kind]:
+                u = url_join(d, name + ext)
+                if stats.exists(u):
+                    return u
+            return None
+
+    return HttpTablebase(base_url)
+
+
 # -------------------------------------------------------------- chesstb backend
 
 
@@ -217,9 +356,16 @@ class ChesstbBackend:
         self.roots = list(roots)
         self._tb = None
         self._dtm50_returns_tuple = None
+        self.transfer = None
         for r in self.roots:
             try:
-                self._tb = ctb.open_tablebase(r)
+                if is_url(r):
+                    # Never open_tablebase(url): upstream searches the local
+                    # filesystem, and a URL joined as a path is the Windows bug.
+                    self.transfer = TransferStats()
+                    self._tb = open_remote_chesstb(r, self.transfer)
+                else:
+                    self._tb = ctb.open_tablebase(r)
                 break
             except Exception:
                 continue
@@ -305,6 +451,43 @@ class SyzygyBackend:
         return r
 
 
+# ----------------------------------------------------------- gaviota backend
+
+
+class GaviotaBackend:
+    """Reads Gaviota tables through python-chess.
+
+    Gaviota stores DTM in plies from the side to move, ignoring the fifty-move
+    rule, so it fills `dtm` and never `dtm50`. Its WDL is -1/0/+1 and is scaled
+    to the Syzygy convention (+2 win, -2 loss) used everywhere else here.
+    """
+
+    def __init__(self, root: str):
+        try:
+            import chess.gaviota  # noqa: F401
+        except Exception as exc:
+            raise ProbeUnavailable("chess.gaviota not importable: %s" % exc)
+        import chess.gaviota as gav
+        if not os.path.isdir(root):
+            raise ProbeUnavailable("no such directory: %s" % root)
+        try:
+            self._tb = gav.open_tablebase(root)
+        except Exception as exc:
+            raise ProbeUnavailable("cannot open Gaviota at %s: %s" % (root, exc))
+        self.root = root
+
+    def name(self) -> str:
+        return "gaviota(%s)" % self.root
+
+    def probe(self, board: chess.Board) -> ProbeResult:
+        try:
+            wdl = self._tb.probe_wdl(board)
+            dtm = self._tb.probe_dtm(board)
+        except Exception as exc:
+            raise TableMissing(material_signature(board), self.name()) from exc
+        return ProbeResult(wdl=2 * wdl, dtm=dtm)
+
+
 # ------------------------------------------------------------------- selection
 
 
@@ -320,4 +503,7 @@ def open_backend(root: str):
         for fn in names:
             if fn.endswith(".rtbw") or fn.endswith(".rtbz"):
                 return SyzygyBackend(root)
+        for fn in names:
+            if fn.endswith(".gtb.cp4"):
+                return GaviotaBackend(root)
     return ChesstbBackend([root])

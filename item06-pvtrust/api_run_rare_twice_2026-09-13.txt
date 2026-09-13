@@ -1,0 +1,38 @@
+##### pass 1 18:51:53
+==========================================================================
+PV TRUST METRIC -- live cdb API, 5 root(s), 40 plies, 1.0 s between requests
+==========================================================================
+  rnbqkbnr/ppppppp1/8/7p/P7/8/1PPPPPPP/RNBQKBNR w KQkq - 0 2   len 30  substantiated 29  score 0.97  trustworthy     first gap 29
+      gap at 2r2rk1/1pqbbpp1/p2p1n2/4p1Bp/Pn2P3/2NB1N1P/1PPQ1PP1/1R2R1K1 b - - 3 16: 1 scored move(s), need 2
+  rnbqkbnr/1ppppppp/8/p7/8/7N/PPPPPPPP/RNBQKB1R w KQkq - 0 2   len 29  substantiated 27  score 0.93  trustworthy     first gap 27
+      gap at 2kr3r/1pp2ppp/2n3b1/p1bN2Pn/8/2N2P2/PPP1P1BP/R1B2R1K b - - 2 15: 1 scored move(s), need 2
+  rnbqkbnr/pppp1ppp/8/4p3/8/5P2/PPPPPKPP/RNBQ1BNR b kq - 1 2   len 15  substantiated 13  score 0.87  trustworthy     first gap 13
+      gap at r3k2r/pppbqppp/2n2n2/1Bb1p3/3p4/2P1PP2/PP1PNKPP/RNBQ1R2 w kq - 1 9: 1 scored move(s), need 2
+  rnbqkbnr/1ppppppp/8/p7/7P/7R/PPPPPPP1/RNBQKBN1 b Qkq - 1 2   len 11  substantiated  9  score 0.82  trustworthy     first gap 9
+      gap at r1bqk1nr/1pp2ppp/3b4/p2pn3/7P/4P3/PPP2PP1/RNBQKBNR w Qkq - 0 7: 1 scored move(s), need 2
+  rnbqkb1r/pppppppp/7n/8/8/7N/PPPPPPPP/RNBQKB1R w KQkq - 2 2   len 24  substantiated 13  score 0.54  partial         first gap 13
+      gap at rnb1k2r/pp1pQ1bp/2p3pn/5pN1/4P3/8/PPP2PPP/RNB1KB1R b KQkq - 0 8: 1 scored move(s), need 2
+--------------------------------------------------------------------------
+  bands: partial 1, trustworthy 4
+  requests made: 136
+  NOTE: the substantiation rule is this module's proposal and still needs
+  confirming by the cdb maintainer before these bands mean anything.
+##### pass 2 18:56:04
+==========================================================================
+PV TRUST METRIC -- live cdb API, 5 root(s), 40 plies, 1.0 s between requests
+==========================================================================
+  rnbqkbnr/ppppppp1/8/7p/P7/8/1PPPPPPP/RNBQKBNR w KQkq - 0 2   len 16  substantiated 15  score 0.94  trustworthy     first gap 15
+      gap at r1bqkb1r/p2pnpp1/1p2p3/7p/P1BQP3/2N4P/1PP2PP1/R1B1K2R b KQkq - 0 9: 1 scored move(s), need 2
+  rnbqkbnr/1ppppppp/8/p7/8/7N/PPPPPPPP/RNBQKB1R w KQkq - 0 2   len 22  substantiated 20  score 0.91  trustworthy     first gap 20
+      gap at r3k2r/1pp2p1p/2np1p2/p1b1pq2/2P2P2/1P2PQ1P/PB1P3P/R3KB1R w KQkq - 3 12: 1 scored move(s), need 2
+  rnbqkbnr/pppp1ppp/8/4p3/8/5P2/PPPPPKPP/RNBQ1BNR b kq - 1 2   len 30  substantiated 19  score 0.63  partial         first gap 19
+      gap at rn2k2r/pp3p2/2p1bq1n/4p2p/3pP2P/3P1P2/PPP2K2/RN1Q1BNR w kq - 0 12: 1 scored move(s), need 2
+  rnbqkbnr/1ppppppp/8/p7/7P/7R/PPPPPPP1/RNBQKBN1 b Qkq - 1 2   len 12  substantiated 10  score 0.83  trustworthy     first gap 10
+      gap at r1bqk1nr/1pp2ppp/3b4/p2pn3/7P/4PN2/PPP2PP1/RNBQKB1R b Qkq - 1 7: 1 scored move(s), need 2
+  rnbqkb1r/pppppppp/7n/8/8/7N/PPPPPPPP/RNBQKB1R w KQkq - 2 2   len 27  substantiated 13  score 0.48  partial         first gap 13
+      gap at rnb1k2r/pp1pQ1bp/2p3pn/5pN1/4P3/8/PPP2PPP/RNB1KB1R b KQkq - 0 8: 1 scored move(s), need 2
+--------------------------------------------------------------------------
+  bands: partial 2, trustworthy 3
+  requests made: 131
+  NOTE: the substantiation rule is this module's proposal and still needs
+  confirming by the cdb maintainer before these bands mean anything.

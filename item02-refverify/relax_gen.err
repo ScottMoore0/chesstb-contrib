@@ -1,0 +1,339 @@
+generating KQvK ...
+  legal positions: 368452 of 524288 slots
+  [sub] generating KvK
+  pass  1: resolved 2448
+  pass  2: resolved 1352
+  pass  3: resolved 5012
+  pass  4: resolved 2956
+  pass  5: resolved 9064
+  pass  6: resolved 7480
+  pass  7: resolved 19964
+  pass  8: resolved 14144
+  pass  9: resolved 26164
+  pass 10: resolved 25484
+  pass 11: resolved 32064
+  pass 12: resolved 39908
+  pass 13: resolved 32104
+  pass 14: resolved 54052
+  pass 15: resolved 15000
+  pass 16: resolved 43800
+  pass 17: resolved 2680
+  pass 18: resolved 11300
+  pass 19: resolved 8
+  pass 20: resolved 56
+  relax sweep  1: changed 4878
+  relax sweep  2: changed 16288
+  relax sweep  3: changed 43772
+  relax sweep  4: changed 84083
+  relax sweep  5: changed 112562
+  relax sweep  6: changed 117117
+  relax sweep  7: changed 103114
+  relax sweep  8: changed 81573
+  relax sweep  9: changed 62733
+  relax sweep 10: changed 45457
+  relax sweep 11: changed 28395
+  relax sweep 12: changed 15509
+  relax sweep 13: changed 6223
+  relax sweep 14: changed 1959
+  relax sweep 15: changed 328
+  relax sweep 16: changed 35
+  relax sweep 17: changed 4
+  relax sweep 18: changed 0
+generating KRvK ...
+  legal positions: 399112 of 524288 slots
+  pass  1: resolved 1512
+  pass  2: resolved 624
+  pass  3: resolved 4676
+  pass  4: resolved 1948
+  pass  5: resolved 3852
+  pass  6: resolved 648
+  pass  7: resolved 1900
+  pass  8: resolved 1584
+  pass  9: resolved 4848
+  pass 10: resolved 3768
+  pass 11: resolved 8708
+  pass 12: resolved 4728
+  pass 13: resolved 11320
+  pass 14: resolved 5444
+  pass 15: resolved 17172
+  pass 16: resolved 11448
+  pass 17: resolved 20088
+  pass 18: resolved 13672
+  pass 19: resolved 19016
+  pass 20: resolved 15872
+  pass 21: resolved 20476
+  pass 22: resolved 22788
+  pass 23: resolved 21480
+  pass 24: resolved 28732
+  pass 25: resolved 17824
+  pass 26: resolved 33516
+  pass 27: resolved 16136
+  pass 28: resolved 36372
+  pass 29: resolved 5244
+  pass 30: resolved 17284
+  pass 31: resolved 916
+  pass 32: resolved 3056
+  relax sweep  1: changed 3071
+  relax sweep  2: changed 5655
+  relax sweep  3: changed 8304
+  relax sweep  4: changed 13232
+  relax sweep  5: changed 23608
+  relax sweep  6: changed 37415
+  relax sweep  7: changed 52739
+  relax sweep  8: changed 72671
+  relax sweep  9: changed 88261
+  relax sweep 10: changed 97057
+  relax sweep 11: changed 97100
+  relax sweep 12: changed 91221
+  relax sweep 13: changed 81098
+  relax sweep 14: changed 69544
+  relax sweep 15: changed 58098
+  relax sweep 16: changed 45890
+  relax sweep 17: changed 33011
+  relax sweep 18: changed 22820
+  relax sweep 19: changed 15641
+  relax sweep 20: changed 10271
+  relax sweep 21: changed 6331
+  relax sweep 22: changed 3526
+  relax sweep 23: changed 1474
+  relax sweep 24: changed 390
+  relax sweep 25: changed 47
+  relax sweep 26: changed 0
+generating KQvKR ...
+  legal positions: 19733336 of 33554432 slots
+  [sub] generating KvKR
+  [sub] generating KQvK
+  pass  1: resolved 6560344
+  pass  2: resolved 362680
+  pass  3: resolved 1553360
+  pass  4: resolved 131208
+  pass  5: resolved 346968
+  pass  6: resolved 119880
+  pass  7: resolved 214840
+  pass  8: resolved 143848
+  pass  9: resolved 181944
+  pass 10: resolved 132788
+  pass 11: resolved 125824
+  pass 12: resolved 115004
+  pass 13: resolved 83212
+  pass 14: resolved 82236
+  pass 15: resolved 62640
+  pass 16: resolved 67964
+  pass 17: resolved 50768
+  pass 18: resolved 58764
+  pass 19: resolved 49856
+  pass 20: resolved 65868
+  pass 21: resolved 56296
+  pass 22: resolved 81892
+  pass 23: resolved 68752
+  pass 24: resolved 100036
+  pass 25: resolved 78160
+  pass 26: resolved 110248
+  pass 27: resolved 89316
+  pass 28: resolved 126064
+  pass 29: resolved 102368
+  pass 30: resolved 148836
+  pass 31: resolved 123524
+  pass 32: resolved 190780
+  pass 33: resolved 146636
+  pass 34: resolved 229060
+  pass 35: resolved 168640
+  pass 36: resolved 276364
+  pass 37: resolved 193868
+  pass 38: resolved 338984
+  pass 39: resolved 228248
+  pass 40: resolved 414212
+  pass 41: resolved 263680
+  pass 42: resolved 501352
+  pass 43: resolved 274220
+  pass 44: resolved 567996
+  pass 45: resolved 275640
+  pass 46: resolved 613968
+  pass 47: resolved 243640
+  pass 48: resolved 624700
+  pass 49: resolved 187548
+  pass 50: resolved 571192
+  pass 51: resolved 120840
+  pass 52: resolved 438028
+  pass 53: resolved 66424
+  pass 54: resolved 269920
+  pass 55: resolved 28080
+  pass 56: resolved 134320
+  pass 57: resolved 7508
+  pass 58: resolved 43524
+  pass 59: resolved 696
+  pass 60: resolved 4592
+  pass 61: resolved 16
+  pass 62: resolved 88
+  relax sweep  1: changed 6624242
+  relax sweep  2: changed 1292388
+  relax sweep  3: changed 883944
+  relax sweep  4: changed 429535
+  relax sweep  5: changed 368064
+  relax sweep  6: changed 323076
+  relax sweep  7: changed 265330
+  relax sweep  8: changed 226937
+  relax sweep  9: changed 201247
+  relax sweep 10: changed 198652
+  relax sweep 11: changed 218440
+  relax sweep 12: changed 269402
+  relax sweep 13: changed 338005
+  relax sweep 14: changed 426118
+  relax sweep 15: changed 536409
+  relax sweep 16: changed 676578
+  relax sweep 17: changed 845707
+  relax sweep 18: changed 1047691
+  relax sweep 19: changed 1287715
+  relax sweep 20: changed 1543874
+  relax sweep 21: changed 1803580
+  relax sweep 22: changed 2022409
+  relax sweep 23: changed 2168312
+  relax sweep 24: changed 2211701
+  relax sweep 25: changed 2147673
+  relax sweep 26: changed 2010885
+  relax sweep 27: changed 1826233
+  relax sweep 28: changed 1586425
+  relax sweep 29: changed 1306449
+  relax sweep 30: changed 1016076
+  relax sweep 31: changed 750503
+  relax sweep 32: changed 523442
+  relax sweep 33: changed 345830
+  relax sweep 34: changed 218525
+  relax sweep 35: changed 130973
+  relax sweep 36: changed 72715
+  relax sweep 37: changed 37793
+  relax sweep 38: changed 18358
+  relax sweep 39: changed 8278
+  relax sweep 40: changed 3712
+  relax sweep 41: changed 1447
+  relax sweep 42: changed 425
+  relax sweep 43: changed 127
+  relax sweep 44: changed 27
+  relax sweep 45: changed 11
+  relax sweep 46: changed 4
+  relax sweep 47: changed 3
+  relax sweep 48: changed 0
+generating KRvKR ...
+  legal positions: 21561456 of 33554432 slots
+  [sub] generating KRvK
+  pass  1: resolved 6019360
+  pass  2: resolved 126112
+  pass  3: resolved 232048
+  pass  4: resolved 7440
+  pass  5: resolved 26128
+  pass  6: resolved 1728
+  pass  7: resolved 928
+  relax sweep  1: changed 6045752
+  relax sweep  2: changed 242750
+  relax sweep  3: changed 116740
+  relax sweep  4: changed 13464
+  relax sweep  5: changed 2682
+  relax sweep  6: changed 818
+  relax sweep  7: changed 98
+  relax sweep  8: changed 0
+generating KQvKQ ...
+  legal positions: 17905216 of 33554432 slots
+  [sub] generating KvKQ
+  pass  1: resolved 7082928
+  pass  2: resolved 52216
+  pass  3: resolved 338216
+  pass  4: resolved 9328
+  pass  5: resolved 38640
+  pass  6: resolved 4432
+  pass  7: resolved 9216
+  pass  8: resolved 1424
+  pass  9: resolved 2528
+  pass 10: resolved 288
+  pass 11: resolved 880
+  pass 12: resolved 288
+  pass 13: resolved 1104
+  pass 14: resolved 304
+  pass 15: resolved 480
+  pass 16: resolved 112
+  pass 17: resolved 112
+  pass 18: resolved 48
+  pass 19: resolved 80
+  relax sweep  1: changed 7106560
+  relax sweep  2: changed 250842
+  relax sweep  3: changed 160476
+  relax sweep  4: changed 22350
+  relax sweep  5: changed 6958
+  relax sweep  6: changed 2642
+  relax sweep  7: changed 1186
+  relax sweep  8: changed 890
+  relax sweep  9: changed 466
+  relax sweep 10: changed 230
+  relax sweep 11: changed 86
+  relax sweep 12: changed 24
+  relax sweep 13: changed 0
+generating KBBvK ...
+  legal positions: 23824640 of 33554432 slots
+  [sub] generating KBvK
+  pass  1: resolved 12624
+  pass  2: resolved 2144
+  pass  3: resolved 5216
+  pass  4: resolved 4688
+  pass  5: resolved 29872
+  pass  6: resolved 6864
+  pass  7: resolved 36864
+  pass  8: resolved 18672
+  pass  9: resolved 61344
+  pass 10: resolved 18640
+  pass 11: resolved 75024
+  pass 12: resolved 42000
+  pass 13: resolved 113616
+  pass 14: resolved 60816
+  pass 15: resolved 172432
+  pass 16: resolved 105472
+  pass 17: resolved 248528
+  pass 18: resolved 155264
+  pass 19: resolved 362512
+  pass 20: resolved 257984
+  pass 21: resolved 499312
+  pass 22: resolved 363184
+  pass 23: resolved 589168
+  pass 24: resolved 508112
+  pass 25: resolved 709520
+  pass 26: resolved 699424
+  pass 27: resolved 721072
+  pass 28: resolved 834832
+  pass 29: resolved 632112
+  pass 30: resolved 980736
+  pass 31: resolved 492144
+  pass 32: resolved 991904
+  pass 33: resolved 218720
+  pass 34: resolved 507600
+  pass 35: resolved 26896
+  pass 36: resolved 65920
+  pass 37: resolved 240
+  pass 38: resolved 720
+  relax sweep  1: changed 14914
+  relax sweep  2: changed 22268
+  relax sweep  3: changed 48544
+  relax sweep  4: changed 86220
+  relax sweep  5: changed 157804
+  relax sweep  6: changed 302874
+  relax sweep  7: changed 548178
+  relax sweep  8: changed 901792
+  relax sweep  9: changed 1372360
+  relax sweep 10: changed 1901686
+  relax sweep 11: changed 2349974
+  relax sweep 12: changed 2630380
+  relax sweep 13: changed 2729958
+  relax sweep 14: changed 2695582
+  relax sweep 15: changed 2554100
+  relax sweep 16: changed 2332888
+  relax sweep 17: changed 2006176
+  relax sweep 18: changed 1601130
+  relax sweep 19: changed 1161510
+  relax sweep 20: changed 771190
+  relax sweep 21: changed 473612
+  relax sweep 22: changed 279218
+  relax sweep 23: changed 154164
+  relax sweep 24: changed 76814
+  relax sweep 25: changed 32484
+  relax sweep 26: changed 11640
+  relax sweep 27: changed 3250
+  relax sweep 28: changed 764
+  relax sweep 29: changed 60
+  relax sweep 30: changed 0

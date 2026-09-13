@@ -1,0 +1,44 @@
+==============================================================================
+TABLEBASE BENCHMARK
+==============================================================================
+machine : Windows-11-10.0.26200-SP0
+seed    : 20260906
+
+-- on-disk size --------------------------------------------------------------
+  ref           509,608,153 bytes  (509.61 MB)
+  gaviota         2,648,473 bytes  (2.65 MB)
+  chesstb         1,123,688 bytes  (1.12 MB)
+  chesstb-hf   remote or unmeasurable
+
+-- correctness (must pass before timing) -------------------------------------
+  positions compared : 500 (WDL), 466 (DTM)
+  disagreements      : 0
+
+-- probe latency -------------------------------------------------------------
+  backend      workload      median_ms     p95_ms     probes/s  missing
+  ref          uniform/cold    0.00680    0.00770    147,059.0        0
+  ref          uniform/warm    0.00710    0.00750    140,845.2        0
+  ref          playout/cold    0.00650    0.00690    153,846.4        2
+  ref          playout/warm    0.00660    0.00700    151,515.3        2
+  gaviota      uniform/cold    0.01270    1.37910     78,740.1        0
+  gaviota      uniform/warm    0.01270    1.36620     78,740.3        0
+  gaviota      playout/cold    0.01190    0.01480     84,033.6        0
+  gaviota      playout/warm    0.01210    0.01970     82,644.6        0
+  chesstb      uniform/cold    0.12630    1.22370      7,917.7        0
+  chesstb      uniform/warm    0.11230    1.09010      8,904.7        0
+  chesstb      playout/cold    0.19985    1.21140      5,003.8        2
+  chesstb      playout/warm    0.15680    1.20860      6,377.6        2
+  chesstb-hf   uniform/cold    0.24440    7.26930      4,091.7        0
+  chesstb-hf   uniform/warm    0.23580    6.80410      4,240.9        0
+  chesstb-hf   playout/cold    0.22905    1.41050      4,365.9        2
+  chesstb-hf   playout/warm    0.16615    1.32940      6,018.7        2
+
+raw results written to item05-benchmark/bench_four_backends_2026-09-13.json
+-- markdown for the README ---------------------------------------------------
+
+| backend | on-disk | uniform cold (ms) | uniform warm (ms) | probes/s warm |
+|---|---|---|---|---|
+| ref | 509.61 MB | 0.0068 | 0.0071 | 140,845.2 |
+| gaviota | 2.65 MB | 0.0127 | 0.0127 | 78,740.3 |
+| chesstb | 1.12 MB | 0.1263 | 0.1123 | 8,904.7 |
+| chesstb-hf | n/a | 0.2444 | 0.2358 | 4,240.9 |

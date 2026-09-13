@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import itertools
 import os
+import random
 import struct
 import sys
 
@@ -44,7 +45,25 @@ def load_reftb(path):
     return pieces, size, wdl, memoryview(dtm).cast("h")
 
 
-def diff_config(sig, tables_dir, tb, limit=None):
+def positions(n, sample, sig):
+    """Squares and side-to-move choices to compare.
+
+    Exhaustive order walks the index from a1 upward, so a --limit run only ever
+    sees positions with the first pieces near a1 -- which is where the capture
+    defect happened to show, and also where a fix could look right by luck.
+    --sample draws positions uniformly with a fixed seed per configuration.
+    """
+    if not sample:
+        for squares in itertools.product(range(64), repeat=n):
+            if len(set(squares)) == n:
+                yield squares, (False, True)
+        return
+    rng = random.Random("gaviota-diff:%s" % sig)
+    for _ in range(sample * 2000):          # bound the draw count for drawn configs
+        yield tuple(rng.sample(range(64), n)), (rng.random() < 0.5,)
+
+
+def diff_config(sig, tables_dir, tb, limit=None, sample=0):
     path = os.path.join(tables_dir, sig + ".reftb")
     if not os.path.exists(path):
         return None
@@ -55,10 +74,10 @@ def diff_config(sig, tables_dir, tb, limit=None):
     worst_ref = worst_gav = 0
     examples = []
 
-    for squares in itertools.product(range(64), repeat=n):
-        if len(set(squares)) != n:
-            continue
-        for stm_black in (False, True):
+    if sample:
+        limit = sample
+    for squares, stm_choices in positions(n, sample, sig):
+        for stm_black in stm_choices:
             idx = 0
             for sq in squares:
                 idx = idx * 64 + sq
@@ -100,6 +119,9 @@ def main(argv=None) -> int:
     ap.add_argument("--tables", default="tables")
     ap.add_argument("--gaviota", required=True)
     ap.add_argument("--limit", type=int)
+    ap.add_argument("--sample", type=int, default=0,
+                    help="compare N winning positions drawn uniformly (seeded per configuration) "
+                         "instead of walking the index from a1")
     args = ap.parse_args(argv)
 
     try:
@@ -110,12 +132,14 @@ def main(argv=None) -> int:
 
     print("=" * 84)
     print("REFERENCE GENERATOR vs GAVIOTA  (DTM, wins only, position by position)")
+    if args.sample:
+        print("mode: %d winning positions per configuration, drawn uniformly (seeded)" % args.sample)
     print("=" * 84)
     print("%-9s %11s %11s %11s %9s %9s %9s"
           % ("config", "checked", "agree", "DISAGREE", "skipped", "ref max", "gav max"))
     total_d = 0
     for sig in args.configs:
-        res = diff_config(sig, args.tables, tb, args.limit)
+        res = diff_config(sig, args.tables, tb, args.limit, args.sample)
         if res is None:
             print("%-9s (no reference table dumped)" % sig)
             continue

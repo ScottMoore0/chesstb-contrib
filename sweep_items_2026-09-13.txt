@@ -1,0 +1,98 @@
+==============================================================
+ chesstb-contrib :: full test sweep
+==============================================================
+
+--- item 07: reverse movegen (bijection) ---------------------
+==========================================================================
+  startpos   complete    420/420      sound    161/161      PASS
+--------------------------------------------------------------------------
+  completeness : 420/420 transitions recovered
+  soundness    : 161/161 predecessors valid
+  VERDICT      : PASS
+
+--- item 02: reference generator (3-man + playout) -----------
+    7   -24  Kc2 Kc5 Re8 
+    8    23  Kc3 Kc5 Re8 
+    9   -22  Kc3 Kd5 Re8 
+   10    21  Kc3 Kd5 Re3 
+   11   -20  Kc3 Kc5 Re3 
+  playout invariant on longest win: PASS
+
+KQvKR            5000        5000           0         0        67        67
+KRvKR            5000        5000           0         0        37        37
+KQvKQ            5000        5000           0         0        23        23
+KBBvK            5000        5000           0         0        35        35
+------------------------------------------------------------------------------------
+VERDICT: PASS -- DTM matches Gaviota everywhere compared
+
+--- item 01: dtm2pvs against reference tables ----------------
+# backend: reftb(item02-refverify/tables)
+8/6k1/8/5Q2/8/8/8/7K w - - ; dtm50 13 ; plies 13 ; end mate ; pv Kg2 Kg8 Qd7 Kf8 Kf3 Kg8 Ke4 Kf8 Ke5 Kg8 Kf6 Kf8 Qc8#
+8/8/8/8/8/2k5/8/K6R w - - ; dtm50 27 ; plies 27 ; end mate ; pv Rd1 Kc2 Rd8 Kc3 Kb1 Kb3 Rc8 Kb4 Ka2 Kb5 Ka3 Ka5 Rb8 Ka6 Ka4 Ka7 Rb1 Ka6 Rb2 Ka7 Ka5 Ka8 Kb6 Kb8 Rc2 Ka8 Rc8#
+8/8/8/4k3/8/8/8/K1Q5 w - - ; dtm50 17 ; plies 17 ; end mate ; pv Ka2 Kd4 Kb3 Kd5 Qe1 Kc5 Qd1 Kb6 Kb4 Ka6 Kc5 Ka7 Kc6 Ka8 Kb6 Kb8 Qd8#
+7k/8/8/8/8/8/6Q1/K7 w - - ; dtm50 11 ; plies 11 ; end mate ; pv Kb2 Kh7 Kc3 Kh6 Kd4 Kh5 Ke5 Kh4 Kf4 Kh5 Qg5#
+# analysed 4, skipped 0, invariant failures 0
+
+--- item 04: client path handling ----------------------------
+Live endpoint (network; informational)
+  url: https://huggingface.co/buckets/noobpwnftw/chesstb/resolve/full/wdl/KQRKQN.lzw
+  PASS  HTTP 200, 518446472 bytes
+  PASS  range read: HTTP 206, 4096 bytes
+
+all path/signature tests passed
+
+--- item 05: benchmark harness -------------------------------
+
+-- markdown for the README ---------------------------------------------------
+
+| backend | on-disk | uniform cold (ms) | uniform warm (ms) | probes/s warm |
+|---|---|---|---|---|
+| ref | 509.61 MB | 0.0067 | 0.0066 | 151,515.3 |
+
+--- item 03: tablebase-draw pathfinder (self test) -----------
+  visited        : 53
+  path found     : False
+  (no drawn position reachable within the depth cap --
+   expected for KQvK, which is won everywhere it is covered)
+  determinism    : re-running must give the same answer
+  identical rerun: YES
+
+--- item 06: PV trust metric (controls) ----------------------
+
+-- distribution over a mixed corpus --------------------------------------
+  trustworthy         133  (66%)
+  unsubstantiated      67  (34%)
+
+VERDICT: PASS
+
+--- item 08: endgame training data ---------------------------
+  item08-nnue-data/out\samples.jsonl
+  item08-nnue-data/out\samples.bin
+  item08-nnue-data/out\samples.plain   <- Stockfish .plain, convertible to binpack
+round-trip check (bin):   PASS (400 records)
+round-trip check (plain): PASS (400 records)
+target distribution: {0.0: 213, 0.5: 24, 1.0: 163}
+
+--- item 09: Stockfish 4-man DTM prototype -------------------
+  Both are viable. EMBED trades binary size for startup time;
+  DERIVE trades startup time for generator code that must be
+  maintained. The choice is the maintainers' to make.
+
+  LICENCE GATE: not proposable until chesstb licensing is settled
+  in writing. This prototype ships no chesstb code.
+
+==============================================================
+ VERDICT
+==============================================================
+  PASS  item07 bijection (quick)
+  PASS  item02 refgen 3-man
+  PASS  item02 4-man DTM vs Gaviota (sampled)
+  PASS  item01 dtm2pvs
+  PASS  item04 client
+  PASS  item05 bench
+  PASS  item03 pathfind
+  PASS  item06 pvtrust
+  PASS  item08 nnue-data
+  PASS  item09 dtm4
+
+  pass=10  fail=0  skip=0
