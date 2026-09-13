@@ -380,3 +380,15 @@ regression; the PV trust metric separating its positive and negative controls.
    check it. The risk here is undisclosed generation, not generation.
 6. Never submit patches to chesstb's generator internals. Verify that code;
    do not rewrite it.
+
+## Licence
+
+MIT; see `LICENSE`. Two things fall outside it:
+
+- `item04-chesstb-client/upstream/*.patch` are changes to python-chess, which is
+  GPL-3.0. As patches to that project they carry its licence.
+- Anything offered to another project - chesstb, python-chess, Stockfish - is
+  offered under that project's licence. Item 09 stays behind its licence gate
+  until chesstb's licence is settled.
+
+The tools import python-chess at run time; it is not included here.
