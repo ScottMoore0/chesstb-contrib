@@ -1,0 +1,9 @@
+# backend: chesstb(https://huggingface.co/buckets/noobpwnftw/chesstb/resolve)
+6k1/3N4/6K1/7n/8/B7/8/8 w - - ; dtm50 21 ; plies 21 ; end mate ; pv Bc1 Ng3 Nf6+ Kh8 Bh6 Nf5 Bf8 Ne7+ Kf7 Nf5 Ne4 Kh7 Ng5+ Kh8 Ba3 Nd4 Bc1 Nb3 Bb2+ Nd4 Bxd4#
+8/6k1/8/4NK2/8/3B4/3N4/8 w - - ; dtm50 13 ; plies 13 ; end mate ; pv Ndc4 Kf8 Nd6 Ke7 Ndf7 Ke8 Kf6 Kf8 Ng6+ Kg8 Bb1 Kh7 Ne7#
+1r5k/R3R3/K7/8/8/8/8/8 w - - ; dtm50 11 ; plies 11 ; end mate ; pv Rad7 Kg8 Ka7 Rc8 Kb7 Ra8 Kxa8 Kf8 Ka7 Kg8 Rd8#
+k7/8/K1p5/8/8/5p2/8/1R6 w - - ; dtm50 19 ; plies 19 ; end mate ; pv Kb6 Kb8 Kxc6+ Kc8 Rf1 Kd8 Kd6 Kc8 Rxf3 Kb7 Rb3+ Ka6 Kc5 Ka7 Kc6 Ka8 Kc7 Ka7 Ra3#
+2K5/k1N5/8/8/1P6/8/4P3/8 w - - ; dtm50 13 ; plies 13 ; end mate ; pv e3 Kb6 e4 Ka7 e5 Kb6 e6 Ka7 e7 Kb6 e8=Q Ka7 Qe3#
+4K3/8/4k3/2R5/1P6/8/6P1/8 w - - ; dtm50 13 ; plies 13 ; end mate ; pv g3 Kd6 g4 Ke6 g5 Kd6 g6 Ke6 g7 Kd6 g8=R Ke6 Rg6#
+# analysed 6, skipped 0, invariant failures 0
+# remote transfer: <TransferStats 59 HEAD, 1313 range requests, 84,814,544 bytes>

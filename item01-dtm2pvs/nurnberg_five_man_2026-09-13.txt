@@ -1,0 +1,7 @@
+Total number of positions to process: 6.
+6k1/3N4/6K1/7n/8/B7/8/8 w - - bm #11; PV: a3c1 h5g7 d7f6 g8h8 c1h6 g7f5 h6f8 f5h4 g6f7 h4f5 f6e4 h8h7 e4g5 h7h8 f8a3 f5d4 a3c1 d4c2 c1b2 c2d4 b2d4;
+8/6k1/8/4NK2/8/3B4/3N4/8 w - - bm #7; PV: d2f3 g7f8 f3g5 f8g7 g5f7 g7g8 f5f6 g8f8 e5g6 f8g8 d3b1 g8h7 g6e7;
+1r5k/R3R3/K7/8/8/8/8/8 w - - bm #6; PV: a7d7 h8g8 a6a7 b8c8 a7b7 c8f8 e7g7 g8h8 g7h7 h8g8 d7g7;
+k7/8/K1p5/8/8/5p2/8/1R6 w - - bm #10; PV: a6b6 a8b8 b6c6 b8c8 b1f1 c8d8 c6d6 d8c8 f1f3 c8b7 f3b3 b7a6 d6c5 a6a7 c5c6 a7a8 c6c7 a8a7 b3a3;
+2K5/k1N5/8/8/1P6/8/4P3/8 w - - bm #7; PV: e2e3 a7b6 e3e4 b6c6 e4e5 c6b6 e5e6 b6c6 e6e7 c6b6 e7e8q b6a7 e8e3;
+4K3/8/4k3/2R5/1P6/8/6P1/8 w - - bm #7; PV: g2g3 e6d6 g3g4 d6e6 g4g5 e6d6 g5g6 d6e6 g6g7 e6d6 g7g8r d6e6 g8g6;

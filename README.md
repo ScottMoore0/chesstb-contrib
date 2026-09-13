@@ -201,7 +201,9 @@ Two rules the code enforces, both easy to get wrong:
 -- four sample mates, KBN v K and a drawn KR v KR - give the same distances from
 the prober's local test tables, from the published tables over HTTP, and from
 Nürnberg's `dtm2pvs.py`, which uses the Lichess tablebase API. Mates in 7, 14, 9,
-6 and 30, and a draw. The run found and fixed a bug: from a drawn position the
+6 and 30, and a draw. Six five-man matetrack positions, three with pawns, agree
+the same way over HTTP, for 84.8 MB transferred. The run found and fixed a bug:
+from a drawn position the
 walker kept playing, preferring the longest loss to a draw, and printed a line
 in which the defender blundered into mate.
 
@@ -330,7 +332,8 @@ regression; the PV trust metric separating its positive and negative controls.
 - **Real chesstb tables have been exercised only for small materials.** Items
   01, 04 and 05 now run on real tables - the prober's own test data locally and
   the published tables over HTTP - but only KBK, KNK, KPK, KQK, KRK, KBNK and
-  KRKR. Nothing at five or more men, and items 03 and 08 not at all.
+  KRKR, plus item 01 on six five-man materials. Nothing at six or more men, and
+  items 03 and 08 not at all.
 - **Five-man has not been compared against anything.** Three- and four-man WDL
   match Syzygy and three- and four-man DTM match Gaviota, but the generator stops
   at four men (a five-man index does not fit its naive layout), so five-man needs

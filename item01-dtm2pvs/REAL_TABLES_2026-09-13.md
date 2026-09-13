@@ -56,3 +56,29 @@ distance is non-zero. Fixed in `build_pv` (a drawn or mated root returns
 immediately) and `choose_move` (a draw beats every loss); the drawn position now
 reports `end draw`, 0 plies, on both the chesstb and reference backends. The
 previous version is in this repository's first commit.
+
+## Five men, over HTTP
+
+Six matetrack positions with five pieces and no castling rights, three of them
+with pawns (`tests/five_man.epd`), probed straight from Hugging Face
+(`five_man_remote_2026-09-13.txt`) and run through Nürnberg's version
+(`nurnberg_five_man_2026-09-13.txt`).
+
+| position | material | matetrack | ours, over HTTP | Nürnberg |
+|---|---|---|---|---|
+| `6k1/3N4/6K1/7n/8/B7/8/8 w` | KBN v KN | #11 | mate in 11 (21 plies) | #11 |
+| `8/6k1/8/4NK2/8/3B4/3N4/8 w` | KBNN v K | #7 | mate in 7 (13 plies) | #7 |
+| `1r5k/R3R3/K7/8/8/8/8/8 w` | KRR v KR | #6 | mate in 6 (11 plies) | #6 |
+| `k7/8/K1p5/8/8/5p2/8/1R6 w` | KR v KPP | #10 | mate in 10 (19 plies) | #10 |
+| `2K5/k1N5/8/8/1P6/8/4P3/8 w` | KNPP v K | #7 | mate in 7 (13 plies) | #7 |
+| `4K3/8/4k3/2R5/1P6/8/6P1/8 w` | KRPP v K | #7 | mate in 7 (13 plies) | #7 |
+
+**All six agree three ways**, including both promotion lines and the
+underpromotion to a rook in the last. Every line keeps the playout invariant.
+
+The cost is the new information: **59 HEAD and 1,313 range requests, 84,814,544
+bytes, about fifteen minutes**, against 363 KB for the three- and four-man run.
+`dtm2pvs` asks for every metric (WDL, DTZ, DTM, DTC and DTM50) for every legal
+move at every ply, so each position also pulls in its capture and promotion
+sub-tables, and pawnful five-man tables are large. A probe path that fetches only
+DTM50 would cut most of that.
