@@ -206,6 +206,7 @@ class TransferStats:
         self.head_requests = 0
         self.range_requests = 0
         self.bytes = 0
+        self.bytes_by_ext = {}
         self._exists = {}
 
     def exists(self, url: str) -> bool:
@@ -226,9 +227,17 @@ class TransferStats:
         self.exists(url)
         return self._exists[url][1]
 
+    def add(self, url: str, n: int):
+        self.range_requests += 1
+        self.bytes += n
+        ext = url.rsplit(".", 1)[-1] if "." in url.rsplit("/", 1)[-1] else "?"
+        self.bytes_by_ext[ext] = self.bytes_by_ext.get(ext, 0) + n
+
     def __repr__(self):
-        return ("<TransferStats %d HEAD, %d range requests, %s bytes>"
-                % (self.head_requests, self.range_requests, "{:,}".format(self.bytes)))
+        kinds = ", ".join("%s %s" % (k, "{:,}".format(v)) for k, v in sorted(self.bytes_by_ext.items()))
+        return ("<TransferStats %d HEAD, %d range requests, %s bytes%s>"
+                % (self.head_requests, self.range_requests, "{:,}".format(self.bytes),
+                   " (%s)" % kinds if kinds else ""))
 
 
 class HttpRangeBuffer:
@@ -265,8 +274,7 @@ class HttpRangeBuffer:
             if len(body) != hi - lo + 1:
                 raise IOError("short range read from %s: wanted %d bytes at %d, got %d"
                               % (self.url, hi - lo + 1, lo, len(body)))
-            self.stats.range_requests += 1
-            self.stats.bytes += len(body)
+            self.stats.add(self.url, len(body))
             self._chunks[n] = body
         return self._chunks[n]
 
@@ -294,7 +302,34 @@ class HttpRangeBuffer:
         self._chunks.clear()
 
 
-def open_remote_chesstb(base_url: str, stats: TransferStats):
+#: Every metric ChesstbBackend can report.
+ALL_KINDS = ("wdl", "dtz", "dtm", "dtc", "dtm50")
+
+
+def restrict_kinds(tablebase_cls, kinds):
+    """A Tablebase subclass that never opens DTC or standalone DTZ tables
+    unless `kinds` asks for those metrics.
+
+    Upstream settles WDL, DTM and DTM50 before it opens either, so declining
+    them changes no answer for those metrics; it only stops the probe fetching
+    tables nobody reads. None means every kind.
+    """
+    if kinds is None:
+        return tablebase_cls
+    kinds = frozenset(kinds)
+
+    class Restricted(tablebase_cls):
+        def _open_dtc(self, cfg):
+            return super()._open_dtc(cfg) if "dtc" in kinds else None
+
+        def _open_dtz(self, cfg):
+            return super()._open_dtz(cfg) if "dtz" in kinds else None
+
+    Restricted.__name__ = tablebase_cls.__name__
+    return Restricted
+
+
+def open_remote_chesstb(base_url: str, stats: TransferStats, kinds=None):
     """A chess.chesstb Tablebase reading `base_url` over HTTP.
 
     Built on upstream's transport seam: _find returns a URL (checked by HEAD),
@@ -332,7 +367,7 @@ def open_remote_chesstb(base_url: str, stats: TransferStats):
                     return u
             return None
 
-    return HttpTablebase(base_url)
+    return restrict_kinds(HttpTablebase, kinds)(base_url)
 
 
 # -------------------------------------------------------------- chesstb backend
@@ -345,7 +380,7 @@ class ChesstbBackend:
     single form regardless of which revision of chesstb is installed.
     """
 
-    def __init__(self, roots):
+    def __init__(self, roots, kinds=None):
         try:
             import chess.chesstb  # noqa: F401
         except Exception as exc:
@@ -357,15 +392,16 @@ class ChesstbBackend:
         self._tb = None
         self._dtm50_returns_tuple = None
         self.transfer = None
+        self.kinds = tuple(ALL_KINDS if kinds is None else kinds)
         for r in self.roots:
             try:
                 if is_url(r):
                     # Never open_tablebase(url): upstream searches the local
                     # filesystem, and a URL joined as a path is the Windows bug.
                     self.transfer = TransferStats()
-                    self._tb = open_remote_chesstb(r, self.transfer)
+                    self._tb = open_remote_chesstb(r, self.transfer, kinds)
                 else:
-                    self._tb = ctb.open_tablebase(r)
+                    self._tb = restrict_kinds(ctb.Tablebase, kinds)(r)
                 break
             except Exception:
                 continue
@@ -390,6 +426,8 @@ class ChesstbBackend:
         except Exception as exc:
             raise TableMissing(material_signature(board), self.name()) from exc
         for attr, field in (("probe_dtz", "dtz"), ("probe_dtm", "dtm"), ("probe_dtc", "dtc")):
+            if field not in self.kinds:
+                continue
             fn = getattr(self._tb, attr, None)
             if fn is None:
                 continue
@@ -397,7 +435,7 @@ class ChesstbBackend:
                 setattr(r, field, fn(board))
             except Exception:
                 pass
-        fn = getattr(self._tb, "probe_dtm50", None)
+        fn = getattr(self._tb, "probe_dtm50", None) if "dtm50" in self.kinds else None
         if fn is not None:
             try:
                 r.dtm50 = self._norm_dtm50(fn(board))
@@ -491,10 +529,14 @@ class GaviotaBackend:
 # ------------------------------------------------------------------- selection
 
 
-def open_backend(root: str):
-    """Open the most appropriate backend for a root, local or remote."""
+def open_backend(root: str, kinds=None):
+    """Open the most appropriate backend for a root, local or remote.
+
+    `kinds` names the metrics the caller will read. Only the chesstb backend
+    uses it, to avoid opening tables for metrics nobody asks for.
+    """
     if is_url(root):
-        return ChesstbBackend([root])
+        return ChesstbBackend([root], kinds)
     if os.path.isdir(root):
         names = os.listdir(root)
         for fn in names:
@@ -506,4 +548,4 @@ def open_backend(root: str):
         for fn in names:
             if fn.endswith(".gtb.cp4"):
                 return GaviotaBackend(root)
-    return ChesstbBackend([root])
+    return ChesstbBackend([root], kinds)

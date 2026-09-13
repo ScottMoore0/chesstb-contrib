@@ -261,7 +261,8 @@ def main(argv=None) -> int:
     if not args.tb:
         print("error: --tb is required (or set CHESSTB_PATH)", file=sys.stderr)
         return 2
-    backend = open_backend(args.tb)
+    # dtm2pvs reads WDL and a distance (DTM50, else DTM); nothing else is opened.
+    backend = open_backend(args.tb, kinds=("wdl", "dtm", "dtm50"))
     print("# backend: %s" % backend.name())
 
     records: List[EpdRecord] = []

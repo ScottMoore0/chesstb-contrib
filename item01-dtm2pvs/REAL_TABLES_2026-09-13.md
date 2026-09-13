@@ -80,5 +80,11 @@ The cost is the new information: **59 HEAD and 1,313 range requests, 84,814,544
 bytes, about fifteen minutes**, against 363 KB for the three- and four-man run.
 `dtm2pvs` asks for every metric (WDL, DTZ, DTM, DTC and DTM50) for every legal
 move at every ply, so each position also pulls in its capture and promotion
-sub-tables, and pawnful five-man tables are large. A probe path that fetches only
-DTM50 would cut most of that.
+sub-tables, and pawnful five-man tables are large.
+
+**Fetching only what dtm2pvs reads barely helps.** With DTC and standalone DTZ
+tables no longer opened (`five_man_remote_dtm50only_2026-09-13.txt`), the same six
+positions give identical lines for 50 HEAD and 1,211 range requests and
+78,129,872 bytes: 8% less, in about twelve minutes. 74.7 MB of that is DTM50
+itself. The cost is the DTM50 blocks for every child position at every ply,
+fetched in 64 KiB chunks, not the metrics nobody read.
