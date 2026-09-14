@@ -1,12 +1,12 @@
 diff --git a/chess/chesstb.py b/chess/chesstb.py
-index 70fe054..dcae005 100644
+index 70fe0541..15a4e6d9 100644
 --- a/chess/chesstb.py
 +++ b/chess/chesstb.py
 @@ -2777,6 +2777,15 @@ class Tablebase:
          re-resolved, so a late directory only affects materials not yet looked
          up.
          """
-+        if "://" in directory:
++        if "://" in os.fspath(directory):
 +            # os.path.join would splice a platform separator into the URL (on
 +            # Windows, a backslash before the kind), after which every table
 +            # reports missing and nothing names the real cause.
@@ -19,10 +19,18 @@ index 70fe054..dcae005 100644
              with self._open_locks[kind]:
                  self.dirs[kind].append(os.path.join(directory, kind))
 diff --git a/test.py b/test.py
-index c0455b5..5583a8d 100755
+index c0455b55..430e3798 100755
 --- a/test.py
 +++ b/test.py
-@@ -5030,6 +5030,19 @@ class ChesstbTestCase(unittest.TestCase):
+@@ -5,6 +5,7 @@ import copy
+ import logging
+ import os
+ import os.path
++import pathlib
+ import platform
+ import struct
+ import sys
+@@ -5030,6 +5031,22 @@ class ChesstbTestCase(unittest.TestCase):
          tables.dirs["dtm50"].clear()
          return tables
  
@@ -38,6 +46,9 @@ index c0455b5..5583a8d 100755
 +        with chess.chesstb.open_tablebase("data/chesstb") as tables:
 +            with self.assertRaises(ValueError):
 +                tables.add_directory(url)
++        # A local directory given as a path object must still open.
++        with chess.chesstb.open_tablebase(pathlib.Path("data/chesstb")) as tables:
++            self.assertEqual(tables.probe_wdl(chess.Board("8/6k1/8/5Q2/8/8/8/7K w - - 0 1")), 2)
 +
      # --- The four table kinds, and how a directory is searched for them. ---
  
