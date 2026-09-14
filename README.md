@@ -102,7 +102,7 @@ array per halfmove clock, its own fixed point, no layering and no encoding. On
 KQvK it reports longest 19, zero cursed wins, and agreement with flat DTM on all
 144,508 winning positions.
 
-**The live HuggingFace endpoint validates the Windows URL fix.** `KQRKQN.lzw` --
+**The live HuggingFace endpoint validates the Windows URL fix.** `KQRKQN.lzw` -
 the exact file from the original `Errno 22` report - resolves over HTTP (200,
 518,446,472 bytes) and range reads work (206, 4096 bytes), which is the mechanism
 remote probing depends on.
@@ -197,8 +197,8 @@ Two rules the code enforces, both easy to get wrong:
 - **The real halfmove clock is propagated into every probe.** DTM50 is defined
   at the board's clock; probing at clock zero yields plausible, wrong lines.
 
-**On real tables** (`item01-dtm2pvs/REAL_TABLES_2026-09-13.md`): six positions
--- four sample mates, KBN v K and a drawn KR v KR - give the same distances from
+**On real tables** (`item01-dtm2pvs/REAL_TABLES_2026-09-13.md`): six positions -
+four sample mates, KBN v K and a drawn KR v KR - give the same distances from
 the prober's local test tables, from the published tables over HTTP, and from
 Nürnberg's `dtm2pvs.py`, which uses the Lichess tablebase API. Mates in 7, 14, 9,
 6 and 30, and a draw. Six five-man matetrack positions, three with pawns, agree
@@ -349,7 +349,7 @@ regression; the PV trust metric separating its positive and negative controls.
      already decided.
   2. **Move generation that GENERATES rather than TESTS.** The original walked all
      64 target squares per piece and asked `attacks()` about each, which for a
-     slider walks a ray every time -- roughly 250 operations per piece. Walking
+     slider walks a ray every time - roughly 250 operations per piece. Walking
      each ray outward once and stopping at the first blocker is what a move
      generator is supposed to do.
 
