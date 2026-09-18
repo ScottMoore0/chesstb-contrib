@@ -376,9 +376,7 @@ regression; the PV trust metric separating its positive and negative controls.
 2. Re-run every item against the real tables, not the reference backend.
 3. Diff the reference generator against Syzygy position by position.
 4. Announce intent in-channel and wait for a signal, one item at a time.
-5. Disclose AI assistance in one plain sentence, alongside what was done to
-   check it. The risk here is undisclosed generation, not generation.
-6. Never submit patches to chesstb's generator internals. Verify that code;
+5. Never submit patches to chesstb's generator internals. Verify that code;
    do not rewrite it.
 
 ## Licence
