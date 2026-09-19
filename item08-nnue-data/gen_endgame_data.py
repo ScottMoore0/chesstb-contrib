@@ -1,16 +1,24 @@
 """Generate tablebase-labelled endgame training positions for nnue-pytorch.
 
-Targets the material configurations where evaluation was measured to be weakest
-against tablebase ground truth:
+Targets the material configurations where the evaluation is measured to be
+weakest against tablebase ground truth. The measurement is `nnue_vs_tb.py`, and
+its results are in `NNUE_VS_TB.md`: 143 materials, 1,000 random legal positions
+each, Syzygy WDL as truth. Stockfish 19's static evaluation agrees on 91.3% of
+the positions it scores, and depth 3 on 98.3%, so the deficit is concentrated
+rather than spread evenly, which is what makes targeted data worth trying.
 
-    KRBvKNN 58.3%   KQPPvKQ 80.0%
-    KBBvKN  60.0%   KQvKNNN 80.0%
-    KBBvKNP 73.3%   KRBvKBN 80.0%
-    KNNNvKP 75.0%   KBBNvKQ 83.3%
+Weakest by static evaluation at a 100 cp threshold, and nearly all of it is one
+mistake: a winning position called a draw.
 
-Overall accuracy was about 89.6% at a single threshold and about 98.3% by depth
-three, so the deficit is concentrated in these configurations rather than spread
-evenly -- which is what makes targeted data worth trying at all.
+    KRRvKQ 43.2%   KQvKQ  62.8%
+    KRBvKQ 50.9%   KQPvKQ 64.0%
+    KRNvKQ 55.5%   KQNvKQ 64.2%
+    KQBvKQ 57.2%   KBNvK  69.0%
+
+An earlier list here (KRBvKNN 58.3%, KBBvKN 60.0% and six others) came from a
+sweep whose artefacts were not kept, and seven of its eight materials were
+6-man, which no local table covers. It is retired: of the eight, only KBBvKN can
+be checked here, and it measures 84.6%, not 60%.
 
 Three rules drive the implementation:
 
@@ -44,9 +52,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
                                 "..", "item04-chesstb-client"))
 from tbbackend import TableMissing, material_signature, open_backend  # noqa: E402
 
+# Measured by nnue_vs_tb.py; NNUE_VS_TB.md has the whole table.
 WEAK_CONFIGS = [
-    ("KRBvKNN", 58.3), ("KBBvKN", 60.0), ("KBBvKNP", 73.3), ("KNNNvKP", 75.0),
-    ("KQPPvKQ", 80.0), ("KQvKNNN", 80.0), ("KRBvKBN", 80.0), ("KBBNvKQ", 83.3),
+    ("KRRvKQ", 43.2), ("KRBvKQ", 50.9), ("KRNvKQ", 55.5), ("KQBvKQ", 57.2),
+    ("KQvKQ", 62.8), ("KQPvKQ", 64.0), ("KQNvKQ", 64.2), ("KBNvK", 69.0),
 ]
 
 PIECE_OF = {"K": chess.KING, "Q": chess.QUEEN, "R": chess.ROOK,

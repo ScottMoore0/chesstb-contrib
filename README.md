@@ -177,7 +177,7 @@ particular failure, but it has only been checked against flat DTM on KQvK.
 | 05 | Size and probe-latency benchmarks | **working**; four backends (reference, Gaviota, chesstb local and over HTTP) agree, then are timed | 0855 |
 | 06 | cdb PV trust metric | metric **working**; finds explored-tree edges on real cdb lines through the live API; sweeps need the dump; rule needs confirming | R. Nürnberg |
 | 07 | Reverse movegen + bijection test | **working**, bijection passes | vondele, noobpwnftw |
-| 08 | Endgame training data from TB truth | generator **working**; binpack not yet emitted | vondele |
+| 08 | Endgame training data from TB truth | generator **working**; target materials now **measured** (`item08-nnue-data/NNUE_VS_TB.md`: 143 materials, 143,000 positions); binpack not yet emitted | vondele |
 | 09 | Stockfish 4-man DTM prototype | **working**, both options measured | noobpwnftw, R. Nürnberg |
 
 ### 01 - `dtm2pvs` for chesstb
@@ -364,10 +364,13 @@ regression; the PV trust metric separating its positive and negative controls.
 - **Item 03 has never seen real cdb data**, and item 06 has seen it only through
   the live API, on ten lines. Both are built for the offline dump (about 1 TB),
   which is not on this machine; 03's search is far too wide for the API.
-- **Item 08 does not emit an nnue-pytorch binpack.** It emits a documented
-  interchange format instead. Claiming binpack compatibility without
-  round-tripping through the stock loader would be exactly the unverifiable
-  output this project exists to avoid.
+- **Item 08 does not emit an nnue-pytorch binpack.** It emits Stockfish `.plain`
+  and a documented interchange format instead. Claiming binpack compatibility
+  without round-tripping through the stock loader would be exactly the
+  unverifiable output this project exists to avoid.
+- **Item 08's target materials are 3- to 5-man**, because the local tables are.
+  The earlier 6-man list is retired: its artefacts were not kept, and it cannot
+  be checked without 6-man tables.
 
 ## Before submitting any of this
 

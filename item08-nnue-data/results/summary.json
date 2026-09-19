@@ -1,0 +1,8736 @@
+{
+  "engine": "wsl -d Ubuntu -e /home/scott/mate-engines/bin/sf19",
+  "seed": "nnue-vs-tb-1",
+  "positions_per_material": 1000,
+  "thresholds": [
+    50,
+    100,
+    200
+  ],
+  "note": "percentages are over positions the arm scored; `eval` declines a position whose side to move is in check, and those are counted in *_declined",
+  "materials": [
+    {
+      "material": "KBBBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 380,
+        "draw": 67,
+        "loss": 553
+      },
+      "static_scored": 760,
+      "static_declined": 240,
+      "static@50": {
+        "agree": 742,
+        "scored": 760,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@100": {
+        "agree": 742,
+        "scored": 760,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@200": {
+        "agree": 740,
+        "scored": 760,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 15
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 937,
+        "scored": 1000,
+        "pct": 93.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 63
+      },
+      "depth3@100": {
+        "agree": 952,
+        "scored": 1000,
+        "pct": 95.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 48
+      },
+      "depth3@200": {
+        "agree": 962,
+        "scored": 1000,
+        "pct": 96.2,
+        "wrong_side": 0,
+        "called_draw": 35,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KBBNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 414,
+        "draw": 25,
+        "loss": 561
+      },
+      "static_scored": 824,
+      "static_declined": 176,
+      "static@50": {
+        "agree": 805,
+        "scored": 824,
+        "pct": 97.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 19
+      },
+      "static@100": {
+        "agree": 805,
+        "scored": 824,
+        "pct": 97.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 19
+      },
+      "static@200": {
+        "agree": 804,
+        "scored": 824,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 19
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 974,
+        "scored": 1000,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 25
+      },
+      "depth3@100": {
+        "agree": 972,
+        "scored": 1000,
+        "pct": 97.2,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 22
+      },
+      "depth3@200": {
+        "agree": 926,
+        "scored": 1000,
+        "pct": 92.6,
+        "wrong_side": 0,
+        "called_draw": 72,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KBBPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 422,
+        "draw": 46,
+        "loss": 532
+      },
+      "static_scored": 843,
+      "static_declined": 157,
+      "static@50": {
+        "agree": 818,
+        "scored": 843,
+        "pct": 97.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 25
+      },
+      "static@100": {
+        "agree": 819,
+        "scored": 843,
+        "pct": 97.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 24
+      },
+      "static@200": {
+        "agree": 818,
+        "scored": 843,
+        "pct": 97.0,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 18
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 957,
+        "scored": 1000,
+        "pct": 95.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 43
+      },
+      "depth3@100": {
+        "agree": 964,
+        "scored": 1000,
+        "pct": 96.4,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 34
+      },
+      "depth3@200": {
+        "agree": 982,
+        "scored": 1000,
+        "pct": 98.2,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 8
+      }
+    },
+    {
+      "material": "KBBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 431,
+        "draw": 98,
+        "loss": 471
+      },
+      "static_scored": 843,
+      "static_declined": 157,
+      "static@50": {
+        "agree": 814,
+        "scored": 843,
+        "pct": 96.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 29
+      },
+      "static@100": {
+        "agree": 776,
+        "scored": 843,
+        "pct": 92.1,
+        "wrong_side": 0,
+        "called_draw": 38,
+        "missed_draw": 29
+      },
+      "static@200": {
+        "agree": 340,
+        "scored": 843,
+        "pct": 40.3,
+        "wrong_side": 0,
+        "called_draw": 491,
+        "missed_draw": 12
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 981,
+        "scored": 1000,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 18
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 806,
+        "scored": 1000,
+        "pct": 80.6,
+        "wrong_side": 0,
+        "called_draw": 194,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBBvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 82,
+        "draw": 903,
+        "loss": 15
+      },
+      "static_scored": 802,
+      "static_declined": 198,
+      "static@50": {
+        "agree": 731,
+        "scored": 802,
+        "pct": 91.1,
+        "wrong_side": 0,
+        "called_draw": 71,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 731,
+        "scored": 802,
+        "pct": 91.1,
+        "wrong_side": 0,
+        "called_draw": 71,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 731,
+        "scored": 802,
+        "pct": 91.1,
+        "wrong_side": 0,
+        "called_draw": 71,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 12
+      },
+      "depth3@100": {
+        "agree": 991,
+        "scored": 1000,
+        "pct": 99.1,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 5
+      },
+      "depth3@200": {
+        "agree": 951,
+        "scored": 1000,
+        "pct": 95.1,
+        "wrong_side": 0,
+        "called_draw": 49,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBBvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 168,
+        "draw": 733,
+        "loss": 99
+      },
+      "static_scored": 826,
+      "static_declined": 174,
+      "static@50": {
+        "agree": 699,
+        "scored": 826,
+        "pct": 84.6,
+        "wrong_side": 0,
+        "called_draw": 52,
+        "missed_draw": 75
+      },
+      "static@100": {
+        "agree": 699,
+        "scored": 826,
+        "pct": 84.6,
+        "wrong_side": 0,
+        "called_draw": 91,
+        "missed_draw": 36
+      },
+      "static@200": {
+        "agree": 657,
+        "scored": 826,
+        "pct": 79.5,
+        "wrong_side": 0,
+        "called_draw": 156,
+        "missed_draw": 13
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 885,
+        "scored": 1000,
+        "pct": 88.5,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 93
+      },
+      "depth3@100": {
+        "agree": 893,
+        "scored": 1000,
+        "pct": 89.3,
+        "wrong_side": 0,
+        "called_draw": 64,
+        "missed_draw": 43
+      },
+      "depth3@200": {
+        "agree": 819,
+        "scored": 1000,
+        "pct": 81.9,
+        "wrong_side": 0,
+        "called_draw": 179,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KBBvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 277,
+        "draw": 523,
+        "loss": 200
+      },
+      "static_scored": 863,
+      "static_declined": 137,
+      "static@50": {
+        "agree": 616,
+        "scored": 863,
+        "pct": 71.4,
+        "wrong_side": 6,
+        "called_draw": 27,
+        "missed_draw": 214
+      },
+      "static@100": {
+        "agree": 717,
+        "scored": 863,
+        "pct": 83.1,
+        "wrong_side": 4,
+        "called_draw": 56,
+        "missed_draw": 86
+      },
+      "static@200": {
+        "agree": 726,
+        "scored": 863,
+        "pct": 84.1,
+        "wrong_side": 1,
+        "called_draw": 103,
+        "missed_draw": 33
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 783,
+        "scored": 1000,
+        "pct": 78.3,
+        "wrong_side": 1,
+        "called_draw": 7,
+        "missed_draw": 209
+      },
+      "depth3@100": {
+        "agree": 910,
+        "scored": 1000,
+        "pct": 91.0,
+        "wrong_side": 1,
+        "called_draw": 19,
+        "missed_draw": 70
+      },
+      "depth3@200": {
+        "agree": 927,
+        "scored": 1000,
+        "pct": 92.7,
+        "wrong_side": 0,
+        "called_draw": 69,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KBBvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 531,
+        "draw": 158,
+        "loss": 311
+      },
+      "static_scored": 695,
+      "static_declined": 305,
+      "static@50": {
+        "agree": 557,
+        "scored": 695,
+        "pct": 80.1,
+        "wrong_side": 29,
+        "called_draw": 40,
+        "missed_draw": 69
+      },
+      "static@100": {
+        "agree": 541,
+        "scored": 695,
+        "pct": 77.8,
+        "wrong_side": 22,
+        "called_draw": 78,
+        "missed_draw": 54
+      },
+      "static@200": {
+        "agree": 499,
+        "scored": 695,
+        "pct": 71.8,
+        "wrong_side": 9,
+        "called_draw": 158,
+        "missed_draw": 29
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 907,
+        "scored": 1000,
+        "pct": 90.7,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 90
+      },
+      "depth3@100": {
+        "agree": 947,
+        "scored": 1000,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 31
+      },
+      "depth3@200": {
+        "agree": 893,
+        "scored": 1000,
+        "pct": 89.3,
+        "wrong_side": 0,
+        "called_draw": 106,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KBBvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 84,
+        "draw": 907,
+        "loss": 9
+      },
+      "static_scored": 785,
+      "static_declined": 215,
+      "static@50": {
+        "agree": 712,
+        "scored": 785,
+        "pct": 90.7,
+        "wrong_side": 0,
+        "called_draw": 69,
+        "missed_draw": 4
+      },
+      "static@100": {
+        "agree": 716,
+        "scored": 785,
+        "pct": 91.2,
+        "wrong_side": 0,
+        "called_draw": 69,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 716,
+        "scored": 785,
+        "pct": 91.2,
+        "wrong_side": 0,
+        "called_draw": 69,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 939,
+        "scored": 1000,
+        "pct": 93.9,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 57
+      },
+      "depth3@100": {
+        "agree": 963,
+        "scored": 1000,
+        "pct": 96.3,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 29
+      },
+      "depth3@200": {
+        "agree": 945,
+        "scored": 1000,
+        "pct": 94.5,
+        "wrong_side": 0,
+        "called_draw": 54,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KBNNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 425,
+        "draw": 42,
+        "loss": 533
+      },
+      "static_scored": 840,
+      "static_declined": 160,
+      "static@50": {
+        "agree": 822,
+        "scored": 840,
+        "pct": 97.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@100": {
+        "agree": 822,
+        "scored": 840,
+        "pct": 97.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@200": {
+        "agree": 820,
+        "scored": 840,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 18
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 5
+      },
+      "depth3@100": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 927,
+        "scored": 1000,
+        "pct": 92.7,
+        "wrong_side": 0,
+        "called_draw": 73,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBNPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 445,
+        "draw": 2,
+        "loss": 553
+      },
+      "static_scored": 869,
+      "static_declined": 131,
+      "static@50": {
+        "agree": 868,
+        "scored": 869,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 868,
+        "scored": 869,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 867,
+        "scored": 869,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 970,
+        "scored": 1000,
+        "pct": 97.0,
+        "wrong_side": 0,
+        "called_draw": 30,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 443,
+        "draw": 98,
+        "loss": 459
+      },
+      "static_scored": 894,
+      "static_declined": 106,
+      "static@50": {
+        "agree": 761,
+        "scored": 894,
+        "pct": 85.1,
+        "wrong_side": 0,
+        "called_draw": 65,
+        "missed_draw": 68
+      },
+      "static@100": {
+        "agree": 617,
+        "scored": 894,
+        "pct": 69.0,
+        "wrong_side": 0,
+        "called_draw": 225,
+        "missed_draw": 52
+      },
+      "static@200": {
+        "agree": 216,
+        "scored": 894,
+        "pct": 24.2,
+        "wrong_side": 0,
+        "called_draw": 671,
+        "missed_draw": 7
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 979,
+        "scored": 1000,
+        "pct": 97.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 20
+      },
+      "depth3@100": {
+        "agree": 958,
+        "scored": 1000,
+        "pct": 95.8,
+        "wrong_side": 0,
+        "called_draw": 42,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 530,
+        "scored": 1000,
+        "pct": 53.0,
+        "wrong_side": 0,
+        "called_draw": 470,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBNvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 124,
+        "draw": 866,
+        "loss": 10
+      },
+      "static_scored": 849,
+      "static_declined": 151,
+      "static@50": {
+        "agree": 746,
+        "scored": 849,
+        "pct": 87.9,
+        "wrong_side": 0,
+        "called_draw": 103,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 745,
+        "scored": 849,
+        "pct": 87.8,
+        "wrong_side": 0,
+        "called_draw": 104,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 745,
+        "scored": 849,
+        "pct": 87.8,
+        "wrong_side": 0,
+        "called_draw": 104,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 994,
+        "scored": 1000,
+        "pct": 99.4,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 2
+      },
+      "depth3@100": {
+        "agree": 967,
+        "scored": 1000,
+        "pct": 96.7,
+        "wrong_side": 0,
+        "called_draw": 32,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 888,
+        "scored": 1000,
+        "pct": 88.8,
+        "wrong_side": 0,
+        "called_draw": 112,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBNvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 144,
+        "draw": 838,
+        "loss": 18
+      },
+      "static_scored": 850,
+      "static_declined": 150,
+      "static@50": {
+        "agree": 720,
+        "scored": 850,
+        "pct": 84.7,
+        "wrong_side": 0,
+        "called_draw": 106,
+        "missed_draw": 24
+      },
+      "static@100": {
+        "agree": 720,
+        "scored": 850,
+        "pct": 84.7,
+        "wrong_side": 0,
+        "called_draw": 123,
+        "missed_draw": 7
+      },
+      "static@200": {
+        "agree": 714,
+        "scored": 850,
+        "pct": 84.0,
+        "wrong_side": 0,
+        "called_draw": 135,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 963,
+        "scored": 1000,
+        "pct": 96.3,
+        "wrong_side": 0,
+        "called_draw": 28,
+        "missed_draw": 9
+      },
+      "depth3@100": {
+        "agree": 938,
+        "scored": 1000,
+        "pct": 93.8,
+        "wrong_side": 0,
+        "called_draw": 60,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 851,
+        "scored": 1000,
+        "pct": 85.1,
+        "wrong_side": 0,
+        "called_draw": 149,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBNvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 487,
+        "draw": 143,
+        "loss": 370
+      },
+      "static_scored": 885,
+      "static_declined": 115,
+      "static@50": {
+        "agree": 757,
+        "scored": 885,
+        "pct": 85.5,
+        "wrong_side": 10,
+        "called_draw": 24,
+        "missed_draw": 94
+      },
+      "static@100": {
+        "agree": 745,
+        "scored": 885,
+        "pct": 84.2,
+        "wrong_side": 4,
+        "called_draw": 63,
+        "missed_draw": 73
+      },
+      "static@200": {
+        "agree": 644,
+        "scored": 885,
+        "pct": 72.8,
+        "wrong_side": 1,
+        "called_draw": 189,
+        "missed_draw": 51
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 955,
+        "scored": 1000,
+        "pct": 95.5,
+        "wrong_side": 2,
+        "called_draw": 10,
+        "missed_draw": 33
+      },
+      "depth3@100": {
+        "agree": 951,
+        "scored": 1000,
+        "pct": 95.1,
+        "wrong_side": 0,
+        "called_draw": 41,
+        "missed_draw": 8
+      },
+      "depth3@200": {
+        "agree": 835,
+        "scored": 1000,
+        "pct": 83.5,
+        "wrong_side": 0,
+        "called_draw": 162,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KBNvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 572,
+        "draw": 44,
+        "loss": 384
+      },
+      "static_scored": 726,
+      "static_declined": 274,
+      "static@50": {
+        "agree": 643,
+        "scored": 726,
+        "pct": 88.6,
+        "wrong_side": 49,
+        "called_draw": 18,
+        "missed_draw": 16
+      },
+      "static@100": {
+        "agree": 619,
+        "scored": 726,
+        "pct": 85.3,
+        "wrong_side": 36,
+        "called_draw": 57,
+        "missed_draw": 14
+      },
+      "static@200": {
+        "agree": 539,
+        "scored": 726,
+        "pct": 74.2,
+        "wrong_side": 22,
+        "called_draw": 156,
+        "missed_draw": 9
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 969,
+        "scored": 1000,
+        "pct": 96.9,
+        "wrong_side": 0,
+        "called_draw": 25,
+        "missed_draw": 6
+      },
+      "depth3@100": {
+        "agree": 943,
+        "scored": 1000,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 56,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 811,
+        "scored": 1000,
+        "pct": 81.1,
+        "wrong_side": 0,
+        "called_draw": 189,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBNvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 139,
+        "draw": 850,
+        "loss": 11
+      },
+      "static_scored": 793,
+      "static_declined": 207,
+      "static@50": {
+        "agree": 697,
+        "scored": 793,
+        "pct": 87.9,
+        "wrong_side": 0,
+        "called_draw": 95,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 694,
+        "scored": 793,
+        "pct": 87.5,
+        "wrong_side": 0,
+        "called_draw": 99,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 693,
+        "scored": 793,
+        "pct": 87.4,
+        "wrong_side": 0,
+        "called_draw": 100,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 974,
+        "scored": 1000,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 16,
+        "missed_draw": 10
+      },
+      "depth3@100": {
+        "agree": 953,
+        "scored": 1000,
+        "pct": 95.3,
+        "wrong_side": 0,
+        "called_draw": 42,
+        "missed_draw": 5
+      },
+      "depth3@200": {
+        "agree": 872,
+        "scored": 1000,
+        "pct": 87.2,
+        "wrong_side": 0,
+        "called_draw": 128,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBPPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 472,
+        "draw": 10,
+        "loss": 518
+      },
+      "static_scored": 911,
+      "static_declined": 89,
+      "static@50": {
+        "agree": 904,
+        "scored": 911,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 7
+      },
+      "static@100": {
+        "agree": 904,
+        "scored": 911,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 7
+      },
+      "static@200": {
+        "agree": 902,
+        "scored": 911,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 7
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 5
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 454,
+        "draw": 112,
+        "loss": 434
+      },
+      "static_scored": 915,
+      "static_declined": 85,
+      "static@50": {
+        "agree": 864,
+        "scored": 915,
+        "pct": 94.4,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 50
+      },
+      "static@100": {
+        "agree": 867,
+        "scored": 915,
+        "pct": 94.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 47
+      },
+      "static@200": {
+        "agree": 874,
+        "scored": 915,
+        "pct": 95.5,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 38
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 8
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 992,
+        "scored": 1000,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBPvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 222,
+        "draw": 718,
+        "loss": 60
+      },
+      "static_scored": 860,
+      "static_declined": 140,
+      "static@50": {
+        "agree": 733,
+        "scored": 860,
+        "pct": 85.2,
+        "wrong_side": 0,
+        "called_draw": 90,
+        "missed_draw": 37
+      },
+      "static@100": {
+        "agree": 731,
+        "scored": 860,
+        "pct": 85.0,
+        "wrong_side": 0,
+        "called_draw": 108,
+        "missed_draw": 21
+      },
+      "static@200": {
+        "agree": 710,
+        "scored": 860,
+        "pct": 82.6,
+        "wrong_side": 0,
+        "called_draw": 139,
+        "missed_draw": 11
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 963,
+        "scored": 1000,
+        "pct": 96.3,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 31
+      },
+      "depth3@100": {
+        "agree": 981,
+        "scored": 1000,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 9,
+        "missed_draw": 10
+      },
+      "depth3@200": {
+        "agree": 974,
+        "scored": 1000,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KBPvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 275,
+        "draw": 581,
+        "loss": 144
+      },
+      "static_scored": 877,
+      "static_declined": 123,
+      "static@50": {
+        "agree": 746,
+        "scored": 877,
+        "pct": 85.1,
+        "wrong_side": 0,
+        "called_draw": 71,
+        "missed_draw": 60
+      },
+      "static@100": {
+        "agree": 736,
+        "scored": 877,
+        "pct": 83.9,
+        "wrong_side": 0,
+        "called_draw": 104,
+        "missed_draw": 37
+      },
+      "static@200": {
+        "agree": 724,
+        "scored": 877,
+        "pct": 82.6,
+        "wrong_side": 0,
+        "called_draw": 137,
+        "missed_draw": 16
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 932,
+        "scored": 1000,
+        "pct": 93.2,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 63
+      },
+      "depth3@100": {
+        "agree": 954,
+        "scored": 1000,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 17,
+        "missed_draw": 29
+      },
+      "depth3@200": {
+        "agree": 942,
+        "scored": 1000,
+        "pct": 94.2,
+        "wrong_side": 0,
+        "called_draw": 45,
+        "missed_draw": 13
+      }
+    },
+    {
+      "material": "KBPvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 496,
+        "draw": 142,
+        "loss": 362
+      },
+      "static_scored": 910,
+      "static_declined": 90,
+      "static@50": {
+        "agree": 799,
+        "scored": 910,
+        "pct": 87.8,
+        "wrong_side": 13,
+        "called_draw": 39,
+        "missed_draw": 59
+      },
+      "static@100": {
+        "agree": 798,
+        "scored": 910,
+        "pct": 87.7,
+        "wrong_side": 9,
+        "called_draw": 59,
+        "missed_draw": 44
+      },
+      "static@200": {
+        "agree": 763,
+        "scored": 910,
+        "pct": 83.8,
+        "wrong_side": 2,
+        "called_draw": 115,
+        "missed_draw": 30
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 959,
+        "scored": 1000,
+        "pct": 95.9,
+        "wrong_side": 3,
+        "called_draw": 11,
+        "missed_draw": 27
+      },
+      "depth3@100": {
+        "agree": 962,
+        "scored": 1000,
+        "pct": 96.2,
+        "wrong_side": 1,
+        "called_draw": 23,
+        "missed_draw": 14
+      },
+      "depth3@200": {
+        "agree": 931,
+        "scored": 1000,
+        "pct": 93.1,
+        "wrong_side": 1,
+        "called_draw": 62,
+        "missed_draw": 6
+      }
+    },
+    {
+      "material": "KBPvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 535,
+        "draw": 65,
+        "loss": 400
+      },
+      "static_scored": 755,
+      "static_declined": 245,
+      "static@50": {
+        "agree": 682,
+        "scored": 755,
+        "pct": 90.3,
+        "wrong_side": 37,
+        "called_draw": 10,
+        "missed_draw": 26
+      },
+      "static@100": {
+        "agree": 679,
+        "scored": 755,
+        "pct": 89.9,
+        "wrong_side": 31,
+        "called_draw": 27,
+        "missed_draw": 18
+      },
+      "static@200": {
+        "agree": 669,
+        "scored": 755,
+        "pct": 88.6,
+        "wrong_side": 24,
+        "called_draw": 49,
+        "missed_draw": 13
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 974,
+        "scored": 1000,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 24
+      },
+      "depth3@100": {
+        "agree": 989,
+        "scored": 1000,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 7
+      },
+      "depth3@200": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KBPvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 276,
+        "draw": 693,
+        "loss": 31
+      },
+      "static_scored": 821,
+      "static_declined": 179,
+      "static@50": {
+        "agree": 657,
+        "scored": 821,
+        "pct": 80.0,
+        "wrong_side": 0,
+        "called_draw": 156,
+        "missed_draw": 8
+      },
+      "static@100": {
+        "agree": 645,
+        "scored": 821,
+        "pct": 78.6,
+        "wrong_side": 0,
+        "called_draw": 173,
+        "missed_draw": 3
+      },
+      "static@200": {
+        "agree": 631,
+        "scored": 821,
+        "pct": 76.9,
+        "wrong_side": 0,
+        "called_draw": 190,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 7
+      },
+      "depth3@100": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 981,
+        "scored": 1000,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 18,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KBvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 0,
+        "draw": 1000,
+        "loss": 0
+      },
+      "static_scored": 834,
+      "static_declined": 166,
+      "static@50": {
+        "agree": 834,
+        "scored": 834,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 834,
+        "scored": 834,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 834,
+        "scored": 834,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 0,
+        "draw": 1000,
+        "loss": 0
+      },
+      "static_scored": 898,
+      "static_declined": 102,
+      "static@50": {
+        "agree": 898,
+        "scored": 898,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 898,
+        "scored": 898,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 898,
+        "scored": 898,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KBvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 124,
+        "draw": 848,
+        "loss": 28
+      },
+      "static_scored": 916,
+      "static_declined": 84,
+      "static@50": {
+        "agree": 885,
+        "scored": 916,
+        "pct": 96.6,
+        "wrong_side": 0,
+        "called_draw": 25,
+        "missed_draw": 6
+      },
+      "static@100": {
+        "agree": 886,
+        "scored": 916,
+        "pct": 96.7,
+        "wrong_side": 0,
+        "called_draw": 29,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 875,
+        "scored": 916,
+        "pct": 95.5,
+        "wrong_side": 0,
+        "called_draw": 40,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 800,
+        "scored": 1000,
+        "pct": 80.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 200
+      },
+      "depth3@100": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KNNNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 423,
+        "draw": 139,
+        "loss": 438
+      },
+      "static_scored": 872,
+      "static_declined": 128,
+      "static@50": {
+        "agree": 757,
+        "scored": 872,
+        "pct": 86.8,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 111
+      },
+      "static@100": {
+        "agree": 752,
+        "scored": 872,
+        "pct": 86.2,
+        "wrong_side": 0,
+        "called_draw": 20,
+        "missed_draw": 100
+      },
+      "static@200": {
+        "agree": 601,
+        "scored": 872,
+        "pct": 68.9,
+        "wrong_side": 0,
+        "called_draw": 191,
+        "missed_draw": 80
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 977,
+        "scored": 1000,
+        "pct": 97.7,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 22
+      },
+      "depth3@100": {
+        "agree": 982,
+        "scored": 1000,
+        "pct": 98.2,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 8
+      },
+      "depth3@200": {
+        "agree": 912,
+        "scored": 1000,
+        "pct": 91.2,
+        "wrong_side": 0,
+        "called_draw": 83,
+        "missed_draw": 5
+      }
+    },
+    {
+      "material": "KNNPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 455,
+        "draw": 63,
+        "loss": 482
+      },
+      "static_scored": 905,
+      "static_declined": 95,
+      "static@50": {
+        "agree": 853,
+        "scored": 905,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 52
+      },
+      "static@100": {
+        "agree": 854,
+        "scored": 905,
+        "pct": 94.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 51
+      },
+      "static@200": {
+        "agree": 857,
+        "scored": 905,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 46
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 980,
+        "scored": 1000,
+        "pct": 98.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 20
+      },
+      "depth3@100": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 7
+      },
+      "depth3@200": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KNNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 0,
+        "draw": 1000,
+        "loss": 0
+      },
+      "static_scored": 904,
+      "static_declined": 96,
+      "static@50": {
+        "agree": 901,
+        "scored": 904,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "static@100": {
+        "agree": 903,
+        "scored": 904,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 904,
+        "scored": 904,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KNNvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 0,
+        "draw": 1000,
+        "loss": 0
+      },
+      "static_scored": 853,
+      "static_declined": 147,
+      "static@50": {
+        "agree": 852,
+        "scored": 853,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 853,
+        "scored": 853,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 853,
+        "scored": 853,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KNNvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 1,
+        "draw": 999,
+        "loss": 0
+      },
+      "static_scored": 873,
+      "static_declined": 127,
+      "static@50": {
+        "agree": 869,
+        "scored": 873,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 3
+      },
+      "static@100": {
+        "agree": 871,
+        "scored": 873,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 872,
+        "scored": 873,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KNNvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 180,
+        "draw": 766,
+        "loss": 54
+      },
+      "static_scored": 897,
+      "static_declined": 103,
+      "static@50": {
+        "agree": 665,
+        "scored": 897,
+        "pct": 74.1,
+        "wrong_side": 0,
+        "called_draw": 62,
+        "missed_draw": 170
+      },
+      "static@100": {
+        "agree": 719,
+        "scored": 897,
+        "pct": 80.2,
+        "wrong_side": 0,
+        "called_draw": 126,
+        "missed_draw": 52
+      },
+      "static@200": {
+        "agree": 698,
+        "scored": 897,
+        "pct": 77.8,
+        "wrong_side": 0,
+        "called_draw": 190,
+        "missed_draw": 9
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 826,
+        "scored": 1000,
+        "pct": 82.6,
+        "wrong_side": 0,
+        "called_draw": 29,
+        "missed_draw": 145
+      },
+      "depth3@100": {
+        "agree": 865,
+        "scored": 1000,
+        "pct": 86.5,
+        "wrong_side": 0,
+        "called_draw": 94,
+        "missed_draw": 41
+      },
+      "depth3@200": {
+        "agree": 826,
+        "scored": 1000,
+        "pct": 82.6,
+        "wrong_side": 0,
+        "called_draw": 164,
+        "missed_draw": 10
+      }
+    },
+    {
+      "material": "KNNvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 417,
+        "draw": 283,
+        "loss": 300
+      },
+      "static_scored": 759,
+      "static_declined": 241,
+      "static@50": {
+        "agree": 613,
+        "scored": 759,
+        "pct": 80.8,
+        "wrong_side": 0,
+        "called_draw": 14,
+        "missed_draw": 132
+      },
+      "static@100": {
+        "agree": 633,
+        "scored": 759,
+        "pct": 83.4,
+        "wrong_side": 0,
+        "called_draw": 35,
+        "missed_draw": 91
+      },
+      "static@200": {
+        "agree": 604,
+        "scored": 759,
+        "pct": 79.6,
+        "wrong_side": 0,
+        "called_draw": 116,
+        "missed_draw": 39
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 864,
+        "scored": 1000,
+        "pct": 86.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 136
+      },
+      "depth3@100": {
+        "agree": 936,
+        "scored": 1000,
+        "pct": 93.6,
+        "wrong_side": 0,
+        "called_draw": 14,
+        "missed_draw": 50
+      },
+      "depth3@200": {
+        "agree": 933,
+        "scored": 1000,
+        "pct": 93.3,
+        "wrong_side": 0,
+        "called_draw": 63,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KNNvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 33,
+        "draw": 965,
+        "loss": 2
+      },
+      "static_scored": 808,
+      "static_declined": 192,
+      "static@50": {
+        "agree": 777,
+        "scored": 808,
+        "pct": 96.2,
+        "wrong_side": 0,
+        "called_draw": 26,
+        "missed_draw": 5
+      },
+      "static@100": {
+        "agree": 779,
+        "scored": 808,
+        "pct": 96.4,
+        "wrong_side": 0,
+        "called_draw": 29,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 779,
+        "scored": 808,
+        "pct": 96.4,
+        "wrong_side": 0,
+        "called_draw": 29,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 975,
+        "scored": 1000,
+        "pct": 97.5,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 19
+      },
+      "depth3@100": {
+        "agree": 989,
+        "scored": 1000,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 14,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KNPPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 466,
+        "draw": 1,
+        "loss": 533
+      },
+      "static_scored": 926,
+      "static_declined": 74,
+      "static@50": {
+        "agree": 925,
+        "scored": 926,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 925,
+        "scored": 926,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 925,
+        "scored": 926,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KNPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 434,
+        "draw": 128,
+        "loss": 438
+      },
+      "static_scored": 939,
+      "static_declined": 61,
+      "static@50": {
+        "agree": 868,
+        "scored": 939,
+        "pct": 92.4,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 69
+      },
+      "static@100": {
+        "agree": 875,
+        "scored": 939,
+        "pct": 93.2,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 56
+      },
+      "static@200": {
+        "agree": 876,
+        "scored": 939,
+        "pct": 93.3,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 41
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 11
+      },
+      "depth3@100": {
+        "agree": 988,
+        "scored": 1000,
+        "pct": 98.8,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 6
+      },
+      "depth3@200": {
+        "agree": 981,
+        "scored": 1000,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 17,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KNPvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 195,
+        "draw": 738,
+        "loss": 67
+      },
+      "static_scored": 881,
+      "static_declined": 119,
+      "static@50": {
+        "agree": 777,
+        "scored": 881,
+        "pct": 88.2,
+        "wrong_side": 0,
+        "called_draw": 73,
+        "missed_draw": 31
+      },
+      "static@100": {
+        "agree": 773,
+        "scored": 881,
+        "pct": 87.7,
+        "wrong_side": 0,
+        "called_draw": 93,
+        "missed_draw": 15
+      },
+      "static@200": {
+        "agree": 755,
+        "scored": 881,
+        "pct": 85.7,
+        "wrong_side": 0,
+        "called_draw": 122,
+        "missed_draw": 4
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 947,
+        "scored": 1000,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 48
+      },
+      "depth3@100": {
+        "agree": 968,
+        "scored": 1000,
+        "pct": 96.8,
+        "wrong_side": 0,
+        "called_draw": 14,
+        "missed_draw": 18
+      },
+      "depth3@200": {
+        "agree": 962,
+        "scored": 1000,
+        "pct": 96.2,
+        "wrong_side": 0,
+        "called_draw": 33,
+        "missed_draw": 5
+      }
+    },
+    {
+      "material": "KNPvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 244,
+        "draw": 632,
+        "loss": 124
+      },
+      "static_scored": 908,
+      "static_declined": 92,
+      "static@50": {
+        "agree": 804,
+        "scored": 908,
+        "pct": 88.5,
+        "wrong_side": 0,
+        "called_draw": 78,
+        "missed_draw": 26
+      },
+      "static@100": {
+        "agree": 793,
+        "scored": 908,
+        "pct": 87.3,
+        "wrong_side": 0,
+        "called_draw": 104,
+        "missed_draw": 11
+      },
+      "static@200": {
+        "agree": 758,
+        "scored": 908,
+        "pct": 83.5,
+        "wrong_side": 0,
+        "called_draw": 145,
+        "missed_draw": 5
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 937,
+        "scored": 1000,
+        "pct": 93.7,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 56
+      },
+      "depth3@100": {
+        "agree": 957,
+        "scored": 1000,
+        "pct": 95.7,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 21
+      },
+      "depth3@200": {
+        "agree": 948,
+        "scored": 1000,
+        "pct": 94.8,
+        "wrong_side": 0,
+        "called_draw": 43,
+        "missed_draw": 9
+      }
+    },
+    {
+      "material": "KNPvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 501,
+        "draw": 213,
+        "loss": 286
+      },
+      "static_scored": 920,
+      "static_declined": 80,
+      "static@50": {
+        "agree": 761,
+        "scored": 920,
+        "pct": 82.7,
+        "wrong_side": 18,
+        "called_draw": 37,
+        "missed_draw": 104
+      },
+      "static@100": {
+        "agree": 759,
+        "scored": 920,
+        "pct": 82.5,
+        "wrong_side": 13,
+        "called_draw": 76,
+        "missed_draw": 72
+      },
+      "static@200": {
+        "agree": 721,
+        "scored": 920,
+        "pct": 78.4,
+        "wrong_side": 5,
+        "called_draw": 164,
+        "missed_draw": 30
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 934,
+        "scored": 1000,
+        "pct": 93.4,
+        "wrong_side": 1,
+        "called_draw": 15,
+        "missed_draw": 50
+      },
+      "depth3@100": {
+        "agree": 933,
+        "scored": 1000,
+        "pct": 93.3,
+        "wrong_side": 0,
+        "called_draw": 40,
+        "missed_draw": 27
+      },
+      "depth3@200": {
+        "agree": 903,
+        "scored": 1000,
+        "pct": 90.3,
+        "wrong_side": 0,
+        "called_draw": 86,
+        "missed_draw": 11
+      }
+    },
+    {
+      "material": "KNPvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 547,
+        "draw": 66,
+        "loss": 387
+      },
+      "static_scored": 777,
+      "static_declined": 223,
+      "static@50": {
+        "agree": 709,
+        "scored": 777,
+        "pct": 91.2,
+        "wrong_side": 21,
+        "called_draw": 14,
+        "missed_draw": 33
+      },
+      "static@100": {
+        "agree": 712,
+        "scored": 777,
+        "pct": 91.6,
+        "wrong_side": 19,
+        "called_draw": 24,
+        "missed_draw": 22
+      },
+      "static@200": {
+        "agree": 721,
+        "scored": 777,
+        "pct": 92.8,
+        "wrong_side": 11,
+        "called_draw": 40,
+        "missed_draw": 5
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 972,
+        "scored": 1000,
+        "pct": 97.2,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 27
+      },
+      "depth3@100": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 11
+      },
+      "depth3@200": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KNPvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 282,
+        "draw": 693,
+        "loss": 25
+      },
+      "static_scored": 839,
+      "static_declined": 161,
+      "static@50": {
+        "agree": 673,
+        "scored": 839,
+        "pct": 80.2,
+        "wrong_side": 0,
+        "called_draw": 137,
+        "missed_draw": 29
+      },
+      "static@100": {
+        "agree": 668,
+        "scored": 839,
+        "pct": 79.6,
+        "wrong_side": 0,
+        "called_draw": 165,
+        "missed_draw": 6
+      },
+      "static@200": {
+        "agree": 634,
+        "scored": 839,
+        "pct": 75.6,
+        "wrong_side": 0,
+        "called_draw": 204,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 946,
+        "scored": 1000,
+        "pct": 94.6,
+        "wrong_side": 0,
+        "called_draw": 17,
+        "missed_draw": 37
+      },
+      "depth3@100": {
+        "agree": 954,
+        "scored": 1000,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 30,
+        "missed_draw": 16
+      },
+      "depth3@200": {
+        "agree": 944,
+        "scored": 1000,
+        "pct": 94.4,
+        "wrong_side": 0,
+        "called_draw": 52,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KNvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 0,
+        "draw": 1000,
+        "loss": 0
+      },
+      "static_scored": 930,
+      "static_declined": 70,
+      "static@50": {
+        "agree": 930,
+        "scored": 930,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 930,
+        "scored": 930,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 930,
+        "scored": 930,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KNvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 173,
+        "draw": 760,
+        "loss": 67
+      },
+      "static_scored": 940,
+      "static_declined": 60,
+      "static@50": {
+        "agree": 884,
+        "scored": 940,
+        "pct": 94.0,
+        "wrong_side": 0,
+        "called_draw": 47,
+        "missed_draw": 9
+      },
+      "static@100": {
+        "agree": 876,
+        "scored": 940,
+        "pct": 93.2,
+        "wrong_side": 0,
+        "called_draw": 61,
+        "missed_draw": 3
+      },
+      "static@200": {
+        "agree": 855,
+        "scored": 940,
+        "pct": 91.0,
+        "wrong_side": 0,
+        "called_draw": 84,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 839,
+        "scored": 1000,
+        "pct": 83.9,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 159
+      },
+      "depth3@100": {
+        "agree": 985,
+        "scored": 1000,
+        "pct": 98.5,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 8
+      },
+      "depth3@200": {
+        "agree": 980,
+        "scored": 1000,
+        "pct": 98.0,
+        "wrong_side": 0,
+        "called_draw": 19,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KPPPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 508,
+        "draw": 3,
+        "loss": 489
+      },
+      "static_scored": 956,
+      "static_declined": 44,
+      "static@50": {
+        "agree": 954,
+        "scored": 956,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "static@100": {
+        "agree": 955,
+        "scored": 956,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 955,
+        "scored": 956,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "depth3@100": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KPPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 437,
+        "draw": 49,
+        "loss": 514
+      },
+      "static_scored": 972,
+      "static_declined": 28,
+      "static@50": {
+        "agree": 953,
+        "scored": 972,
+        "pct": 98.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 19
+      },
+      "static@100": {
+        "agree": 954,
+        "scored": 972,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 16
+      },
+      "static@200": {
+        "agree": 955,
+        "scored": 972,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 14
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 974,
+        "scored": 1000,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 26
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KPPvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 279,
+        "draw": 605,
+        "loss": 116
+      },
+      "static_scored": 889,
+      "static_declined": 111,
+      "static@50": {
+        "agree": 801,
+        "scored": 889,
+        "pct": 90.1,
+        "wrong_side": 0,
+        "called_draw": 47,
+        "missed_draw": 41
+      },
+      "static@100": {
+        "agree": 793,
+        "scored": 889,
+        "pct": 89.2,
+        "wrong_side": 0,
+        "called_draw": 71,
+        "missed_draw": 25
+      },
+      "static@200": {
+        "agree": 771,
+        "scored": 889,
+        "pct": 86.7,
+        "wrong_side": 0,
+        "called_draw": 108,
+        "missed_draw": 10
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 774,
+        "scored": 1000,
+        "pct": 77.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 226
+      },
+      "depth3@100": {
+        "agree": 967,
+        "scored": 1000,
+        "pct": 96.7,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 30
+      },
+      "depth3@200": {
+        "agree": 970,
+        "scored": 1000,
+        "pct": 97.0,
+        "wrong_side": 0,
+        "called_draw": 20,
+        "missed_draw": 10
+      }
+    },
+    {
+      "material": "KPPvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 329,
+        "draw": 486,
+        "loss": 185
+      },
+      "static_scored": 933,
+      "static_declined": 67,
+      "static@50": {
+        "agree": 846,
+        "scored": 933,
+        "pct": 90.7,
+        "wrong_side": 0,
+        "called_draw": 31,
+        "missed_draw": 56
+      },
+      "static@100": {
+        "agree": 849,
+        "scored": 933,
+        "pct": 91.0,
+        "wrong_side": 0,
+        "called_draw": 52,
+        "missed_draw": 32
+      },
+      "static@200": {
+        "agree": 819,
+        "scored": 933,
+        "pct": 87.8,
+        "wrong_side": 0,
+        "called_draw": 102,
+        "missed_draw": 12
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 814,
+        "scored": 1000,
+        "pct": 81.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 186
+      },
+      "depth3@100": {
+        "agree": 947,
+        "scored": 1000,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 45
+      },
+      "depth3@200": {
+        "agree": 956,
+        "scored": 1000,
+        "pct": 95.6,
+        "wrong_side": 0,
+        "called_draw": 27,
+        "missed_draw": 17
+      }
+    },
+    {
+      "material": "KPPvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 523,
+        "draw": 136,
+        "loss": 341
+      },
+      "static_scored": 966,
+      "static_declined": 34,
+      "static@50": {
+        "agree": 845,
+        "scored": 966,
+        "pct": 87.5,
+        "wrong_side": 14,
+        "called_draw": 39,
+        "missed_draw": 68
+      },
+      "static@100": {
+        "agree": 837,
+        "scored": 966,
+        "pct": 86.6,
+        "wrong_side": 10,
+        "called_draw": 80,
+        "missed_draw": 39
+      },
+      "static@200": {
+        "agree": 799,
+        "scored": 966,
+        "pct": 82.7,
+        "wrong_side": 5,
+        "called_draw": 144,
+        "missed_draw": 18
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 940,
+        "scored": 1000,
+        "pct": 94.0,
+        "wrong_side": 0,
+        "called_draw": 12,
+        "missed_draw": 48
+      },
+      "depth3@100": {
+        "agree": 956,
+        "scored": 1000,
+        "pct": 95.6,
+        "wrong_side": 0,
+        "called_draw": 27,
+        "missed_draw": 17
+      },
+      "depth3@200": {
+        "agree": 944,
+        "scored": 1000,
+        "pct": 94.4,
+        "wrong_side": 0,
+        "called_draw": 50,
+        "missed_draw": 6
+      }
+    },
+    {
+      "material": "KPPvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 496,
+        "draw": 92,
+        "loss": 412
+      },
+      "static_scored": 786,
+      "static_declined": 214,
+      "static@50": {
+        "agree": 713,
+        "scored": 786,
+        "pct": 90.7,
+        "wrong_side": 14,
+        "called_draw": 9,
+        "missed_draw": 50
+      },
+      "static@100": {
+        "agree": 735,
+        "scored": 786,
+        "pct": 93.5,
+        "wrong_side": 14,
+        "called_draw": 16,
+        "missed_draw": 21
+      },
+      "static@200": {
+        "agree": 736,
+        "scored": 786,
+        "pct": 93.6,
+        "wrong_side": 10,
+        "called_draw": 32,
+        "missed_draw": 8
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 980,
+        "scored": 1000,
+        "pct": 98.0,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 17
+      },
+      "depth3@100": {
+        "agree": 983,
+        "scored": 1000,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 11
+      },
+      "depth3@200": {
+        "agree": 979,
+        "scored": 1000,
+        "pct": 97.9,
+        "wrong_side": 0,
+        "called_draw": 18,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KPPvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 523,
+        "draw": 189,
+        "loss": 288
+      },
+      "static_scored": 860,
+      "static_declined": 140,
+      "static@50": {
+        "agree": 736,
+        "scored": 860,
+        "pct": 85.6,
+        "wrong_side": 15,
+        "called_draw": 56,
+        "missed_draw": 53
+      },
+      "static@100": {
+        "agree": 729,
+        "scored": 860,
+        "pct": 84.8,
+        "wrong_side": 10,
+        "called_draw": 87,
+        "missed_draw": 34
+      },
+      "static@200": {
+        "agree": 691,
+        "scored": 860,
+        "pct": 80.3,
+        "wrong_side": 4,
+        "called_draw": 158,
+        "missed_draw": 7
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 938,
+        "scored": 1000,
+        "pct": 93.8,
+        "wrong_side": 8,
+        "called_draw": 18,
+        "missed_draw": 36
+      },
+      "depth3@100": {
+        "agree": 937,
+        "scored": 1000,
+        "pct": 93.7,
+        "wrong_side": 6,
+        "called_draw": 38,
+        "missed_draw": 19
+      },
+      "depth3@200": {
+        "agree": 902,
+        "scored": 1000,
+        "pct": 90.2,
+        "wrong_side": 4,
+        "called_draw": 89,
+        "missed_draw": 5
+      }
+    },
+    {
+      "material": "KPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 384,
+        "draw": 296,
+        "loss": 320
+      },
+      "static_scored": 992,
+      "static_declined": 8,
+      "static@50": {
+        "agree": 975,
+        "scored": 992,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 9
+      },
+      "static@100": {
+        "agree": 974,
+        "scored": 992,
+        "pct": 98.2,
+        "wrong_side": 0,
+        "called_draw": 12,
+        "missed_draw": 6
+      },
+      "static@200": {
+        "agree": 958,
+        "scored": 992,
+        "pct": 96.6,
+        "wrong_side": 0,
+        "called_draw": 29,
+        "missed_draw": 5
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 962,
+        "scored": 1000,
+        "pct": 96.2,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 37
+      },
+      "depth3@100": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KPvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 447,
+        "draw": 313,
+        "loss": 240
+      },
+      "static_scored": 981,
+      "static_declined": 19,
+      "static@50": {
+        "agree": 879,
+        "scored": 981,
+        "pct": 89.6,
+        "wrong_side": 4,
+        "called_draw": 75,
+        "missed_draw": 23
+      },
+      "static@100": {
+        "agree": 873,
+        "scored": 981,
+        "pct": 89.0,
+        "wrong_side": 2,
+        "called_draw": 94,
+        "missed_draw": 12
+      },
+      "static@200": {
+        "agree": 848,
+        "scored": 981,
+        "pct": 86.4,
+        "wrong_side": 1,
+        "called_draw": 128,
+        "missed_draw": 4
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 977,
+        "scored": 1000,
+        "pct": 97.7,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 16
+      },
+      "depth3@100": {
+        "agree": 974,
+        "scored": 1000,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 18,
+        "missed_draw": 8
+      },
+      "depth3@200": {
+        "agree": 962,
+        "scored": 1000,
+        "pct": 96.2,
+        "wrong_side": 0,
+        "called_draw": 38,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQBBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 353,
+        "draw": 17,
+        "loss": 630
+      },
+      "static_scored": 646,
+      "static_declined": 354,
+      "static@50": {
+        "agree": 646,
+        "scored": 646,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 646,
+        "scored": 646,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 646,
+        "scored": 646,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 983,
+        "scored": 1000,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 17
+      },
+      "depth3@100": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 14
+      },
+      "depth3@200": {
+        "agree": 991,
+        "scored": 1000,
+        "pct": 99.1,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 5
+      }
+    },
+    {
+      "material": "KQBNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 336,
+        "draw": 0,
+        "loss": 664
+      },
+      "static_scored": 689,
+      "static_declined": 311,
+      "static@50": {
+        "agree": 689,
+        "scored": 689,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 689,
+        "scored": 689,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 689,
+        "scored": 689,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 994,
+        "scored": 1000,
+        "pct": 99.4,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 970,
+        "scored": 1000,
+        "pct": 97.0,
+        "wrong_side": 0,
+        "called_draw": 30,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQBPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 374,
+        "draw": 3,
+        "loss": 623
+      },
+      "static_scored": 732,
+      "static_declined": 268,
+      "static@50": {
+        "agree": 732,
+        "scored": 732,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 732,
+        "scored": 732,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 732,
+        "scored": 732,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 353,
+        "draw": 57,
+        "loss": 590
+      },
+      "static_scored": 736,
+      "static_declined": 264,
+      "static@50": {
+        "agree": 736,
+        "scored": 736,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 736,
+        "scored": 736,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 736,
+        "scored": 736,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 973,
+        "scored": 1000,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 27
+      },
+      "depth3@100": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQBvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 420,
+        "draw": 107,
+        "loss": 473
+      },
+      "static_scored": 685,
+      "static_declined": 315,
+      "static@50": {
+        "agree": 644,
+        "scored": 685,
+        "pct": 94.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 41
+      },
+      "static@100": {
+        "agree": 646,
+        "scored": 685,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 39
+      },
+      "static@200": {
+        "agree": 649,
+        "scored": 685,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 35
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 993,
+        "scored": 1000,
+        "pct": 99.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 7
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQBvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 381,
+        "draw": 102,
+        "loss": 517
+      },
+      "static_scored": 726,
+      "static_declined": 274,
+      "static@50": {
+        "agree": 690,
+        "scored": 726,
+        "pct": 95.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 36
+      },
+      "static@100": {
+        "agree": 693,
+        "scored": 726,
+        "pct": 95.5,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 33
+      },
+      "static@200": {
+        "agree": 698,
+        "scored": 726,
+        "pct": 96.1,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 28
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 4
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQBvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 379,
+        "draw": 99,
+        "loss": 522
+      },
+      "static_scored": 731,
+      "static_declined": 269,
+      "static@50": {
+        "agree": 689,
+        "scored": 731,
+        "pct": 94.3,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 41
+      },
+      "static@100": {
+        "agree": 691,
+        "scored": 731,
+        "pct": 94.5,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 39
+      },
+      "static@200": {
+        "agree": 696,
+        "scored": 731,
+        "pct": 95.2,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 34
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 958,
+        "scored": 1000,
+        "pct": 95.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 42
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KQBvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 429,
+        "draw": 530,
+        "loss": 41
+      },
+      "static_scored": 633,
+      "static_declined": 367,
+      "static@50": {
+        "agree": 380,
+        "scored": 633,
+        "pct": 60.0,
+        "wrong_side": 2,
+        "called_draw": 244,
+        "missed_draw": 7
+      },
+      "static@100": {
+        "agree": 362,
+        "scored": 633,
+        "pct": 57.2,
+        "wrong_side": 0,
+        "called_draw": 270,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 347,
+        "scored": 633,
+        "pct": 54.8,
+        "wrong_side": 0,
+        "called_draw": 286,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 868,
+        "scored": 1000,
+        "pct": 86.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 131
+      },
+      "depth3@100": {
+        "agree": 971,
+        "scored": 1000,
+        "pct": 97.1,
+        "wrong_side": 0,
+        "called_draw": 13,
+        "missed_draw": 16
+      },
+      "depth3@200": {
+        "agree": 971,
+        "scored": 1000,
+        "pct": 97.1,
+        "wrong_side": 0,
+        "called_draw": 26,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KQBvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 418,
+        "draw": 163,
+        "loss": 419
+      },
+      "static_scored": 679,
+      "static_declined": 321,
+      "static@50": {
+        "agree": 569,
+        "scored": 679,
+        "pct": 83.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 110
+      },
+      "static@100": {
+        "agree": 570,
+        "scored": 679,
+        "pct": 83.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 109
+      },
+      "static@200": {
+        "agree": 582,
+        "scored": 679,
+        "pct": 85.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 97
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 978,
+        "scored": 1000,
+        "pct": 97.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 22
+      },
+      "depth3@100": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KQNNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 338,
+        "draw": 51,
+        "loss": 611
+      },
+      "static_scored": 714,
+      "static_declined": 286,
+      "static@50": {
+        "agree": 714,
+        "scored": 714,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 714,
+        "scored": 714,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 714,
+        "scored": 714,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 973,
+        "scored": 1000,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 27
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQNPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 336,
+        "draw": 0,
+        "loss": 664
+      },
+      "static_scored": 728,
+      "static_declined": 272,
+      "static@50": {
+        "agree": 728,
+        "scored": 728,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 728,
+        "scored": 728,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 728,
+        "scored": 728,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 365,
+        "draw": 70,
+        "loss": 565
+      },
+      "static_scored": 739,
+      "static_declined": 261,
+      "static@50": {
+        "agree": 739,
+        "scored": 739,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 739,
+        "scored": 739,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 739,
+        "scored": 739,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 972,
+        "scored": 1000,
+        "pct": 97.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 28
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQNvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 398,
+        "draw": 134,
+        "loss": 468
+      },
+      "static_scored": 718,
+      "static_declined": 282,
+      "static@50": {
+        "agree": 657,
+        "scored": 718,
+        "pct": 91.5,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 61
+      },
+      "static@100": {
+        "agree": 663,
+        "scored": 718,
+        "pct": 92.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 55
+      },
+      "static@200": {
+        "agree": 678,
+        "scored": 718,
+        "pct": 94.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 40
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQNvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 374,
+        "draw": 118,
+        "loss": 508
+      },
+      "static_scored": 722,
+      "static_declined": 278,
+      "static@50": {
+        "agree": 681,
+        "scored": 722,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 41
+      },
+      "static@100": {
+        "agree": 684,
+        "scored": 722,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 38
+      },
+      "static@200": {
+        "agree": 690,
+        "scored": 722,
+        "pct": 95.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 32
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQNvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 419,
+        "draw": 91,
+        "loss": 490
+      },
+      "static_scored": 743,
+      "static_declined": 257,
+      "static@50": {
+        "agree": 701,
+        "scored": 743,
+        "pct": 94.3,
+        "wrong_side": 3,
+        "called_draw": 0,
+        "missed_draw": 39
+      },
+      "static@100": {
+        "agree": 706,
+        "scored": 743,
+        "pct": 95.0,
+        "wrong_side": 2,
+        "called_draw": 1,
+        "missed_draw": 34
+      },
+      "static@200": {
+        "agree": 717,
+        "scored": 743,
+        "pct": 96.5,
+        "wrong_side": 2,
+        "called_draw": 1,
+        "missed_draw": 23
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 974,
+        "scored": 1000,
+        "pct": 97.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 26
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KQNvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 390,
+        "draw": 589,
+        "loss": 21
+      },
+      "static_scored": 620,
+      "static_declined": 380,
+      "static@50": {
+        "agree": 405,
+        "scored": 620,
+        "pct": 65.3,
+        "wrong_side": 2,
+        "called_draw": 209,
+        "missed_draw": 4
+      },
+      "static@100": {
+        "agree": 398,
+        "scored": 620,
+        "pct": 64.2,
+        "wrong_side": 0,
+        "called_draw": 222,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 390,
+        "scored": 620,
+        "pct": 62.9,
+        "wrong_side": 0,
+        "called_draw": 230,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 880,
+        "scored": 1000,
+        "pct": 88.0,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 119
+      },
+      "depth3@100": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 10
+      },
+      "depth3@200": {
+        "agree": 982,
+        "scored": 1000,
+        "pct": 98.2,
+        "wrong_side": 0,
+        "called_draw": 14,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KQNvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 438,
+        "draw": 170,
+        "loss": 392
+      },
+      "static_scored": 709,
+      "static_declined": 291,
+      "static@50": {
+        "agree": 601,
+        "scored": 709,
+        "pct": 84.8,
+        "wrong_side": 14,
+        "called_draw": 1,
+        "missed_draw": 93
+      },
+      "static@100": {
+        "agree": 609,
+        "scored": 709,
+        "pct": 85.9,
+        "wrong_side": 13,
+        "called_draw": 2,
+        "missed_draw": 85
+      },
+      "static@200": {
+        "agree": 633,
+        "scored": 709,
+        "pct": 89.3,
+        "wrong_side": 11,
+        "called_draw": 5,
+        "missed_draw": 60
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 979,
+        "scored": 1000,
+        "pct": 97.9,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 18
+      },
+      "depth3@100": {
+        "agree": 985,
+        "scored": 1000,
+        "pct": 98.5,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 9
+      },
+      "depth3@200": {
+        "agree": 977,
+        "scored": 1000,
+        "pct": 97.7,
+        "wrong_side": 0,
+        "called_draw": 18,
+        "missed_draw": 5
+      }
+    },
+    {
+      "material": "KQPPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 405,
+        "draw": 1,
+        "loss": 594
+      },
+      "static_scored": 776,
+      "static_declined": 224,
+      "static@50": {
+        "agree": 776,
+        "scored": 776,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 776,
+        "scored": 776,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 776,
+        "scored": 776,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 389,
+        "draw": 14,
+        "loss": 597
+      },
+      "static_scored": 795,
+      "static_declined": 205,
+      "static@50": {
+        "agree": 795,
+        "scored": 795,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 795,
+        "scored": 795,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 795,
+        "scored": 795,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 992,
+        "scored": 1000,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 8
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQPvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 446,
+        "draw": 100,
+        "loss": 454
+      },
+      "static_scored": 755,
+      "static_declined": 245,
+      "static@50": {
+        "agree": 717,
+        "scored": 755,
+        "pct": 95.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 38
+      },
+      "static@100": {
+        "agree": 717,
+        "scored": 755,
+        "pct": 95.0,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 37
+      },
+      "static@200": {
+        "agree": 724,
+        "scored": 755,
+        "pct": 95.9,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 27
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 953,
+        "scored": 1000,
+        "pct": 95.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 47
+      },
+      "depth3@100": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KQPvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 407,
+        "draw": 72,
+        "loss": 521
+      },
+      "static_scored": 765,
+      "static_declined": 235,
+      "static@50": {
+        "agree": 738,
+        "scored": 765,
+        "pct": 96.5,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 27
+      },
+      "static@100": {
+        "agree": 739,
+        "scored": 765,
+        "pct": 96.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 26
+      },
+      "static@200": {
+        "agree": 744,
+        "scored": 765,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 21
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 976,
+        "scored": 1000,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 24
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQPvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 424,
+        "draw": 53,
+        "loss": 523
+      },
+      "static_scored": 763,
+      "static_declined": 237,
+      "static@50": {
+        "agree": 738,
+        "scored": 763,
+        "pct": 96.7,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 24
+      },
+      "static@100": {
+        "agree": 745,
+        "scored": 763,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 17
+      },
+      "static@200": {
+        "agree": 750,
+        "scored": 763,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 12
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 985,
+        "scored": 1000,
+        "pct": 98.5,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 15
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KQPvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 528,
+        "draw": 395,
+        "loss": 77
+      },
+      "static_scored": 664,
+      "static_declined": 336,
+      "static@50": {
+        "agree": 438,
+        "scored": 664,
+        "pct": 66.0,
+        "wrong_side": 17,
+        "called_draw": 169,
+        "missed_draw": 40
+      },
+      "static@100": {
+        "agree": 425,
+        "scored": 664,
+        "pct": 64.0,
+        "wrong_side": 10,
+        "called_draw": 202,
+        "missed_draw": 27
+      },
+      "static@200": {
+        "agree": 400,
+        "scored": 664,
+        "pct": 60.2,
+        "wrong_side": 6,
+        "called_draw": 241,
+        "missed_draw": 17
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 929,
+        "scored": 1000,
+        "pct": 92.9,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 61
+      },
+      "depth3@100": {
+        "agree": 957,
+        "scored": 1000,
+        "pct": 95.7,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 21
+      },
+      "depth3@200": {
+        "agree": 954,
+        "scored": 1000,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 39,
+        "missed_draw": 7
+      }
+    },
+    {
+      "material": "KQPvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 567,
+        "draw": 49,
+        "loss": 384
+      },
+      "static_scored": 740,
+      "static_declined": 260,
+      "static@50": {
+        "agree": 651,
+        "scored": 740,
+        "pct": 88.0,
+        "wrong_side": 58,
+        "called_draw": 2,
+        "missed_draw": 29
+      },
+      "static@100": {
+        "agree": 649,
+        "scored": 740,
+        "pct": 87.7,
+        "wrong_side": 55,
+        "called_draw": 7,
+        "missed_draw": 29
+      },
+      "static@200": {
+        "agree": 650,
+        "scored": 740,
+        "pct": 87.8,
+        "wrong_side": 51,
+        "called_draw": 12,
+        "missed_draw": 27
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 1,
+        "called_draw": 3,
+        "missed_draw": 10
+      },
+      "depth3@100": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 1,
+        "called_draw": 4,
+        "missed_draw": 5
+      },
+      "depth3@200": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 1,
+        "called_draw": 13,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KQQBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 295,
+        "draw": 0,
+        "loss": 705
+      },
+      "static_scored": 562,
+      "static_declined": 438,
+      "static@50": {
+        "agree": 562,
+        "scored": 562,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 562,
+        "scored": 562,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 562,
+        "scored": 562,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 295,
+        "draw": 0,
+        "loss": 705
+      },
+      "static_scored": 575,
+      "static_declined": 425,
+      "static@50": {
+        "agree": 575,
+        "scored": 575,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 575,
+        "scored": 575,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 575,
+        "scored": 575,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 314,
+        "draw": 0,
+        "loss": 686
+      },
+      "static_scored": 588,
+      "static_declined": 412,
+      "static@50": {
+        "agree": 588,
+        "scored": 588,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 588,
+        "scored": 588,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 588,
+        "scored": 588,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQQvK",
+      "positions": 1000,
+      "truth": {
+        "win": 245,
+        "draw": 0,
+        "loss": 755
+      },
+      "static_scored": 451,
+      "static_declined": 549,
+      "static@50": {
+        "agree": 451,
+        "scored": 451,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 451,
+        "scored": 451,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 451,
+        "scored": 451,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQRvK",
+      "positions": 1000,
+      "truth": {
+        "win": 276,
+        "draw": 0,
+        "loss": 724
+      },
+      "static_scored": 536,
+      "static_declined": 464,
+      "static@50": {
+        "agree": 536,
+        "scored": 536,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 536,
+        "scored": 536,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 536,
+        "scored": 536,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQvK",
+      "positions": 1000,
+      "truth": {
+        "win": 290,
+        "draw": 0,
+        "loss": 710
+      },
+      "static_scored": 601,
+      "static_declined": 399,
+      "static@50": {
+        "agree": 601,
+        "scored": 601,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 601,
+        "scored": 601,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 601,
+        "scored": 601,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 350,
+        "draw": 0,
+        "loss": 650
+      },
+      "static_scored": 592,
+      "static_declined": 408,
+      "static@50": {
+        "agree": 592,
+        "scored": 592,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 592,
+        "scored": 592,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 592,
+        "scored": 592,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 325,
+        "draw": 0,
+        "loss": 675
+      },
+      "static_scored": 602,
+      "static_declined": 398,
+      "static@50": {
+        "agree": 602,
+        "scored": 602,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 602,
+        "scored": 602,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 602,
+        "scored": 602,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 309,
+        "draw": 4,
+        "loss": 687
+      },
+      "static_scored": 615,
+      "static_declined": 385,
+      "static@50": {
+        "agree": 614,
+        "scored": 615,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 614,
+        "scored": 615,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 614,
+        "scored": 615,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQQvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 417,
+        "draw": 194,
+        "loss": 389
+      },
+      "static_scored": 545,
+      "static_declined": 455,
+      "static@50": {
+        "agree": 445,
+        "scored": 545,
+        "pct": 81.7,
+        "wrong_side": 5,
+        "called_draw": 0,
+        "missed_draw": 95
+      },
+      "static@100": {
+        "agree": 445,
+        "scored": 545,
+        "pct": 81.7,
+        "wrong_side": 5,
+        "called_draw": 0,
+        "missed_draw": 95
+      },
+      "static@200": {
+        "agree": 446,
+        "scored": 545,
+        "pct": 81.8,
+        "wrong_side": 5,
+        "called_draw": 2,
+        "missed_draw": 92
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 844,
+        "scored": 1000,
+        "pct": 84.4,
+        "wrong_side": 1,
+        "called_draw": 2,
+        "missed_draw": 153
+      },
+      "depth3@100": {
+        "agree": 977,
+        "scored": 1000,
+        "pct": 97.7,
+        "wrong_side": 1,
+        "called_draw": 5,
+        "missed_draw": 17
+      },
+      "depth3@200": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 1,
+        "called_draw": 5,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KQQvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 356,
+        "draw": 1,
+        "loss": 643
+      },
+      "static_scored": 577,
+      "static_declined": 423,
+      "static@50": {
+        "agree": 576,
+        "scored": 577,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 576,
+        "scored": 577,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 576,
+        "scored": 577,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQRBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 330,
+        "draw": 0,
+        "loss": 670
+      },
+      "static_scored": 631,
+      "static_declined": 369,
+      "static@50": {
+        "agree": 631,
+        "scored": 631,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 631,
+        "scored": 631,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 631,
+        "scored": 631,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQRNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 338,
+        "draw": 0,
+        "loss": 662
+      },
+      "static_scored": 664,
+      "static_declined": 336,
+      "static@50": {
+        "agree": 664,
+        "scored": 664,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 664,
+        "scored": 664,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 664,
+        "scored": 664,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQRPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 364,
+        "draw": 0,
+        "loss": 636
+      },
+      "static_scored": 669,
+      "static_declined": 331,
+      "static@50": {
+        "agree": 669,
+        "scored": 669,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 669,
+        "scored": 669,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 669,
+        "scored": 669,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQRRvK",
+      "positions": 1000,
+      "truth": {
+        "win": 306,
+        "draw": 0,
+        "loss": 694
+      },
+      "static_scored": 590,
+      "static_declined": 410,
+      "static@50": {
+        "agree": 590,
+        "scored": 590,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 590,
+        "scored": 590,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 590,
+        "scored": 590,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQRvK",
+      "positions": 1000,
+      "truth": {
+        "win": 359,
+        "draw": 0,
+        "loss": 641
+      },
+      "static_scored": 672,
+      "static_declined": 328,
+      "static@50": {
+        "agree": 672,
+        "scored": 672,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 672,
+        "scored": 672,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 672,
+        "scored": 672,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQRvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 394,
+        "draw": 66,
+        "loss": 540
+      },
+      "static_scored": 668,
+      "static_declined": 332,
+      "static@50": {
+        "agree": 637,
+        "scored": 668,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 31
+      },
+      "static@100": {
+        "agree": 637,
+        "scored": 668,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 31
+      },
+      "static@200": {
+        "agree": 637,
+        "scored": 668,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 31
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 954,
+        "scored": 1000,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 46
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KQRvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 366,
+        "draw": 69,
+        "loss": 565
+      },
+      "static_scored": 672,
+      "static_declined": 328,
+      "static@50": {
+        "agree": 654,
+        "scored": 672,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@100": {
+        "agree": 654,
+        "scored": 672,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@200": {
+        "agree": 654,
+        "scored": 672,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 946,
+        "scored": 1000,
+        "pct": 94.6,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 53
+      },
+      "depth3@100": {
+        "agree": 991,
+        "scored": 1000,
+        "pct": 99.1,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 989,
+        "scored": 1000,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 9,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KQRvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 380,
+        "draw": 10,
+        "loss": 610
+      },
+      "static_scored": 694,
+      "static_declined": 306,
+      "static@50": {
+        "agree": 687,
+        "scored": 694,
+        "pct": 99.0,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 6
+      },
+      "static@100": {
+        "agree": 688,
+        "scored": 694,
+        "pct": 99.1,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 5
+      },
+      "static@200": {
+        "agree": 688,
+        "scored": 694,
+        "pct": 99.1,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 5
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 991,
+        "scored": 1000,
+        "pct": 99.1,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 8
+      },
+      "depth3@100": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 993,
+        "scored": 1000,
+        "pct": 99.3,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQRvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 565,
+        "draw": 139,
+        "loss": 296
+      },
+      "static_scored": 583,
+      "static_declined": 417,
+      "static@50": {
+        "agree": 432,
+        "scored": 583,
+        "pct": 74.1,
+        "wrong_side": 73,
+        "called_draw": 5,
+        "missed_draw": 73
+      },
+      "static@100": {
+        "agree": 432,
+        "scored": 583,
+        "pct": 74.1,
+        "wrong_side": 69,
+        "called_draw": 14,
+        "missed_draw": 68
+      },
+      "static@200": {
+        "agree": 437,
+        "scored": 583,
+        "pct": 75.0,
+        "wrong_side": 52,
+        "called_draw": 47,
+        "missed_draw": 47
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 912,
+        "scored": 1000,
+        "pct": 91.2,
+        "wrong_side": 0,
+        "called_draw": 12,
+        "missed_draw": 76
+      },
+      "depth3@100": {
+        "agree": 958,
+        "scored": 1000,
+        "pct": 95.8,
+        "wrong_side": 0,
+        "called_draw": 29,
+        "missed_draw": 13
+      },
+      "depth3@200": {
+        "agree": 899,
+        "scored": 1000,
+        "pct": 89.9,
+        "wrong_side": 0,
+        "called_draw": 98,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KQRvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 440,
+        "draw": 119,
+        "loss": 441
+      },
+      "static_scored": 636,
+      "static_declined": 364,
+      "static@50": {
+        "agree": 578,
+        "scored": 636,
+        "pct": 90.9,
+        "wrong_side": 1,
+        "called_draw": 0,
+        "missed_draw": 57
+      },
+      "static@100": {
+        "agree": 577,
+        "scored": 636,
+        "pct": 90.7,
+        "wrong_side": 1,
+        "called_draw": 1,
+        "missed_draw": 57
+      },
+      "static@200": {
+        "agree": 575,
+        "scored": 636,
+        "pct": 90.4,
+        "wrong_side": 1,
+        "called_draw": 3,
+        "missed_draw": 57
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 926,
+        "scored": 1000,
+        "pct": 92.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 74
+      },
+      "depth3@100": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQvK",
+      "positions": 1000,
+      "truth": {
+        "win": 397,
+        "draw": 66,
+        "loss": 537
+      },
+      "static_scored": 792,
+      "static_declined": 208,
+      "static@50": {
+        "agree": 792,
+        "scored": 792,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 792,
+        "scored": 792,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 792,
+        "scored": 792,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 14
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 436,
+        "draw": 128,
+        "loss": 436
+      },
+      "static_scored": 752,
+      "static_declined": 248,
+      "static@50": {
+        "agree": 700,
+        "scored": 752,
+        "pct": 93.1,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 52
+      },
+      "static@100": {
+        "agree": 701,
+        "scored": 752,
+        "pct": 93.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 51
+      },
+      "static@200": {
+        "agree": 704,
+        "scored": 752,
+        "pct": 93.6,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 47
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 943,
+        "scored": 1000,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 57
+      },
+      "depth3@100": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 387,
+        "draw": 129,
+        "loss": 484
+      },
+      "static_scored": 754,
+      "static_declined": 246,
+      "static@50": {
+        "agree": 710,
+        "scored": 754,
+        "pct": 94.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 44
+      },
+      "static@100": {
+        "agree": 712,
+        "scored": 754,
+        "pct": 94.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 42
+      },
+      "static@200": {
+        "agree": 716,
+        "scored": 754,
+        "pct": 95.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 38
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 943,
+        "scored": 1000,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 57
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 431,
+        "draw": 67,
+        "loss": 502
+      },
+      "static_scored": 786,
+      "static_declined": 214,
+      "static@50": {
+        "agree": 761,
+        "scored": 786,
+        "pct": 96.8,
+        "wrong_side": 4,
+        "called_draw": 4,
+        "missed_draw": 17
+      },
+      "static@100": {
+        "agree": 769,
+        "scored": 786,
+        "pct": 97.8,
+        "wrong_side": 4,
+        "called_draw": 4,
+        "missed_draw": 9
+      },
+      "static@200": {
+        "agree": 768,
+        "scored": 786,
+        "pct": 97.7,
+        "wrong_side": 4,
+        "called_draw": 7,
+        "missed_draw": 7
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 972,
+        "scored": 1000,
+        "pct": 97.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 28
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 5
+      },
+      "depth3@200": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KQvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 410,
+        "draw": 584,
+        "loss": 6
+      },
+      "static_scored": 626,
+      "static_declined": 374,
+      "static@50": {
+        "agree": 394,
+        "scored": 626,
+        "pct": 62.9,
+        "wrong_side": 0,
+        "called_draw": 232,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 393,
+        "scored": 626,
+        "pct": 62.8,
+        "wrong_side": 0,
+        "called_draw": 233,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 392,
+        "scored": 626,
+        "pct": 62.6,
+        "wrong_side": 0,
+        "called_draw": 234,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 924,
+        "scored": 1000,
+        "pct": 92.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 76
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KQvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 598,
+        "draw": 35,
+        "loss": 367
+      },
+      "static_scored": 735,
+      "static_declined": 265,
+      "static@50": {
+        "agree": 612,
+        "scored": 735,
+        "pct": 83.3,
+        "wrong_side": 93,
+        "called_draw": 10,
+        "missed_draw": 20
+      },
+      "static@100": {
+        "agree": 599,
+        "scored": 735,
+        "pct": 81.5,
+        "wrong_side": 85,
+        "called_draw": 32,
+        "missed_draw": 19
+      },
+      "static@200": {
+        "agree": 327,
+        "scored": 735,
+        "pct": 44.5,
+        "wrong_side": 52,
+        "called_draw": 350,
+        "missed_draw": 6
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 7
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 928,
+        "scored": 1000,
+        "pct": 92.8,
+        "wrong_side": 0,
+        "called_draw": 72,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRBBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 379,
+        "draw": 21,
+        "loss": 600
+      },
+      "static_scored": 760,
+      "static_declined": 240,
+      "static@50": {
+        "agree": 752,
+        "scored": 760,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 8
+      },
+      "static@100": {
+        "agree": 752,
+        "scored": 760,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 8
+      },
+      "static@200": {
+        "agree": 753,
+        "scored": 760,
+        "pct": 99.1,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 7
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 978,
+        "scored": 1000,
+        "pct": 97.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 21
+      },
+      "depth3@100": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 15
+      },
+      "depth3@200": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 14,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRBNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 376,
+        "draw": 0,
+        "loss": 624
+      },
+      "static_scored": 771,
+      "static_declined": 229,
+      "static@50": {
+        "agree": 771,
+        "scored": 771,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 771,
+        "scored": 771,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 771,
+        "scored": 771,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 992,
+        "scored": 1000,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 970,
+        "scored": 1000,
+        "pct": 97.0,
+        "wrong_side": 0,
+        "called_draw": 30,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRBPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 402,
+        "draw": 1,
+        "loss": 597
+      },
+      "static_scored": 794,
+      "static_declined": 206,
+      "static@50": {
+        "agree": 793,
+        "scored": 794,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 793,
+        "scored": 794,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 793,
+        "scored": 794,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 402,
+        "draw": 48,
+        "loss": 550
+      },
+      "static_scored": 805,
+      "static_declined": 195,
+      "static@50": {
+        "agree": 783,
+        "scored": 805,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 22
+      },
+      "static@100": {
+        "agree": 783,
+        "scored": 805,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 22
+      },
+      "static@200": {
+        "agree": 782,
+        "scored": 805,
+        "pct": 97.1,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 22
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 3
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRBvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 436,
+        "draw": 192,
+        "loss": 372
+      },
+      "static_scored": 787,
+      "static_declined": 213,
+      "static@50": {
+        "agree": 668,
+        "scored": 787,
+        "pct": 84.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 119
+      },
+      "static@100": {
+        "agree": 685,
+        "scored": 787,
+        "pct": 87.0,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 101
+      },
+      "static@200": {
+        "agree": 701,
+        "scored": 787,
+        "pct": 89.1,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 83
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 8
+      },
+      "depth3@100": {
+        "agree": 990,
+        "scored": 1000,
+        "pct": 99.0,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 6
+      },
+      "depth3@200": {
+        "agree": 991,
+        "scored": 1000,
+        "pct": 99.1,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KRBvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 384,
+        "draw": 157,
+        "loss": 459
+      },
+      "static_scored": 785,
+      "static_declined": 215,
+      "static@50": {
+        "agree": 693,
+        "scored": 785,
+        "pct": 88.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 92
+      },
+      "static@100": {
+        "agree": 697,
+        "scored": 785,
+        "pct": 88.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 88
+      },
+      "static@200": {
+        "agree": 707,
+        "scored": 785,
+        "pct": 90.1,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 77
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 9
+      },
+      "depth3@100": {
+        "agree": 991,
+        "scored": 1000,
+        "pct": 99.1,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 988,
+        "scored": 1000,
+        "pct": 98.8,
+        "wrong_side": 0,
+        "called_draw": 9,
+        "missed_draw": 3
+      }
+    },
+    {
+      "material": "KRBvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 407,
+        "draw": 110,
+        "loss": 483
+      },
+      "static_scored": 801,
+      "static_declined": 199,
+      "static@50": {
+        "agree": 739,
+        "scored": 801,
+        "pct": 92.3,
+        "wrong_side": 7,
+        "called_draw": 0,
+        "missed_draw": 55
+      },
+      "static@100": {
+        "agree": 743,
+        "scored": 801,
+        "pct": 92.8,
+        "wrong_side": 6,
+        "called_draw": 5,
+        "missed_draw": 47
+      },
+      "static@200": {
+        "agree": 750,
+        "scored": 801,
+        "pct": 93.6,
+        "wrong_side": 6,
+        "called_draw": 10,
+        "missed_draw": 35
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 10
+      },
+      "depth3@100": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 980,
+        "scored": 1000,
+        "pct": 98.0,
+        "wrong_side": 0,
+        "called_draw": 20,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRBvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 564,
+        "draw": 348,
+        "loss": 88
+      },
+      "static_scored": 695,
+      "static_declined": 305,
+      "static@50": {
+        "agree": 406,
+        "scored": 695,
+        "pct": 58.4,
+        "wrong_side": 10,
+        "called_draw": 252,
+        "missed_draw": 27
+      },
+      "static@100": {
+        "agree": 354,
+        "scored": 695,
+        "pct": 50.9,
+        "wrong_side": 4,
+        "called_draw": 329,
+        "missed_draw": 8
+      },
+      "static@200": {
+        "agree": 302,
+        "scored": 695,
+        "pct": 43.5,
+        "wrong_side": 2,
+        "called_draw": 389,
+        "missed_draw": 2
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 840,
+        "scored": 1000,
+        "pct": 84.0,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 150
+      },
+      "depth3@100": {
+        "agree": 935,
+        "scored": 1000,
+        "pct": 93.5,
+        "wrong_side": 0,
+        "called_draw": 38,
+        "missed_draw": 27
+      },
+      "depth3@200": {
+        "agree": 898,
+        "scored": 1000,
+        "pct": 89.8,
+        "wrong_side": 0,
+        "called_draw": 98,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KRBvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 190,
+        "draw": 781,
+        "loss": 29
+      },
+      "static_scored": 755,
+      "static_declined": 245,
+      "static@50": {
+        "agree": 613,
+        "scored": 755,
+        "pct": 81.2,
+        "wrong_side": 0,
+        "called_draw": 136,
+        "missed_draw": 6
+      },
+      "static@100": {
+        "agree": 613,
+        "scored": 755,
+        "pct": 81.2,
+        "wrong_side": 0,
+        "called_draw": 141,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 603,
+        "scored": 755,
+        "pct": 79.9,
+        "wrong_side": 0,
+        "called_draw": 152,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 981,
+        "scored": 1000,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 15
+      },
+      "depth3@100": {
+        "agree": 992,
+        "scored": 1000,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 989,
+        "scored": 1000,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KRNNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 420,
+        "draw": 53,
+        "loss": 527
+      },
+      "static_scored": 800,
+      "static_declined": 200,
+      "static@50": {
+        "agree": 782,
+        "scored": 800,
+        "pct": 97.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@100": {
+        "agree": 782,
+        "scored": 800,
+        "pct": 97.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 18
+      },
+      "static@200": {
+        "agree": 783,
+        "scored": 800,
+        "pct": 97.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 17
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 993,
+        "scored": 1000,
+        "pct": 99.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 7
+      },
+      "depth3@100": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRNPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 421,
+        "draw": 3,
+        "loss": 576
+      },
+      "static_scored": 852,
+      "static_declined": 148,
+      "static@50": {
+        "agree": 851,
+        "scored": 852,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 851,
+        "scored": 852,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "static@200": {
+        "agree": 851,
+        "scored": 852,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 1
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 998,
+        "scored": 1000,
+        "pct": 99.8,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 2
+      },
+      "depth3@100": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KRNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 429,
+        "draw": 51,
+        "loss": 520
+      },
+      "static_scored": 825,
+      "static_declined": 175,
+      "static@50": {
+        "agree": 810,
+        "scored": 825,
+        "pct": 98.2,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 15
+      },
+      "static@100": {
+        "agree": 811,
+        "scored": 825,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 14
+      },
+      "static@200": {
+        "agree": 810,
+        "scored": 825,
+        "pct": 98.2,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 14
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 992,
+        "scored": 1000,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 4
+      },
+      "depth3@100": {
+        "agree": 996,
+        "scored": 1000,
+        "pct": 99.6,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 994,
+        "scored": 1000,
+        "pct": 99.4,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRNvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 445,
+        "draw": 213,
+        "loss": 342
+      },
+      "static_scored": 775,
+      "static_declined": 225,
+      "static@50": {
+        "agree": 648,
+        "scored": 775,
+        "pct": 83.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 127
+      },
+      "static@100": {
+        "agree": 658,
+        "scored": 775,
+        "pct": 84.9,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 117
+      },
+      "static@200": {
+        "agree": 677,
+        "scored": 775,
+        "pct": 87.4,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 93
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 12
+      },
+      "depth3@100": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 5
+      },
+      "depth3@200": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 12,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KRNvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 438,
+        "draw": 120,
+        "loss": 442
+      },
+      "static_scored": 809,
+      "static_declined": 191,
+      "static@50": {
+        "agree": 734,
+        "scored": 809,
+        "pct": 90.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 75
+      },
+      "static@100": {
+        "agree": 737,
+        "scored": 809,
+        "pct": 91.1,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 72
+      },
+      "static@200": {
+        "agree": 748,
+        "scored": 809,
+        "pct": 92.5,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 57
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 989,
+        "scored": 1000,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 7
+      },
+      "depth3@100": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 9,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 14,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRNvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 423,
+        "draw": 131,
+        "loss": 446
+      },
+      "static_scored": 839,
+      "static_declined": 161,
+      "static@50": {
+        "agree": 744,
+        "scored": 839,
+        "pct": 88.7,
+        "wrong_side": 6,
+        "called_draw": 7,
+        "missed_draw": 82
+      },
+      "static@100": {
+        "agree": 764,
+        "scored": 839,
+        "pct": 91.1,
+        "wrong_side": 5,
+        "called_draw": 9,
+        "missed_draw": 61
+      },
+      "static@200": {
+        "agree": 768,
+        "scored": 839,
+        "pct": 91.5,
+        "wrong_side": 2,
+        "called_draw": 28,
+        "missed_draw": 41
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 972,
+        "scored": 1000,
+        "pct": 97.2,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 24
+      },
+      "depth3@100": {
+        "agree": 982,
+        "scored": 1000,
+        "pct": 98.2,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 8
+      },
+      "depth3@200": {
+        "agree": 976,
+        "scored": 1000,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRNvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 556,
+        "draw": 305,
+        "loss": 139
+      },
+      "static_scored": 703,
+      "static_declined": 297,
+      "static@50": {
+        "agree": 438,
+        "scored": 703,
+        "pct": 62.3,
+        "wrong_side": 18,
+        "called_draw": 210,
+        "missed_draw": 37
+      },
+      "static@100": {
+        "agree": 390,
+        "scored": 703,
+        "pct": 55.5,
+        "wrong_side": 9,
+        "called_draw": 285,
+        "missed_draw": 19
+      },
+      "static@200": {
+        "agree": 336,
+        "scored": 703,
+        "pct": 47.8,
+        "wrong_side": 3,
+        "called_draw": 359,
+        "missed_draw": 5
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 877,
+        "scored": 1000,
+        "pct": 87.7,
+        "wrong_side": 0,
+        "called_draw": 10,
+        "missed_draw": 113
+      },
+      "depth3@100": {
+        "agree": 933,
+        "scored": 1000,
+        "pct": 93.3,
+        "wrong_side": 0,
+        "called_draw": 41,
+        "missed_draw": 26
+      },
+      "depth3@200": {
+        "agree": 878,
+        "scored": 1000,
+        "pct": 87.8,
+        "wrong_side": 0,
+        "called_draw": 116,
+        "missed_draw": 6
+      }
+    },
+    {
+      "material": "KRNvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 196,
+        "draw": 789,
+        "loss": 15
+      },
+      "static_scored": 761,
+      "static_declined": 239,
+      "static@50": {
+        "agree": 622,
+        "scored": 761,
+        "pct": 81.7,
+        "wrong_side": 0,
+        "called_draw": 139,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 614,
+        "scored": 761,
+        "pct": 80.7,
+        "wrong_side": 0,
+        "called_draw": 147,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 609,
+        "scored": 761,
+        "pct": 80.0,
+        "wrong_side": 0,
+        "called_draw": 152,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 981,
+        "scored": 1000,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 12
+      },
+      "depth3@100": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 9,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 983,
+        "scored": 1000,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 16,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KRPPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 401,
+        "draw": 1,
+        "loss": 598
+      },
+      "static_scored": 861,
+      "static_declined": 139,
+      "static@50": {
+        "agree": 861,
+        "scored": 861,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 861,
+        "scored": 861,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 861,
+        "scored": 861,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 409,
+        "draw": 19,
+        "loss": 572
+      },
+      "static_scored": 861,
+      "static_declined": 139,
+      "static@50": {
+        "agree": 850,
+        "scored": 861,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 11
+      },
+      "static@100": {
+        "agree": 850,
+        "scored": 861,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 11
+      },
+      "static@200": {
+        "agree": 850,
+        "scored": 861,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 11
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 988,
+        "scored": 1000,
+        "pct": 98.8,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 11
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRPvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 445,
+        "draw": 191,
+        "loss": 364
+      },
+      "static_scored": 791,
+      "static_declined": 209,
+      "static@50": {
+        "agree": 696,
+        "scored": 791,
+        "pct": 88.0,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 94
+      },
+      "static@100": {
+        "agree": 699,
+        "scored": 791,
+        "pct": 88.4,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 89
+      },
+      "static@200": {
+        "agree": 697,
+        "scored": 791,
+        "pct": 88.1,
+        "wrong_side": 0,
+        "called_draw": 21,
+        "missed_draw": 73
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 939,
+        "scored": 1000,
+        "pct": 93.9,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 57
+      },
+      "depth3@100": {
+        "agree": 981,
+        "scored": 1000,
+        "pct": 98.1,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 12
+      },
+      "depth3@200": {
+        "agree": 975,
+        "scored": 1000,
+        "pct": 97.5,
+        "wrong_side": 0,
+        "called_draw": 21,
+        "missed_draw": 4
+      }
+    },
+    {
+      "material": "KRPvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 454,
+        "draw": 124,
+        "loss": 422
+      },
+      "static_scored": 849,
+      "static_declined": 151,
+      "static@50": {
+        "agree": 780,
+        "scored": 849,
+        "pct": 91.9,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 66
+      },
+      "static@100": {
+        "agree": 781,
+        "scored": 849,
+        "pct": 92.0,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 60
+      },
+      "static@200": {
+        "agree": 787,
+        "scored": 849,
+        "pct": 92.7,
+        "wrong_side": 0,
+        "called_draw": 19,
+        "missed_draw": 43
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 957,
+        "scored": 1000,
+        "pct": 95.7,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 41
+      },
+      "depth3@100": {
+        "agree": 983,
+        "scored": 1000,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 9
+      },
+      "depth3@200": {
+        "agree": 979,
+        "scored": 1000,
+        "pct": 97.9,
+        "wrong_side": 0,
+        "called_draw": 19,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRPvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 494,
+        "draw": 42,
+        "loss": 464
+      },
+      "static_scored": 870,
+      "static_declined": 130,
+      "static@50": {
+        "agree": 829,
+        "scored": 870,
+        "pct": 95.3,
+        "wrong_side": 9,
+        "called_draw": 4,
+        "missed_draw": 28
+      },
+      "static@100": {
+        "agree": 824,
+        "scored": 870,
+        "pct": 94.7,
+        "wrong_side": 7,
+        "called_draw": 15,
+        "missed_draw": 24
+      },
+      "static@200": {
+        "agree": 800,
+        "scored": 870,
+        "pct": 92.0,
+        "wrong_side": 5,
+        "called_draw": 47,
+        "missed_draw": 18
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 983,
+        "scored": 1000,
+        "pct": 98.3,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 15
+      },
+      "depth3@100": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 6,
+        "missed_draw": 10
+      },
+      "depth3@200": {
+        "agree": 976,
+        "scored": 1000,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 22,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRPvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 618,
+        "draw": 91,
+        "loss": 291
+      },
+      "static_scored": 729,
+      "static_declined": 271,
+      "static@50": {
+        "agree": 606,
+        "scored": 729,
+        "pct": 83.1,
+        "wrong_side": 50,
+        "called_draw": 43,
+        "missed_draw": 30
+      },
+      "static@100": {
+        "agree": 579,
+        "scored": 729,
+        "pct": 79.4,
+        "wrong_side": 44,
+        "called_draw": 86,
+        "missed_draw": 20
+      },
+      "static@200": {
+        "agree": 542,
+        "scored": 729,
+        "pct": 74.3,
+        "wrong_side": 30,
+        "called_draw": 149,
+        "missed_draw": 8
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 953,
+        "scored": 1000,
+        "pct": 95.3,
+        "wrong_side": 1,
+        "called_draw": 5,
+        "missed_draw": 41
+      },
+      "depth3@100": {
+        "agree": 966,
+        "scored": 1000,
+        "pct": 96.6,
+        "wrong_side": 1,
+        "called_draw": 17,
+        "missed_draw": 16
+      },
+      "depth3@200": {
+        "agree": 947,
+        "scored": 1000,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 51,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRPvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 400,
+        "draw": 455,
+        "loss": 145
+      },
+      "static_scored": 793,
+      "static_declined": 207,
+      "static@50": {
+        "agree": 636,
+        "scored": 793,
+        "pct": 80.2,
+        "wrong_side": 12,
+        "called_draw": 93,
+        "missed_draw": 52
+      },
+      "static@100": {
+        "agree": 628,
+        "scored": 793,
+        "pct": 79.2,
+        "wrong_side": 10,
+        "called_draw": 113,
+        "missed_draw": 42
+      },
+      "static@200": {
+        "agree": 605,
+        "scored": 793,
+        "pct": 76.3,
+        "wrong_side": 5,
+        "called_draw": 155,
+        "missed_draw": 28
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 957,
+        "scored": 1000,
+        "pct": 95.7,
+        "wrong_side": 1,
+        "called_draw": 8,
+        "missed_draw": 34
+      },
+      "depth3@100": {
+        "agree": 965,
+        "scored": 1000,
+        "pct": 96.5,
+        "wrong_side": 1,
+        "called_draw": 17,
+        "missed_draw": 17
+      },
+      "depth3@200": {
+        "agree": 954,
+        "scored": 1000,
+        "pct": 95.4,
+        "wrong_side": 0,
+        "called_draw": 40,
+        "missed_draw": 6
+      }
+    },
+    {
+      "material": "KRRBvK",
+      "positions": 1000,
+      "truth": {
+        "win": 345,
+        "draw": 0,
+        "loss": 655
+      },
+      "static_scored": 713,
+      "static_declined": 287,
+      "static@50": {
+        "agree": 713,
+        "scored": 713,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 713,
+        "scored": 713,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 713,
+        "scored": 713,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRRNvK",
+      "positions": 1000,
+      "truth": {
+        "win": 356,
+        "draw": 0,
+        "loss": 644
+      },
+      "static_scored": 729,
+      "static_declined": 271,
+      "static@50": {
+        "agree": 729,
+        "scored": 729,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 729,
+        "scored": 729,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 729,
+        "scored": 729,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRRPvK",
+      "positions": 1000,
+      "truth": {
+        "win": 388,
+        "draw": 0,
+        "loss": 612
+      },
+      "static_scored": 770,
+      "static_declined": 230,
+      "static@50": {
+        "agree": 770,
+        "scored": 770,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 770,
+        "scored": 770,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 770,
+        "scored": 770,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRRRvK",
+      "positions": 1000,
+      "truth": {
+        "win": 347,
+        "draw": 0,
+        "loss": 653
+      },
+      "static_scored": 680,
+      "static_declined": 320,
+      "static@50": {
+        "agree": 680,
+        "scored": 680,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 680,
+        "scored": 680,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 680,
+        "scored": 680,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRRvK",
+      "positions": 1000,
+      "truth": {
+        "win": 390,
+        "draw": 0,
+        "loss": 610
+      },
+      "static_scored": 767,
+      "static_declined": 233,
+      "static@50": {
+        "agree": 767,
+        "scored": 767,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 767,
+        "scored": 767,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 767,
+        "scored": 767,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@100": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 1000,
+        "scored": 1000,
+        "pct": 100.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRRvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 441,
+        "draw": 131,
+        "loss": 428
+      },
+      "static_scored": 714,
+      "static_declined": 286,
+      "static@50": {
+        "agree": 628,
+        "scored": 714,
+        "pct": 88.0,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 86
+      },
+      "static@100": {
+        "agree": 631,
+        "scored": 714,
+        "pct": 88.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 83
+      },
+      "static@200": {
+        "agree": 646,
+        "scored": 714,
+        "pct": 90.5,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 67
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 15
+      },
+      "depth3@100": {
+        "agree": 997,
+        "scored": 1000,
+        "pct": 99.7,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 1
+      },
+      "depth3@200": {
+        "agree": 994,
+        "scored": 1000,
+        "pct": 99.4,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 1
+      }
+    },
+    {
+      "material": "KRRvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 435,
+        "draw": 83,
+        "loss": 482
+      },
+      "static_scored": 771,
+      "static_declined": 229,
+      "static@50": {
+        "agree": 727,
+        "scored": 771,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 44
+      },
+      "static@100": {
+        "agree": 729,
+        "scored": 771,
+        "pct": 94.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 42
+      },
+      "static@200": {
+        "agree": 730,
+        "scored": 771,
+        "pct": 94.7,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 40
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 972,
+        "scored": 1000,
+        "pct": 97.2,
+        "wrong_side": 0,
+        "called_draw": 8,
+        "missed_draw": 20
+      },
+      "depth3@100": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 12,
+        "missed_draw": 4
+      },
+      "depth3@200": {
+        "agree": 978,
+        "scored": 1000,
+        "pct": 97.8,
+        "wrong_side": 0,
+        "called_draw": 20,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRRvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 398,
+        "draw": 31,
+        "loss": 571
+      },
+      "static_scored": 747,
+      "static_declined": 253,
+      "static@50": {
+        "agree": 723,
+        "scored": 747,
+        "pct": 96.8,
+        "wrong_side": 3,
+        "called_draw": 2,
+        "missed_draw": 19
+      },
+      "static@100": {
+        "agree": 724,
+        "scored": 747,
+        "pct": 96.9,
+        "wrong_side": 3,
+        "called_draw": 2,
+        "missed_draw": 18
+      },
+      "static@200": {
+        "agree": 727,
+        "scored": 747,
+        "pct": 97.3,
+        "wrong_side": 3,
+        "called_draw": 4,
+        "missed_draw": 13
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 12
+      },
+      "depth3@100": {
+        "agree": 992,
+        "scored": 1000,
+        "pct": 99.2,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 989,
+        "scored": 1000,
+        "pct": 98.9,
+        "wrong_side": 0,
+        "called_draw": 9,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRRvKQ",
+      "positions": 1000,
+      "truth": {
+        "win": 566,
+        "draw": 355,
+        "loss": 79
+      },
+      "static_scored": 648,
+      "static_declined": 352,
+      "static@50": {
+        "agree": 309,
+        "scored": 648,
+        "pct": 47.7,
+        "wrong_side": 2,
+        "called_draw": 336,
+        "missed_draw": 1
+      },
+      "static@100": {
+        "agree": 280,
+        "scored": 648,
+        "pct": 43.2,
+        "wrong_side": 0,
+        "called_draw": 368,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 253,
+        "scored": 648,
+        "pct": 39.0,
+        "wrong_side": 0,
+        "called_draw": 395,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 921,
+        "scored": 1000,
+        "pct": 92.1,
+        "wrong_side": 0,
+        "called_draw": 16,
+        "missed_draw": 63
+      },
+      "depth3@100": {
+        "agree": 950,
+        "scored": 1000,
+        "pct": 95.0,
+        "wrong_side": 0,
+        "called_draw": 40,
+        "missed_draw": 10
+      },
+      "depth3@200": {
+        "agree": 824,
+        "scored": 1000,
+        "pct": 82.4,
+        "wrong_side": 0,
+        "called_draw": 174,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRRvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 451,
+        "draw": 179,
+        "loss": 370
+      },
+      "static_scored": 715,
+      "static_declined": 285,
+      "static@50": {
+        "agree": 595,
+        "scored": 715,
+        "pct": 83.2,
+        "wrong_side": 4,
+        "called_draw": 1,
+        "missed_draw": 115
+      },
+      "static@100": {
+        "agree": 610,
+        "scored": 715,
+        "pct": 85.3,
+        "wrong_side": 4,
+        "called_draw": 1,
+        "missed_draw": 100
+      },
+      "static@200": {
+        "agree": 619,
+        "scored": 715,
+        "pct": 86.6,
+        "wrong_side": 3,
+        "called_draw": 3,
+        "missed_draw": 90
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 976,
+        "scored": 1000,
+        "pct": 97.6,
+        "wrong_side": 0,
+        "called_draw": 2,
+        "missed_draw": 22
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 994,
+        "scored": 1000,
+        "pct": 99.4,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRvK",
+      "positions": 1000,
+      "truth": {
+        "win": 441,
+        "draw": 41,
+        "loss": 518
+      },
+      "static_scored": 897,
+      "static_declined": 103,
+      "static@50": {
+        "agree": 883,
+        "scored": 897,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 14
+      },
+      "static@100": {
+        "agree": 884,
+        "scored": 897,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 13
+      },
+      "static@200": {
+        "agree": 884,
+        "scored": 897,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 0,
+        "missed_draw": 13
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 994,
+        "scored": 1000,
+        "pct": 99.4,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 5
+      },
+      "depth3@100": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      },
+      "depth3@200": {
+        "agree": 999,
+        "scored": 1000,
+        "pct": 99.9,
+        "wrong_side": 0,
+        "called_draw": 1,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRvKB",
+      "positions": 1000,
+      "truth": {
+        "win": 167,
+        "draw": 808,
+        "loss": 25
+      },
+      "static_scored": 832,
+      "static_declined": 168,
+      "static@50": {
+        "agree": 704,
+        "scored": 832,
+        "pct": 84.6,
+        "wrong_side": 0,
+        "called_draw": 125,
+        "missed_draw": 3
+      },
+      "static@100": {
+        "agree": 702,
+        "scored": 832,
+        "pct": 84.4,
+        "wrong_side": 0,
+        "called_draw": 128,
+        "missed_draw": 2
+      },
+      "static@200": {
+        "agree": 699,
+        "scored": 832,
+        "pct": 84.0,
+        "wrong_side": 0,
+        "called_draw": 133,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 973,
+        "scored": 1000,
+        "pct": 97.3,
+        "wrong_side": 0,
+        "called_draw": 5,
+        "missed_draw": 22
+      },
+      "depth3@100": {
+        "agree": 984,
+        "scored": 1000,
+        "pct": 98.4,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 9
+      },
+      "depth3@200": {
+        "agree": 986,
+        "scored": 1000,
+        "pct": 98.6,
+        "wrong_side": 0,
+        "called_draw": 9,
+        "missed_draw": 5
+      }
+    },
+    {
+      "material": "KRvKN",
+      "positions": 1000,
+      "truth": {
+        "win": 200,
+        "draw": 748,
+        "loss": 52
+      },
+      "static_scored": 857,
+      "static_declined": 143,
+      "static@50": {
+        "agree": 703,
+        "scored": 857,
+        "pct": 82.0,
+        "wrong_side": 0,
+        "called_draw": 124,
+        "missed_draw": 30
+      },
+      "static@100": {
+        "agree": 702,
+        "scored": 857,
+        "pct": 81.9,
+        "wrong_side": 0,
+        "called_draw": 136,
+        "missed_draw": 19
+      },
+      "static@200": {
+        "agree": 692,
+        "scored": 857,
+        "pct": 80.7,
+        "wrong_side": 0,
+        "called_draw": 157,
+        "missed_draw": 8
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 951,
+        "scored": 1000,
+        "pct": 95.1,
+        "wrong_side": 0,
+        "called_draw": 7,
+        "missed_draw": 42
+      },
+      "depth3@100": {
+        "agree": 969,
+        "scored": 1000,
+        "pct": 96.9,
+        "wrong_side": 0,
+        "called_draw": 15,
+        "missed_draw": 16
+      },
+      "depth3@200": {
+        "agree": 964,
+        "scored": 1000,
+        "pct": 96.4,
+        "wrong_side": 0,
+        "called_draw": 34,
+        "missed_draw": 2
+      }
+    },
+    {
+      "material": "KRvKP",
+      "positions": 1000,
+      "truth": {
+        "win": 504,
+        "draw": 142,
+        "loss": 354
+      },
+      "static_scored": 864,
+      "static_declined": 136,
+      "static@50": {
+        "agree": 792,
+        "scored": 864,
+        "pct": 91.7,
+        "wrong_side": 21,
+        "called_draw": 22,
+        "missed_draw": 29
+      },
+      "static@100": {
+        "agree": 789,
+        "scored": 864,
+        "pct": 91.3,
+        "wrong_side": 21,
+        "called_draw": 28,
+        "missed_draw": 26
+      },
+      "static@200": {
+        "agree": 781,
+        "scored": 864,
+        "pct": 90.4,
+        "wrong_side": 11,
+        "called_draw": 51,
+        "missed_draw": 21
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 977,
+        "scored": 1000,
+        "pct": 97.7,
+        "wrong_side": 1,
+        "called_draw": 14,
+        "missed_draw": 8
+      },
+      "depth3@100": {
+        "agree": 970,
+        "scored": 1000,
+        "pct": 97.0,
+        "wrong_side": 0,
+        "called_draw": 27,
+        "missed_draw": 3
+      },
+      "depth3@200": {
+        "agree": 943,
+        "scored": 1000,
+        "pct": 94.3,
+        "wrong_side": 0,
+        "called_draw": 57,
+        "missed_draw": 0
+      }
+    },
+    {
+      "material": "KRvKR",
+      "positions": 1000,
+      "truth": {
+        "win": 278,
+        "draw": 719,
+        "loss": 3
+      },
+      "static_scored": 791,
+      "static_declined": 209,
+      "static@50": {
+        "agree": 587,
+        "scored": 791,
+        "pct": 74.2,
+        "wrong_side": 0,
+        "called_draw": 204,
+        "missed_draw": 0
+      },
+      "static@100": {
+        "agree": 586,
+        "scored": 791,
+        "pct": 74.1,
+        "wrong_side": 0,
+        "called_draw": 205,
+        "missed_draw": 0
+      },
+      "static@200": {
+        "agree": 583,
+        "scored": 791,
+        "pct": 73.7,
+        "wrong_side": 0,
+        "called_draw": 208,
+        "missed_draw": 0
+      },
+      "depth3_scored": 1000,
+      "depth3_declined": 0,
+      "depth3@50": {
+        "agree": 987,
+        "scored": 1000,
+        "pct": 98.7,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 10
+      },
+      "depth3@100": {
+        "agree": 995,
+        "scored": 1000,
+        "pct": 99.5,
+        "wrong_side": 0,
+        "called_draw": 3,
+        "missed_draw": 2
+      },
+      "depth3@200": {
+        "agree": 994,
+        "scored": 1000,
+        "pct": 99.4,
+        "wrong_side": 0,
+        "called_draw": 4,
+        "missed_draw": 2
+      }
+    }
+  ]
+}
